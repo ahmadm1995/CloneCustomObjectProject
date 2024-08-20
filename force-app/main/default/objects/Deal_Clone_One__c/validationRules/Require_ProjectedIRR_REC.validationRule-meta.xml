@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_ProjectedIRR_REC</fullName>
+    <active>true</active>
+    <description>Projected IRR/ROE is required when status is circled</description>
+    <errorConditionFormula>AND( $User.Bypass_User_Validations__c = False, RecordType.Name = &quot;Real Estate Credit - Direct Lending&quot;, TEXT ( REC_Status__c ) = &quot;1. Circled / Due Diligence&quot;, ISBLANK ( TEXT ( Projected_IRR__c ) ))</errorConditionFormula>
+    <errorDisplayField>Projected_IRR__c</errorDisplayField>
+    <errorMessage>If Status is Circled, Forward ROE must be filled in.</errorMessage>
+</ValidationRule>

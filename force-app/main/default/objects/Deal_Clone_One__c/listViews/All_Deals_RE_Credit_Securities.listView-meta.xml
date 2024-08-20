@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Deals_RE_Credit_Securities</fullName>
+    <columns>NAME</columns>
+    <columns>Project_Name__c</columns>
+    <columns>Deal_Team_Short__c</columns>
+    <columns>REC_Status__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>IT_REC__c</field>
+        <operation>equals</operation>
+        <value>Securities – Investment Grade,Securities – SASB (BIG + Non Control),Securities – SASB (Control / First Loss),Securities – Conduit BIG / B-Pieces</value>
+    </filters>
+    <label>All Deals (RE Credit - Securities)</label>
+</ListView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Reports_InfraGlobal</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Send Reports</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>/* Button Configuration - Change these values */ 
+var templateId =&apos;a1N1H000002YG6n,a1N1H0000038qgo,a1N1H000002WgJU&apos;; 
+var queryId = &apos;[INFRATMT]a1F1H000005yeDF,[INFRAEN]a1F1H000005yeDK,[INFRAINF]a1F1H000005yeDP,[INFRARM]a1F1H000005yeDU,[PORT]a1F1H000005yfnT,[PIPEAM]a1F1H00000743Q0,[PIPEEUR]a1F1H00000743Q5&apos;; 
+var serverURL = &apos;{!API.Partner_Server_URL_370}&apos;; 
+var id = &apos;a1L1H000004QJUlUAO&apos;; 
+var parameterId = &apos;2&apos;; 
+var loggingId = &apos;0&apos;; 
+var zip = &apos;0&apos; 
+var redirect = &apos;/lightning/n/Curated_Pipeline_Infrastructure&apos;; 
+var emailtoId = &apos;&apos;; 
+var ccId = &apos;&apos;; 
+var emailId = &apos;a1E1H00000AMq1zUAD&apos;; 
+
+/* URL Building - Don&apos;t change these values */ 
+var url = &apos;&apos;; 
+
+url += &apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos; + 
+&apos;&amp;serverUrl=&apos; +serverURL+ 
+&apos;&amp;Id=&apos; +id+ 
+&apos;&amp;QueryId=&apos; + queryId+ 
+&apos;&amp;TemplateId=&apos;+templateId+ 
+&apos;&amp;DS7=&apos; +parameterId+ 
+&apos;&amp;AC0=&apos; +loggingId+ 
+&apos;&amp;ZipFiles=&apos; +zip+ 
+&apos;&amp;ReturnPath=&apos; +redirect+ 
+&apos;&amp;EmailAdditionalTo=&apos; +emailtoId+ 
+&apos;&amp;EmailCC=&apos; +ccId+ 
+&apos;&amp;EmailTemplateId=&apos; +emailId; 
+
+
+//Open modal in SmartList 
+openURLInModal(url,false);</url>
+</WebLink>

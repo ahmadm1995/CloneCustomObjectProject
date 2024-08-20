@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Deal_Platform_Energy_Inverse</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$User.Bypass_User_Validations__c = False ,
+OR (
+RecordType.Name = &apos;Energy&apos; ) ,
+Platform_Deal__c &lt;&gt; &apos;&apos; ,
+TEXT( Platform_Details__c ) &lt;&gt; &apos;Platform Add On&apos; ,
+TEXT( Platform_Details__c ) &lt;&gt; &apos;&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Platform_Deal__c</errorDisplayField>
+    <errorMessage>Please clear Platform Deal if not a Platform Add-on.</errorMessage>
+</ValidationRule>

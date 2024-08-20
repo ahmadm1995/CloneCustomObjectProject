@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Reason_Not_Bid_when_eliminated</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( $User.Bypass_User_Validations__c = False, OR(RecordType.Name = &quot;Real Estate Credit - Direct Lending&quot;,RecordType.Name = &quot;Real Estate Credit - Securities&quot;), TEXT ( REC_Status__c ) = &quot;6. Dead / Passed / Not Active&quot;,  TEXT ( KKR_Bid__c ) = &quot;No&quot;, ISBLANK ( TEXT (  Reason_REC__c ) ) )</errorConditionFormula>
+    <errorDisplayField>Reason_REC__c</errorDisplayField>
+    <errorMessage>Please fill in the Reason Not Bid details for this deal.</errorMessage>
+</ValidationRule>

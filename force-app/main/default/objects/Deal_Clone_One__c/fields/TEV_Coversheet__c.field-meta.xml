@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TEV_Coversheet__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AND( ISNULL( TLo__c ) , ISNULL( TEVhi__c ) ) , &quot;TBD&quot; , IF( TLo__c = TEVhi__c , TEXT( CurrencyIsoCode ) + &quot; &quot; + IF( TEVhi__c &gt;= 1000, TEXT( TEVhi__c / 1000 ) + &quot; BN&quot; , TEXT( TEVhi__c ) + &quot; MM&quot; ) , IF( AND( ISNULL( TLo__c ) , NOT( ISNULL( TEVhi__c ) ) ) , TEXT( CurrencyIsoCode ) + &quot; &quot; + IF( TEVhi__c &gt;= 1000, TEXT( TEVhi__c / 1000 ) + &quot; BN&quot; , TEXT( TEVhi__c ) + &quot; MM&quot; ) , IF( AND( NOT( ISNULL( TLo__c ) ) , ISNULL( TEVhi__c ) ) , TEXT( CurrencyIsoCode ) + &quot; &quot; + IF( TLo__c &gt;= 1000, TEXT( TLo__c / 1000 ) + &quot; BN&quot; , TEXT( TLo__c ) + &quot; MM&quot; ) , TEXT( CurrencyIsoCode ) + &quot; &quot; + IF( TLo__c &gt;= 1000, TEXT( TLo__c / 1000 ) + &quot; BN&quot; , TEXT( TLo__c ) + &quot; MM&quot; ) + &quot; - &quot; + IF( TEVhi__c &gt;= 1000, TEXT( TEVhi__c / 1000 ) + &quot; BN&quot; , TEXT( TEVhi__c ) + &quot; MM&quot; ) ) ) ) )</formula>
+    <label>TEV Coversheet</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Climate_Framework_Infra_Climate</fullName>
+    <active>true</active>
+    <errorConditionFormula>$Permission.Validation_For_ESG_Certification = TRUE
+&amp;&amp;
+(
+RecordType.DeveloperName = &apos;Infrastructure&apos;
+)
+&amp;&amp;
+ISBLANK(TEXT( CFEA__c ))
+&amp;&amp;
+(
+(
+(
+ISPICKVAL(Status_AsiaInfra__c, &apos;Active Evaluation&apos;)
+||
+ISPICKVAL(Status_AsiaInfra__c, &apos;Priority&apos;)
+||
+ISPICKVAL(Status_AsiaInfra__c, &apos;High Priority&apos;)
+||
+ISPICKVAL(Status_AsiaInfra__c, &apos;Completed&apos;)
+||
+ISPICKVAL(Status_AsiaInfra__c, &apos;Portfolio&apos;)
+)
+&amp;&amp;
+ISPICKVAL($User.Office_Region__c, &apos;Asia&apos;)
+)
+||
+(
+(
+ISPICKVAL(Phase_Infra__c, &apos;Active&apos;)
+||
+ISPICKVAL(Phase_Infra__c, &apos;Phase 1&apos;)
+||
+ISPICKVAL(Phase_Infra__c, &apos;Phase 2a&apos;)
+||
+ISPICKVAL(Phase_Infra__c, &apos;Phase 2b&apos;)
+||
+ISPICKVAL(Phase_Infra__c, &apos;Signed&apos;)
+||
+ISPICKVAL(Phase_Infra__c, &apos;Portfolio&apos;)
+||
+ISPICKVAL(Phase_Infra__c, &apos;Phase 2&apos;)
+)
+&amp;&amp;
+(
+ISPICKVAL($User.Office_Region__c, &apos;Americas&apos;)
+||
+ISPICKVAL($User.Office_Region__c, &apos;EMEA&apos; )
+)
+)
+)
+&amp;&amp; 
+    (
+        INCLUDES(BU__c, &quot;Americas + EMEA Climate&quot;) ||
+        INCLUDES(BU__c, &quot;Asia Climate&quot;)
+    )</errorConditionFormula>
+    <errorDisplayField>CFEA__c</errorDisplayField>
+    <errorMessage>Climate Framework Eligibility Assessment is required prior to moving to the next stage.</errorMessage>
+</ValidationRule>

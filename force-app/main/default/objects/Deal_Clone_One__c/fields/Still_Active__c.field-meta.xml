@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Still_Active__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISNULL(Date_Initiated__c )),
+	IF(OR(Date_Initiated__c &gt; Date_Monitored__c, ISNULL(Date_Monitored__c)),IF(OR(Date_Initiated__c &gt; Date_Eliminated__c, ISNULL(Date_Eliminated__c)),IF(OR(Date_Initiated__c &gt; Date_Closed__c, ISNULL(Date_Closed__c)),IF(OR(Date_Initiated__c &gt; Date_Signed__c, ISNULL(Date_Signed__c)),IF(OR(Date_Initiated__c &gt; Date_of_Divestiture__c, ISNULL(Date_of_Divestiture__c)),&quot;Yes&quot;,&quot;No&quot;),&quot;No&quot;),&quot;No&quot;),&quot;No&quot;),&quot;No&quot;),&quot;No&quot;)</formula>
+    <label>Still Active</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

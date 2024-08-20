@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Broker__c</fullName>
+    <externalId>false</externalId>
+    <label>Broker</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Direct</fullName>
+                <default>false</default>
+                <label>Direct</label>
+            </value>
+            <value>
+                <fullName>Ackman-Ziff</fullName>
+                <default>false</default>
+                <label>Ackman-Ziff</label>
+            </value>
+            <value>
+                <fullName>Argentic</fullName>
+                <default>false</default>
+                <label>Argentic</label>
+            </value>
+            <value>
+                <fullName>Avison Young</fullName>
+                <default>false</default>
+                <label>Avison Young</label>
+            </value>
+            <value>
+                <fullName>Bank of America</fullName>
+                <default>false</default>
+                <label>Bank of America</label>
+            </value>
+            <value>
+                <fullName>Barclays</fullName>
+                <default>false</default>
+                <label>Barclays</label>
+            </value>
+            <value>
+                <fullName>Benefit Street</fullName>
+                <default>false</default>
+                <label>Benefit Street</label>
+            </value>
+            <value>
+                <fullName>Berkadia</fullName>
+                <default>false</default>
+                <label>Berkadia</label>
+            </value>
+            <value>
+                <fullName>Bellwether</fullName>
+                <default>false</default>
+                <label>Bellwether</label>
+            </value>
+            <value>
+                <fullName>BMO</fullName>
+                <default>false</default>
+                <label>BMO</label>
+            </value>
+            <value>
+                <fullName>C&amp;W</fullName>
+                <default>false</default>
+                <label>C&amp;W</label>
+            </value>
+            <value>
+                <fullName>CBRE</fullName>
+                <default>false</default>
+                <label>CBRE</label>
+            </value>
+            <value>
+                <fullName>CCRE</fullName>
+                <default>false</default>
+                <label>CCRE</label>
+            </value>
+            <value>
+                <fullName>CIBC</fullName>
+                <default>false</default>
+                <label>CIBC</label>
+            </value>
+            <value>
+                <fullName>Citi</fullName>
+                <default>false</default>
+                <label>Citi</label>
+            </value>
+            <value>
+                <fullName>Colliers</fullName>
+                <default>false</default>
+                <label>Colliers</label>
+            </value>
+            <value>
+                <fullName>Credit Suisse</fullName>
+                <default>false</default>
+                <label>Credit Suisse</label>
+            </value>
+            <value>
+                <fullName>Deutsche Bank</fullName>
+                <default>false</default>
+                <label>Deutsche Bank</label>
+            </value>
+            <value>
+                <fullName>Eastdil</fullName>
+                <default>false</default>
+                <label>Eastdil</label>
+            </value>
+            <value>
+                <fullName>Estreich</fullName>
+                <default>false</default>
+                <label>Estreich</label>
+            </value>
+            <value>
+                <fullName>Goldman Sachs</fullName>
+                <default>false</default>
+                <label>Goldman Sachs</label>
+            </value>
+            <value>
+                <fullName>Grandbridge</fullName>
+                <default>false</default>
+                <label>Grandbridge</label>
+            </value>
+            <value>
+                <fullName>JLL</fullName>
+                <default>false</default>
+                <label>JLL</label>
+            </value>
+            <value>
+                <fullName>JP Morgan</fullName>
+                <default>false</default>
+                <label>JP Morgan</label>
+            </value>
+            <value>
+                <fullName>KeyBank</fullName>
+                <default>false</default>
+                <label>KeyBank</label>
+            </value>
+            <value>
+                <fullName>Ladder Capital</fullName>
+                <default>false</default>
+                <label>Ladder Capital</label>
+            </value>
+            <value>
+                <fullName>LMF Commercial</fullName>
+                <default>false</default>
+                <label>LMF Commercial</label>
+            </value>
+            <value>
+                <fullName>Meridian</fullName>
+                <default>false</default>
+                <label>Meridian</label>
+            </value>
+            <value>
+                <fullName>Morgan Stanley</fullName>
+                <default>false</default>
+                <label>Morgan Stanley</label>
+            </value>
+            <value>
+                <fullName>Natixis</fullName>
+                <default>false</default>
+                <label>Natixis</label>
+            </value>
+            <value>
+                <fullName>Newmark</fullName>
+                <default>false</default>
+                <label>Newmark</label>
+            </value>
+            <value>
+                <fullName>RBC</fullName>
+                <default>false</default>
+                <label>RBC</label>
+            </value>
+            <value>
+                <fullName>Societe Generale</fullName>
+                <default>false</default>
+                <label>Societe Generale</label>
+            </value>
+            <value>
+                <fullName>Starwood Mortgage</fullName>
+                <default>false</default>
+                <label>Starwood Mortgage</label>
+            </value>
+            <value>
+                <fullName>TSB Capital</fullName>
+                <default>false</default>
+                <label>TSB Capital</label>
+            </value>
+            <value>
+                <fullName>UBS</fullName>
+                <default>false</default>
+                <label>UBS</label>
+            </value>
+            <value>
+                <fullName>W&amp;D</fullName>
+                <default>false</default>
+                <label>W&amp;D</label>
+            </value>
+            <value>
+                <fullName>Wells Fargo</fullName>
+                <default>false</default>
+                <label>Wells Fargo</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

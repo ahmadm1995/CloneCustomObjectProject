@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AsiaPEGoldSilver_ExpCloseDate</fullName>
+    <active>true</active>
+    <description>Require Expected Close date when an Asia PE deal reaches Gold / Silver</description>
+    <errorConditionFormula>AND(
+  RecordType.DeveloperName = &apos;Private_Equity_Asia&apos;,
+  OR(
+    ISPICKVAL(Gold_Silver_Indicator__c, &apos;Gold&apos;),
+    ISPICKVAL(Gold_Silver_Indicator__c, &apos;Silver&apos;)
+  ),
+  ISBLANK(Exp_Closing_Date_REE__c)
+)</errorConditionFormula>
+    <errorDisplayField>Exp_Closing_Date_REE__c</errorDisplayField>
+    <errorMessage>Expected Close Date required when Deal is Gold or Silver</errorMessage>
+</ValidationRule>

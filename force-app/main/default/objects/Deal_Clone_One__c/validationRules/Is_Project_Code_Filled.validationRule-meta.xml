@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Project_Code_Filled</fullName>
+    <active>true</active>
+    <description>Whenever a Deal is created - check if Deal Code Approver is populated and Project code is not - ask user to provide project code - because it is required to request deal code</description>
+    <errorConditionFormula>AND ( $User.Bypass_User_Validations__c = False, NOT( OR ( ISNULL(Deal_Code_Approver__c), ISBLANK(Deal_Code_Approver__c) ) ) , ISBLANK( Project_Name__c ) )</errorConditionFormula>
+    <errorMessage>Please provide a Code/Project Name to request Deal Expense Code</errorMessage>
+</ValidationRule>

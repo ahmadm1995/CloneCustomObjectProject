@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Infra_EBITDA_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$RecordType.Name = &apos;Infrastructure&apos;,
+$Profile.Name = &apos;Investment Professional - Infrastructure&apos;,
+OR(
+TEXT(Phase_Infra__c) = &quot;Phase 2&quot;,
+TEXT(Phase_Infra__c) = &quot;Phase 2a&quot;,
+TEXT(Phase_Infra__c) = &quot;Phase 2b&quot;,
+TEXT(Phase_Infra__c) = &quot;Signed&quot;,
+TEXT(Phase_Infra__c) = &quot;Portfolio&quot;
+),
+ISBLANK(EB__c)
+)</errorConditionFormula>
+    <errorDisplayField>EB__c</errorDisplayField>
+    <errorMessage>Please provide EBITDA.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FFGDY__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( TEXT ( Tranche__c ) = &quot;Senior&quot;, SR_GDY__c, 
+IF( TEXT ( Tranche__c ) = &quot;Mezz&quot;, Mezz_GDY__c, 
+IF( TEXT ( Tranche__c ) = &quot;M1&quot;, M1_GDY__c, 
+IF( TEXT ( Tranche__c ) = &quot;M2&quot;, M2_GDY__c, 
+IF( TEXT ( Tranche__c ) = &quot;Pref. Equity&quot;, PE_GDY__c,NULL)))))</formula>
+    <label>Fully Funded Target Tranche GDY</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_IC_Approved_Closed_REE_Platform</fullName>
+    <active>true</active>
+    <description>If deal is changed to Portfolio - deal needs to be approved by IC.</description>
+    <errorConditionFormula>AND(
+    $User.Bypass_User_Validations__c = False,
+				RecordType.Name = &quot;Platform Deal&quot;,
+    AND(
+        TEXT (Status_REE__c) = &quot;Awarded&quot;
+    ),
+    NOT(
+        ISBLANK(TEXT(Awarded_Stage_REE__c))
+    ),
+    TEXT(DT_RE__c) = &apos;Portfolio&apos;,
+				TEXT (Platform_Details__c )= &apos;Standalone Investment&apos;,
+    NOT(
+        ISBLANK(TEXT(Awarded_Stage_REE__c))
+    ),
+    ISBLANK(TEXT(IC_Approval_Date__c))
+)</errorConditionFormula>
+    <errorDisplayField>IC_Approval_Date__c</errorDisplayField>
+    <errorMessage>Before closing, deal must be approved by IC.</errorMessage>
+</ValidationRule>

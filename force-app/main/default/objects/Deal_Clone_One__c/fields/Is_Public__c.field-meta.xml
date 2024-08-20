@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Public__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Designate whether the company has any publicly traded debt/equity securities</inlineHelpText>
+    <label>Is Public?</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Monitor</controllingFieldValue>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <controllingFieldValue>Completed</controllingFieldValue>
+            <controllingFieldValue>Ex-Portfolio</controllingFieldValue>
+            <controllingFieldValue>Portfolio</controllingFieldValue>
+            <controllingFieldValue>High Priority</controllingFieldValue>
+            <controllingFieldValue>Priority</controllingFieldValue>
+            <controllingFieldValue>Active Evaluation</controllingFieldValue>
+            <valueName>Yes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Monitor</controllingFieldValue>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <controllingFieldValue>Completed</controllingFieldValue>
+            <controllingFieldValue>Ex-Portfolio</controllingFieldValue>
+            <controllingFieldValue>Portfolio</controllingFieldValue>
+            <controllingFieldValue>High Priority</controllingFieldValue>
+            <controllingFieldValue>Priority</controllingFieldValue>
+            <controllingFieldValue>Active Evaluation</controllingFieldValue>
+            <valueName>No</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

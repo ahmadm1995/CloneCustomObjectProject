@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Net_Coupon__c</fullName>
+    <description>If Whole Loan AND Floating = Interest Rate (Senior) + Floor (Senior) + (Fee/Expected Term)
+If  Whole Loan AND Fixed = Interest Rate (Senior) + (Fee/Expected Term)
+
+If Whole Loan AND Floating AND GA = Interest Rate (Senior) + Floor (Senior) + (Fee/Expected Term) – 50bps
+If Whole Loan AND Fixed AND GA = Interest Rate (Senior) + (Fee/Expected Term) -50bps
+
+If Mezz AND Floating = Interest Rate (Mezz) + Floor (Mezz) + (Fee/Expected Term)
+If Mezz AND Fixed = Interest Rate (Mezz) + (Fee/Expected Term)
+
+If Mezz AND Floating AND GA = Interest Rate (Mezz) - Floor (Mezz) + (Fee/Expected Term) – 50bps
+If Mezz AND Fixed AND GA = Interest Rate (Mezz) + (Fee/Expected Term) -50bps</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(CONTAINS(TEXT(IT_REC__c),&quot;Mezz&quot;),TEXT(Mezz_Fixed_Floating__c)=&apos;Floating&apos;),((Mezz_IR__c + Mezz_LIBOR_Floor__c + (Fee__c / Expected_Term__c))),
+    IF(AND(CONTAINS(TEXT(IT_REC__c),&quot;Mezz&quot;),TEXT(Mezz_Fixed_Floating__c)=&apos;Fixed&apos;),((Mezz_IR__c + (Fee__c / Expected_Term__c))),
+        IF(AND(NOT(CONTAINS(TEXT(IT_REC__c),&quot;Mezz&quot;)),NOT(CONTAINS(TEXT(IT_REC__c),&quot;Pref Equity&quot;)),TEXT(FF__c)=&apos;Floating&apos;),((Sr_IR__c + Senior_LIBOR_Floor__c + (Fee__c / Expected_Term__c))),
+            IF(AND(NOT(CONTAINS(TEXT(IT_REC__c),&quot;Mezz&quot;)),NOT(CONTAINS(TEXT(IT_REC__c),&quot;Pref Equity&quot;)),TEXT(FF__c)=&apos;Fixed&apos;),((Sr_IR__c + (Fee__c / Expected_Term__c))),
+                IF(AND(CONTAINS(TEXT(IT_REC__c),&quot;Pref Equity&quot;),TEXT(PE_Fixed_Floating__c)=&apos;Floating&apos;),((PE_IR__c + Pref_Equity_LIBOR_Floor__c + (Fee__c / Expected_Term__c))),
+                    IF(AND(CONTAINS(TEXT(IT_REC__c),&quot;Pref Equity&quot;),TEXT(PE_Fixed_Floating__c)=&apos;Fixed&apos;),((PE_IR__c + (Fee__c / Expected_Term__c))),null
+                    )
+                )
+            )
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If Interest Rate = Floating, then Interest Rate  +  Libor Floor  + (Fee/Expected Term). If Interest Rate = Fixed, then Interest Rate  + (Fee/Expected Term)</inlineHelpText>
+    <label>Gross Coupon</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

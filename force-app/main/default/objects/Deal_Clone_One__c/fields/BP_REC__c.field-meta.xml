@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BP_REC__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Plan</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stabilized</fullName>
+                <default>false</default>
+                <label>Stabilized</label>
+            </value>
+            <value>
+                <fullName>Light Value Add</fullName>
+                <default>false</default>
+                <label>Light Value Add</label>
+            </value>
+            <value>
+                <fullName>Value Add</fullName>
+                <default>false</default>
+                <label>Value Add</label>
+            </value>
+            <value>
+                <fullName>Opportunistic</fullName>
+                <default>false</default>
+                <label>Opportunistic</label>
+            </value>
+            <value>
+                <fullName>CMBS</fullName>
+                <default>false</default>
+                <label>CMBS</label>
+            </value>
+            <value>
+                <fullName>Senior Secured</fullName>
+                <default>false</default>
+                <label>Senior Secured</label>
+            </value>
+            <value>
+                <fullName>Senior Unsecured</fullName>
+                <default>false</default>
+                <label>Senior Unsecured</label>
+            </value>
+            <value>
+                <fullName>Core</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Core</label>
+            </value>
+            <value>
+                <fullName>Core Plus</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Core Plus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

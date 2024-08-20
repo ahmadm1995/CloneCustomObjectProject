@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lender_REEV2__c</fullName>
+    <externalId>false</externalId>
+    <label>Lender</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RBC</fullName>
+                <default>false</default>
+                <label>RBC</label>
+            </value>
+            <value>
+                <fullName>CMBS</fullName>
+                <default>false</default>
+                <label>CMBS</label>
+            </value>
+            <value>
+                <fullName>Fannie Mae</fullName>
+                <default>false</default>
+                <label>Fannie Mae</label>
+            </value>
+            <value>
+                <fullName>Freddie Mac</fullName>
+                <default>false</default>
+                <label>Freddie Mac</label>
+            </value>
+            <value>
+                <fullName>Morgan Stanley</fullName>
+                <default>false</default>
+                <label>Morgan Stanley</label>
+            </value>
+            <value>
+                <fullName>BMO</fullName>
+                <default>false</default>
+                <label>BMO</label>
+            </value>
+            <value>
+                <fullName>Met Life</fullName>
+                <default>false</default>
+                <label>Met Life</label>
+            </value>
+            <value>
+                <fullName>Deutsche Bank</fullName>
+                <default>false</default>
+                <label>Deutsche Bank</label>
+            </value>
+            <value>
+                <fullName>Capital One</fullName>
+                <default>false</default>
+                <label>Capital One</label>
+            </value>
+            <value>
+                <fullName>Goldman Sachs</fullName>
+                <default>false</default>
+                <label>Goldman Sachs</label>
+            </value>
+            <value>
+                <fullName>JP Morgan</fullName>
+                <default>false</default>
+                <label>JP Morgan</label>
+            </value>
+            <value>
+                <fullName>New York Life</fullName>
+                <default>false</default>
+                <label>New York Life</label>
+            </value>
+            <value>
+                <fullName>Wells Fargo</fullName>
+                <default>false</default>
+                <label>Wells Fargo</label>
+            </value>
+            <value>
+                <fullName>Northwestern Mutual</fullName>
+                <default>false</default>
+                <label>Northwestern Mutual</label>
+            </value>
+            <value>
+                <fullName>Barclays</fullName>
+                <default>false</default>
+                <label>Barclays</label>
+            </value>
+            <value>
+                <fullName>Heitman</fullName>
+                <default>false</default>
+                <label>Heitman</label>
+            </value>
+            <value>
+                <fullName>Invesco</fullName>
+                <default>false</default>
+                <label>Invesco</label>
+            </value>
+            <value>
+                <fullName>Citibank</fullName>
+                <default>false</default>
+                <label>Citibank</label>
+            </value>
+            <value>
+                <fullName>Ares</fullName>
+                <default>false</default>
+                <label>Ares</label>
+            </value>
+            <value>
+                <fullName>Brookfield</fullName>
+                <default>false</default>
+                <label>Brookfield</label>
+            </value>
+            <value>
+                <fullName>TIAA</fullName>
+                <default>false</default>
+                <label>TIAA</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

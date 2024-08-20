@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asia_BU__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+
+AND( RecordType.Name = &quot;Private Equity - Asia&quot; , OR( INCLUDES( BU__c, &quot;Asia PE&quot; ) , INCLUDES( BU__c , &quot;Asia-Core&quot; ) ) ) ,
+
+&quot;PE&quot; , 
+
+IF( 
+
+AND( OR( RecordType.Name = &quot;Real Estate Equity&quot; , INCLUDES( BU__c, &quot;Real Estate Equity&quot;) ) , NOT( INCLUDES( BU__c , &quot;Asia PE&quot; ) ) , NOT( INCLUDES( BU__c , &quot;Asia-Core&quot; ) ) ) ,
+
+&quot;Real Estate&quot; ,
+
+IF( 
+
+AND( OR( RecordType.Name = &quot;Infrastructure&quot; , INCLUDES( BU__c, &quot;Infrastructure&quot;) ) , NOT( INCLUDES( BU__c , &quot;Asia PE&quot; ) ) , NOT( INCLUDES( BU__c , &quot;Asia-Core&quot; ) ) ) ,
+
+&quot;Infrastructure&quot; , 
+
+IF( 
+
+AND( OR( RecordType.Name = &quot;Global Impact&quot; , INCLUDES( BU__c, &quot;Asia-Impact&quot;) ) , NOT( INCLUDES( BU__c , &quot;Asia PE&quot; ) ) , NOT( INCLUDES( BU__c , &quot;Asia-Core&quot; ) ) ) , 
+
+&quot;Impact&quot; , 
+
+IF( 
+
+AND( INCLUDES( BU__c, &quot;Asia NGT&quot; ) , NOT( INCLUDES( BU__c , &quot;Asia PE&quot; ) ) , NOT( INCLUDES( BU__c , &quot;Asia-Core&quot; ) ) ) , 
+
+&quot;NGT&quot; ,
+
+&quot;&quot; ) ) ) ) )</formula>
+    <label>Asia BU</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

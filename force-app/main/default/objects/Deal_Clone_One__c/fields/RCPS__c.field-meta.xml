@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCPS__c</fullName>
+    <description>Used for REC Shadow Pipeline Smartlist</description>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(REC_Status__c),
+&quot;1. Circled / Due Diligence&quot;, &quot;1. Circled&quot;,
+&quot;2. Quoted / Term Sheet&quot;,&quot;2. Quoted&quot;,
+&quot;3. Active / Underwriting&quot;,&quot;3. Active&quot;,
+&quot;4. Preview&quot;,&quot;4. Preview&quot;,
+&quot;5. Shadow&quot;, &quot;5.Shadow&quot;,
+&quot;6. Dead / Passed / Not Active&quot;,&quot;6. Dead&quot;,
+&quot;7. Portfolio&quot;,&quot;7. Portfolio&quot;,
+&quot;8. Ex-Portfolio&quot;,&quot;8. Ex-Portfolio&quot;,
+&quot;&quot;)</formula>
+    <label>RCPS</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

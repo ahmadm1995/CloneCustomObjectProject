@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Equity_Need_when_Active_Asia</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND ( OR( ISNEW() , ISCHANGED( Status_Asia__c ) ) , 
+OR ( AND ( EqHiA__c = 0, EqLoA__c = 0), AND(  ISNULL( EqHiA__c ), ISNULL( EqLoA__c)), OR( AND( EqHiA__c &lt;=0, ISNULL ( EqLoA__c) = TRUE, ISNULL (EqHiA__c) = FALSE)), AND( EqLoA__c &lt;=0, ISNULL ( EqHiA__c) = TRUE, ISNULL (EqLoA__c) = FALSE)), 
+OR ( TEXT ( Status_Asia__c ) = &quot;Active Evaluation&quot;, TEXT ( Status_Asia__c ) = &quot;Priority&quot;, TEXT ( Status_Asia__c ) = &quot;High Priority&quot;) )</errorConditionFormula>
+    <errorMessage>Equity Need (Low or High) should be greater than 0 for all Active Deals</errorMessage>
+</ValidationRule>

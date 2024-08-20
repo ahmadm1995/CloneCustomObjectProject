@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Elim_Common__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( RecordType.Name,
+&quot;Private Equity - Industrials&quot;, TEXT(RE_Industrials__c),
+&quot;Private Equity - TMT&quot;, TEXT(Reason_Eliminated__c),
+&quot;Real Estate Equity&quot;, TEXT(Reason_Eliminated_RE__c),
+&quot;Health Care Growth&quot;, TEXT(Reason_Passed__c),
+&quot;Health Care PE/Core&quot;, TEXT(Reason_Passed__c),
+&quot;Europe&quot;, TEXT(Eliminated_ReasonEU__c),
+&quot;Strategic Growth&quot;, TEXT(Reason_Eliminated__c),
+&quot;NGT - Asia&quot;, TEXT(RE_Asia__c),
+&quot;Private Equity - Asia&quot;, TEXT(RE_Asia__c),
+&quot;Private Equity - CRG&quot;, TEXT(Reason_Eliminated__c),
+&quot;Global Impact&quot;, TEXT(Eliminated_ReasonEU__c),
+&quot;Infrastructure&quot;, RE_Infra__c,
+&quot;Private Equity&quot;, TEXT(Reason_Eliminated_FIG__c),
+&quot;Real Estate Credit - Direct Lending&quot;, IF(TEXT(KKR_Bid__c)=&quot;No&quot;, TEXT(Reason_REC__c), TEXT(RL1__c) &amp; &quot;, &quot; &amp; TEXT(RL2__c) &amp; &quot;, &quot; &amp; TEXT(RL3__c)),
+&quot;Real Estate Credit - Securities&quot;, IF(TEXT(KKR_Bid__c)=&quot;No&quot;, TEXT(Reason_REC__c), TEXT(RL1__c) &amp; &quot;, &quot; &amp; TEXT(RL2__c) &amp; &quot;, &quot; &amp; TEXT(RL3__c)),
+&quot;Real Estate Credit - Shadow&quot;, TEXT(Reason_REC__c),
+&quot;Energy&quot;, TEXT(RE_Energy__c),
+null
+)</formula>
+    <label>Reason Eliminated - Common</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

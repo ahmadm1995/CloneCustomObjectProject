@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Nullify_Equity_Need_REE_Active</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( $User.Bypass_User_Validations__c = False, NOT ( ISNEW()), 
+OR( 
+AND( NOT( ISNULL( PRIORVALUE( EN_High_REE__c ) ) ) , AND ( ISNULL( EN_High_REE__c ),ISNULL( EN_Low_REE__c ) ) ) , 
+AND( NOT( ISNULL( PRIORVALUE( EN_Low_REE__c ) ) ) , AND ( ISNULL( EN_High_REE__c ),ISNULL( EN_Low_REE__c ) ) ) , 
+AND( NOT( ISNULL( PRIORVALUE( EN_High_REE__c ) ) ) , AND ( EN_High_REE__c = 0,EN_Low_REE__c = 0 ) ) , 
+AND( NOT( ISNULL( PRIORVALUE( EN_Low_REE__c ) ) ) , AND ( EN_High_REE__c = 0,EN_Low_REE__c = 0 ) ) , 
+AND( NOT( ISNULL( PRIORVALUE( EN_High_REE__c ) ) ) , OR ( AND ( ISNULL( EN_High_REE__c ),EN_Low_REE__c = 0 ) , AND ( EN_High_REE__c = 0, ISNULL ( EN_Low_REE__c ) ) ) ), 
+AND( NOT( ISNULL( PRIORVALUE( EN_Low_REE__c ) ) ) , OR ( AND ( ISNULL( EN_High_REE__c ),EN_Low_REE__c = 0 ) , AND ( EN_High_REE__c = 0, ISNULL ( EN_Low_REE__c ) ) ) )
+), 
+OR( 
+TEXT ( Pipeline_StatusRE__c ) = &quot;Active Evaluation&quot;, TEXT ( Pipeline_StatusRE__c ) = &quot;Priority&quot;, TEXT ( Pipeline_StatusRE__c ) = &quot;High Priority&quot;
+)
+ )</errorConditionFormula>
+    <errorMessage>Equity Need cannot be removed for active deals.</errorMessage>
+</ValidationRule>

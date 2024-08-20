@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_PrefEquity_REC</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($User.Bypass_User_Validations__c = False, OR(
+AND(
+NOT(ISBLANK( TEXT(PE_Fixed_Floating__c) )),ISBLANK( PE_IR__c )
+),
+AND(
+NOT(ISBLANK( PE_IR__c )),ISBLANK( TEXT(PE_Fixed_Floating__c) )
+)
+))</errorConditionFormula>
+    <errorDisplayField>PE_IR__c</errorDisplayField>
+    <errorMessage>Please ensure you&apos;re filling in both Pref. Equity (Interest Rate) and Pref. Equity (Fixed/ Floating).</errorMessage>
+</ValidationRule>

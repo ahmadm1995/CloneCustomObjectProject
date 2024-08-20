@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preview_Stage__c</fullName>
+    <externalId>false</externalId>
+    <label>Preview Stage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>REC_Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>High Priority</fullName>
+                <default>false</default>
+                <label>High Priority</label>
+            </value>
+            <value>
+                <fullName>Medium Priority</fullName>
+                <default>false</default>
+                <label>Medium Priority</label>
+            </value>
+            <value>
+                <fullName>Low Priority</fullName>
+                <default>false</default>
+                <label>Low Priority</label>
+            </value>
+            <value>
+                <fullName>Pre-NDA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pre-NDA</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>4. Preview</controllingFieldValue>
+            <valueName>High Priority</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>4. Preview</controllingFieldValue>
+            <valueName>Medium Priority</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>4. Preview</controllingFieldValue>
+            <valueName>Low Priority</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EMEA_Gold_Silver_EqNeed</fullName>
+    <active>true</active>
+    <description>Equity Need Low or HIgh to be filled in when</description>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Europe&apos;
+&amp;&amp;
+(EqHi__c &lt;= 0 || ISBLANK(EqHi__c) )
+&amp;&amp;
+(EqLo__c &lt;= 0 || ISBLANK(EqLo__c)  )
+&amp;&amp;
+ ( ISPICKVAL(Gold_Silver_Indicator__c, &apos;Gold&apos;)
+   ||
+   ISPICKVAL(Gold_Silver_Indicator__c, &apos;Silver&apos;) )</errorConditionFormula>
+    <errorMessage>Equity Need (Low or High) must be greater than 0 when deal is Gold or Silver</errorMessage>
+</ValidationRule>

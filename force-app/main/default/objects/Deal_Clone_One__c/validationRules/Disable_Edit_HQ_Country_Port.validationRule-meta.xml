@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disable_Edit_HQ_Country_Port</fullName>
+    <active>true</active>
+    <description>If deal is in Portfolio status, users should not be allowed to change the HQ Country (PR-2244)</description>
+    <errorConditionFormula>AND($User.Bypass_User_Validations__c = False, OR(ISPICKVAL(Status__c, &quot;Portfolio&quot;),ISPICKVAL(Status__c, &quot;Ex-Portfolio&quot;)), ISCHANGED(HQ_Country__c))</errorConditionFormula>
+    <errorDisplayField>HQ_Country__c</errorDisplayField>
+    <errorMessage>HQ Country cannot be changed while deal is in Portfolio or Ex-Portfolio stage.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Created_within_Last_3_Months_CRG</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 4) AND 5</booleanFilter>
+    <columns>NAME</columns>
+    <columns>BU__c</columns>
+    <columns>Sector__c</columns>
+    <columns>TEV_Reporting__c</columns>
+    <columns>EB__c</columns>
+    <columns>Deal_Team_Initials__c</columns>
+    <columns>Latest_Deal_Note__c</columns>
+    <columns>Last_Modified__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Deal_Clone_One__c.Private_Equity_CRG</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Tracked</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>LAST_N_MONTHS:3</value>
+    </filters>
+    <filters>
+        <field>Latest_Deal_Note_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>LAST_N_MONTHS:3</value>
+    </filters>
+    <filters>
+        <field>Exclude_CRG__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Tracked Deals Created Within L3M (CRG)</label>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_RECMezz_SOFR</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$User.Bypass_User_Validations__c = False,
+RecordType.Name = &quot;Real Estate Credit - Direct Lending&quot;,
+TEXT(Tranche__c) = &apos;Mezz&apos;,
+ISBLANK( Mezz_LIBOR_Floor__c )
+)</errorConditionFormula>
+    <errorDisplayField>Mezz_LIBOR_Floor__c</errorDisplayField>
+    <errorMessage>Mezz (SOFR Floor) is required when Tranche is Mezz.</errorMessage>
+</ValidationRule>

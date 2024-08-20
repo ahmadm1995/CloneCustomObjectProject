@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_OwnerTime_Bid_Date_if_Active_CRG</fullName>
+    <active>true</active>
+    <description>If Status is Active, require Current Owner, Bid Date
+for CRG team</description>
+    <errorConditionFormula>AND( 
+	$User.Bypass_User_Validations__c = False , 
+	TEXT(Status__c)=&quot;Active Evaluation&quot; , 
+	OR(ISBLANK(Bid_Date__c), 
+	AND(
+		ISBLANK(Current_Owner_Name__c),
+		TEXT ( Current_Owner__c ) != &quot;Public&quot;
+	),
+	TEXT(Priority_Stage_CRG__c)=&quot;&quot;
+	), 
+	RecordType.Name = &quot;Private Equity - CRG&quot;
+)</errorConditionFormula>
+    <errorMessage>If Status is Active, Bid Date, Priority and Current Owner Name must be filled in.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preview_Tokyo_Weekly_Pipeline</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Preview Tokyo Weekly Pipeline</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>/* Button Configuration - Change these values */
+var queryId = &apos;[TA]a1F5a00000GtJRP,[TE]a1F5a00000GtJRU,[TO]a1F5a00000GtJRZ,[TT]a1F5a00000GtJRe,[TP]a1F5a00000GtJRj,[TH]a1F5a00000GtJRo,[TC]a1F5a00000GtJRt,[TPO]a1F5a00000GtJTp,[TNGTE]a1F5a00000GtJSX,[TNGTO]a1F5a00000GtJSS,[TNGTT]a1F5a00000GtJSN,[TNGTA]a1F5a00000GtJSI,[TNGTC]a1F5a00000GtJSD,[TNGTP]a1F5a00000GtJS3,[TNGTPO]a1F5a00000GtJUd,[TNGTHP]a1F5a00000GtJRy,[RIT]a1F1H000006xiL9,[RIME]a1F1H000006xiL8,[RIP]a1F1H000006xiL3,[RIHP]a1F1H000006xiKy,[RIC]a1F1H000006xufz,[RIPC]a1F1H000006xie4,[RIOH]a1F1H000006xiLD,[THCA]a1F5a00000EkhMm,[THCME]a1F5a00000EkhMr,[THCOH]a1F5a00000EkhMw,[THCT]a1F5a00000EkhNf,[THCP]a1F5a00000EkhNk,[THCHP]a1F5a00000EkhNp,[THCC]a1F5a00000EkhNu,[THCPO]a1F5a00000EkhNv,[AIAE]a1F5a00000Jh6YQEAZ%3Fpv0%3DActive+Evaluation,[AIT]a1F5a00000Jh6YQEAZ%3Fpv0%3DTracked,[AIP]a1F5a00000Jh6YQEAZ%3Fpv0%3DPriority,[AIHP]a1F5a00000Jh6YQEAZ%3Fpv0%3DHigh+Priority,[AIS]a1F5a00000Jh6YQEAZ%3Fpv0%3DCompleted,[AIPORT]a1F5a00000Jh6YQEAZ%3Fpv0%3DPortfolio,[AIMES]a1F5a00000Jh6YaEAJ%3Fpv0%3DMonitor+-+Early+Stage,[AIMOH]a1F5a00000Jh6YaEAJ%3Fpv0%3DMonitor+-+On+Hold&apos;;
+var serverURL = &apos;{!API.Partner_Server_URL_370}&apos;;
+var id = &apos;a1E5a000006dQYP&apos;;
+var parameterId = &apos;2&apos;;
+var loggingId = &apos;0&apos;;
+var zip = &apos;0&apos;
+var redirect = &apos;/lightning/n/All_Deals_Japan&apos;;
+var emailtoId = &apos;&apos;;
+var ccId = &apos;&apos;;
+var emailId = &apos;a1E5a000006dQYP&apos;;
+
+/* URL Building - Don&apos;t change these values */
+var url = &apos;&apos;;
+
+url += &apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos; +
+&apos;&amp;serverUrl=&apos; +serverURL+
+&apos;&amp;Id=&apos; +id+
+&apos;&amp;QueryId=&apos; + queryId+
+&apos;&amp;DS7=&apos; +parameterId+
+&apos;&amp;AC0=&apos; +loggingId+
+&apos;&amp;ZipFiles=&apos; +zip+
+&apos;&amp;ReturnPath=&apos; +redirect+
+&apos;&amp;EmailAdditionalTo=&apos; +emailtoId+
+&apos;&amp;EmailCC=&apos; +ccId+
+&apos;&amp;EmailTemplateId=&apos; +emailId;
+
+
+//Open modal in SmartList
+openURLInModal(url,false);</url>
+</WebLink>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMPE_Sector</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+TEXT(Gold_Silver_Indicator__c) = &quot;Gold&quot;,
+TEXT(Gold_Silver_Indicator__c) = &quot;Silver&quot;
+),
+RecordType.Name = &quot;Private Equity - TMT&quot;,
+ISPICKVAL(Sector__c, &apos;&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>Sector__c</errorDisplayField>
+    <errorMessage>Please provide Sector when deal is marked Gold or Silver.</errorMessage>
+</ValidationRule>

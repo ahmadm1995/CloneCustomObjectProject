@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equity_Need_Common__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+NOT ( AND( ISNULL(EqLoA__c), ISNULL(EqHiA__c) ) ), 
+IF( EqLoA__c = EqHiA__c , 
+EqHiA__c , 
+IF( AND( ISNULL( EqLoA__c ) , NOT( ISNULL( EqHiA__c ) ) ), 
+EqHiA__c , 
+IF( AND( NOT( ISNULL( EqLoA__c ) ) , ISNULL( EqHiA__c ) ) , 
+EqLoA__c, IF( AND( NOT( ISNULL( EqLoA__c ) ) , NOT(ISNULL( EqHiA__c ) ) ), 
+EqHiA__c, null ) ) ) ), 
+IF( 
+NOT ( AND( ISNULL(EN_Low_REE__c), ISNULL(EN_High_REE__c) ) ), 
+IF( EN_Low_REE__c = EN_High_REE__c , 
+EN_High_REE__c , 
+IF( AND( ISNULL( EN_Low_REE__c ) , NOT( ISNULL( EN_High_REE__c ) ) ), 
+EN_High_REE__c , 
+IF( AND( NOT( ISNULL( EN_Low_REE__c ) ) , 
+ISNULL( EN_High_REE__c ) ) , 
+EN_Low_REE__c, IF( AND( NOT( ISNULL( EN_Low_REE__c ) ) , 
+NOT( ISNULL( EN_High_REE__c ) ) ), 
+EN_Low_REE__c, null)))),
+IF( 
+NOT(AND(ISNULL(EqLo__c),ISNULL(EqHi__c))),IF(EqLo__c=EqHi__c,EqHi__c,IF(AND(ISNULL(EqLo__c),NOT(ISNULL(EqHi__c))),EqHi__c,IF(AND(NOT(ISNULL(EqLo__c)),ISNULL(EqHi__c)),EqLo__c,IF(AND(NOT(ISNULL(EqLo__c)),NOT(ISNULL(EqHi__c))),EqHi__c,null )))),  null)))</formula>
+    <label>Equity Need (MM) - Common</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

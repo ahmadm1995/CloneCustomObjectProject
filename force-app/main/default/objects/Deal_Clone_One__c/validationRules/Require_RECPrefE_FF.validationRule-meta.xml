@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_RECPrefE_FF</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$User.Bypass_User_Validations__c = False, 
+RecordType.Name = &quot;Real Estate Credit - Direct Lending&quot;,
+TEXT(Tranche__c) = &apos;Pref. Equity&apos;,
+ISBLANK( TEXT(PE_Fixed_Floating__c) )
+)</errorConditionFormula>
+    <errorDisplayField>PE_Fixed_Floating__c</errorDisplayField>
+    <errorMessage>Fixed/Floating is required</errorMessage>
+</ValidationRule>

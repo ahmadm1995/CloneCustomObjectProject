@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Nullify_Equity_Need_Energy_Active</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( $User.Bypass_User_Validations__c = False, NOT ( ISNEW()), 
+OR( 
+AND( NOT( ISNULL( PRIORVALUE( EqHi__c ) ) ) , AND ( ISNULL( EqHi__c ),ISNULL( EqLo__c ) ) ) , 
+AND( NOT( ISNULL( PRIORVALUE( EqLo__c ) ) ) , AND ( ISNULL( EqHi__c ),ISNULL( EqLo__c ) ) ) , 
+AND( NOT( ISNULL( PRIORVALUE( EqHi__c ) ) ) , AND ( EqHi__c = 0,EqLo__c = 0 ) ) , 
+AND( NOT( ISNULL( PRIORVALUE( EqLo__c ) ) ) , AND ( EqHi__c = 0,EqLo__c = 0 ) ) , 
+AND( NOT( ISNULL( PRIORVALUE( EqHi__c ) ) ) , OR ( AND ( ISNULL( EqHi__c ),EqLo__c = 0 ) , AND ( EqHi__c = 0, ISNULL ( EqLo__c ) ) ) ), 
+AND( NOT( ISNULL( PRIORVALUE( EqLo__c ) ) ) , OR ( AND ( ISNULL( EqHi__c ),EqLo__c = 0 ) , AND ( EqHi__c = 0, ISNULL ( EqLo__c ) ) ) )
+), 
+AND ( Dead_Infra__c = FALSE,
+OR( 
+TEXT ( DLA__c ) = &quot;Full Analysis&quot;, TEXT ( DLA__c ) = &quot;IC&quot;, TEXT ( DLA__c ) = &quot;Bid&quot;, TEXT ( DLA__c ) = &quot;IC / Bid&quot;
+))
+ )</errorConditionFormula>
+    <errorMessage>Equity Need cannot be removed for active deals.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Reports_AMPE</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Send Reports</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>/* Button Configuration - Change these values */ 
+var templateId = &apos;[AMPE Pipeline Weekly Update]a1N5a00000FOmRB,[AMPE Portfolio Weekly Update]a1N5a00000FOmRG,[Pipeline Report Stats - AMPE]a1N1H000002WgIq,[AMPE Weekly Update]a1N1H000003kls2&apos;; 
+var queryId = &apos;[PIPE]a1F1H000007437o,[PORT]a1F1H0000074383,[CR]a1F1H00000742uL,[FIG]a1F1H00000743D7,[HC]a1F1H00000743DC,[HSG]a1F1H00000743DD,[IS]a1F1H00000743DH,[NGT]a1F1H00000743Db,[IM]a1F1H00000743Dl,[PIJE]a1F8J0000008QPi,[RM]a1F1H00000743iC,[TMT]a1F1H00000743DW,[EN]a1F1H000005yeCw,[PIPEMMA]a1F5a000008Nm7u,[PEMMA]a1F5a000008Nm7v&apos;; 
+var serverURL = &apos;{!API.Partner_Server_URL_370}&apos;; 
+var id = &apos;a1L1H000004QIaSUAW&apos;; 
+var parameterId = &apos;2&apos;; 
+var loggingId = &apos;0&apos;; 
+var zip = &apos;0&apos; 
+var redirect = &apos;/lightning/n/Curated_Pipeline_AMPE&apos;; 
+var emailtoId = &apos;&apos;; 
+var ccId = &apos;&apos;; 
+var emailId = &apos;a1E1H00000AMouxUAD&apos;; 
+
+/* URL Building - Don&apos;t change these values */ 
+var url = &apos;&apos;; 
+
+url += &apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos; + 
+&apos;&amp;serverUrl=&apos; +serverURL+ 
+&apos;&amp;Id=&apos; +id+ 
+&apos;&amp;QueryId=&apos; + queryId+ 
+&apos;&amp;TemplateId=&apos;+templateId+ 
+&apos;&amp;DS7=&apos; +parameterId+ 
+&apos;&amp;AC0=&apos; +loggingId+ 
+&apos;&amp;ZipFiles=&apos; +zip+ 
+&apos;&amp;ReturnPath=&apos; +redirect+ 
+&apos;&amp;EmailAdditionalTo=&apos; +emailtoId+ 
+&apos;&amp;EmailCC=&apos; +ccId+ 
+&apos;&amp;EmailTemplateId=&apos; +emailId; 
+
+
+//Open modal in SmartList 
+openURLInModal(url,false);</url>
+</WebLink>

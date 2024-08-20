@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KKR_Equity_Source_REE__c</fullName>
+    <externalId>false</externalId>
+    <label>KKR Equity Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>REPA II</fullName>
+                <default>false</default>
+                <label>REPA II</label>
+            </value>
+            <value>
+                <fullName>REPA III</fullName>
+                <default>false</default>
+                <label>REPA III</label>
+            </value>
+            <value>
+                <fullName>REPE II</fullName>
+                <default>false</default>
+                <label>REPE II</label>
+            </value>
+            <value>
+                <fullName>REPE III</fullName>
+                <default>false</default>
+                <label>REPE III</label>
+            </value>
+            <value>
+                <fullName>KREST</fullName>
+                <default>false</default>
+                <label>KREST</label>
+            </value>
+            <value>
+                <fullName>KPPA</fullName>
+                <default>false</default>
+                <label>KPPA</label>
+            </value>
+            <value>
+                <fullName>KPPE</fullName>
+                <default>false</default>
+                <label>KPPE</label>
+            </value>
+            <value>
+                <fullName>FSK/FSK II</fullName>
+                <default>false</default>
+                <label>FSK/FSK II</label>
+            </value>
+            <value>
+                <fullName>GA</fullName>
+                <default>false</default>
+                <label>GA</label>
+            </value>
+            <value>
+                <fullName>Balance Sheet</fullName>
+                <default>false</default>
+                <label>Balance Sheet</label>
+            </value>
+            <value>
+                <fullName>Co-Invest</fullName>
+                <default>false</default>
+                <label>Co-Invest</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

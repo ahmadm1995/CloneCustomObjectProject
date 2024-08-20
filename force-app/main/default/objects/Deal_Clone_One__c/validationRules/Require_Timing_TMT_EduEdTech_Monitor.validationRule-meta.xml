@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Timing_TMT_EduEdTech_Monitor</fullName>
+    <active>true</active>
+    <description>Enforces the filling out of timing when Sector is Education and EdTech and Status is Monitor.</description>
+    <errorConditionFormula>AND(
+$User.Bypass_User_Validations__c = False ,
+RecordType.Name= &apos;Private Equity - TMT&apos;,
+TEXT(Sector__c)= &apos;Education and EdTech&apos;,
+TEXT(Status_TMT__c)= &apos;Monitor&apos;,
+ISBLANK(TEXT(Timing_CRG__c))
+)</errorConditionFormula>
+    <errorDisplayField>Timing_CRG__c</errorDisplayField>
+    <errorMessage>Timing is required when Sector is set to Education for proper pipeline tracking.</errorMessage>
+</ValidationRule>

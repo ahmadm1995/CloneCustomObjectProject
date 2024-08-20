@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Deal_Platform_Energy</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$User.Bypass_User_Validations__c = False ,
+OR (
+RecordType.Name = &apos;Energy&apos; ) ,
+Platform_Deal__c = &apos;&apos; ,
+TEXT( Platform_Details__c ) = &apos;Platform Add On&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Platform_Deal__c</errorDisplayField>
+    <errorMessage>Please select Platform Deal for this Platform Add-on.</errorMessage>
+</ValidationRule>

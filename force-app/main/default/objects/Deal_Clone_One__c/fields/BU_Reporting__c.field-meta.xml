@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BU_Reporting__c</fullName>
+    <externalId>false</externalId>
+    <formula>SUBSTITUTE( 
+IF(INCLUDES(BU__c, &quot;AMPE&quot;), &quot;AMPE; &quot;, NULL) + 
+IF(INCLUDES(BU__c, &quot;Euro PE&quot;), &quot;EUPE; &quot;, NULL) + 
+IF(INCLUDES(BU__c, &quot;Asia PE&quot;), &quot;ASIAPE; &quot;, NULL) + 
+IF(INCLUDES(BU__c, &quot;Public Toe-holds&quot;), &quot;TOE HOLD; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Asia NGT&quot;), &quot;Asia NGT; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;NGT&quot;), &quot;NGT; &quot;, NULL)  +
+IF(INCLUDES(BU__c, &quot;Healthcare Strategic Growth&quot;), &quot;HCSG; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Healthcare Royalty and Income&quot;), &quot;HCRI; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Energy&quot;), &quot;ERA; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Infrastructure&quot;), &quot;INFRA; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Infrastructure - Core&quot;), &quot;INFRA - CORE; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Real Estate Equity&quot;), &quot;RE; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Real Estate Credit&quot;), &quot;RE; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;AMPE-Core&quot;), &quot;CORE; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Eur-Core&quot;), &quot;CORE; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Asia-Core&quot;), &quot;CORE; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;AMPE-Impact&quot;), &quot;IMPACT; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Eur-Impact&quot;), &quot;IMPACT; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Asia-Impact&quot;), &quot;IMPACT; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Balance Sheet&quot;), &quot;BS; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Credit&quot;), &quot;CREDIT; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Global Impact&quot;), &quot;IMPACT; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;NBFC&quot;), &quot;NBFC; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Mezzanine&quot;), &quot;MEZZ; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Strategic Investments Group&quot;), &quot;SIG; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Hedge Fund&quot;), &quot;HF; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;AMPE - Middle Market&quot;), &quot;AMPE-MM; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Asia Climate&quot;), &quot;ASIA CLIMATE; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;Americas + EMEA Climate&quot;), &quot;CLIMATE TRANSITION; &quot;, NULL) +
+IF(INCLUDES(BU__c, &quot;TBD&quot;), &quot;TBD; &quot;, NULL) + &quot;.&quot;, &quot;; .&quot;, NULL)</formula>
+    <label>Business (Reporting)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

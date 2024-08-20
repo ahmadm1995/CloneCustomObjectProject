@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Infra_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Industry_Team__c</fields>
+    <fields>Phase_Infra__c</fields>
+    <fields>Dead_Infra__c</fields>
+    <fields>CS__c</fields>
+    <fields>SAP_Deal_Code__c</fields>
+    <fields>Deal_Team_Short__c</fields>
+    <label>Infra Compact Layout</label>
+</CompactLayout>

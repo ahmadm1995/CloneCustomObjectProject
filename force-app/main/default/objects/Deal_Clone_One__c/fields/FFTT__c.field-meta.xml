@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FFTT__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( TEXT ( Tranche__c ) = &quot;Senior&quot;, Sr_FF__c,
+IF( TEXT ( Tranche__c ) = &quot;Mezz&quot;, Mezz_FF__c,
+IF( TEXT ( Tranche__c ) = &quot;M1&quot;, M1_FF__c,
+IF( TEXT ( Tranche__c ) = &quot;M2&quot;, M2_FF__c,
+IF( TEXT ( Tranche__c ) = &quot;Pref. Equity&quot;, PE_FF__c,NULL)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Fully Funded Target Tranche $ Amt</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

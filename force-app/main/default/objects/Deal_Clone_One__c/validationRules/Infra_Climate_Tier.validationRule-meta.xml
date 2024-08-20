@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Infra_Climate_Tier</fullName>
+    <active>false</active>
+    <description>Requires the field Tier when  Climate Transition is selected as a Business</description>
+    <errorConditionFormula>$User.Bypass_User_Validations__c = FALSE
+&amp;&amp;
+RecordType.DeveloperName = &apos;Infrastructure&apos;
+&amp;&amp;
+OR(
+INCLUDES (BU__c, &apos;Climate Transition&apos;),
+INCLUDES (BU__c, &apos;Asia Climate&apos;)
+)
+&amp;&amp;
+ISBLANK(TEXT( Priority_CRG__c	))
+&amp;&amp;
+NOT(
+OR(
+TEXT(Status__c)=&apos;Eliminated&apos;,
+TEXT(Status__c)=&apos;Archived&apos;
+)
+)</errorConditionFormula>
+    <errorDisplayField>Priority_CRG__c</errorDisplayField>
+    <errorMessage>Tier must be selected if deal is part of Climate Transition</errorMessage>
+</ValidationRule>

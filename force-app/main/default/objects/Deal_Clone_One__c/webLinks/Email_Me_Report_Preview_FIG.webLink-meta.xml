@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Me_Report_Preview_FIG</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Email Me Report Preview</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>/* Button Configuration - Change these values */ 
+var templateId =&apos;a1N1H000002q72O&apos;; 
+var queryId = &apos;[PORT]a1F1H000007o18f,[ELIM]a1F1H000007o18k,[ACTH]a1F1H000006xidj,[ACTL]a1F1H000006xido,[IDEA]a1F1H000006xidt,[NEAR]a1F1H000006xidy&apos;; 
+var serverURL = &apos;{!API.Partner_Server_URL_370}&apos;; 
+var id = &apos;a1L1H000003xHEQ&apos;; 
+var redirect = &apos;/lightning/n/AMPE_FIG_Pipeline&apos;; 
+var parameterId = &apos;12&apos;; 
+var loggingId = &apos;0&apos;; 
+var zip = &apos;0&apos; 
+var sf1 = &apos;1&apos; 
+var ccId = &apos;&apos;; 
+var emailId = &apos;a1E1H00000CshFP&apos;; 
+var user = sforce.connection.getUserInfo(); 
+var emailtoId = user.userEmail; 
+console.log(user); 
+
+/* URL Building - Don&apos;t change these values */ 
+var url = &apos;&apos;; 
+
+url += &apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos; + 
+&apos;&amp;serverUrl=&apos; +serverURL+ 
+&apos;&amp;Id=&apos; +id+ 
+&apos;&amp;QueryId=&apos; + queryId+ 
+&apos;&amp;DefaultPDF=1&apos;+ 
+&apos;&amp;TemplateId=&apos;+templateId+ 
+&apos;&amp;ReturnPath=&apos; +redirect+ 
+&apos;&amp;DS7=&apos; +parameterId+ 
+&apos;&amp;AC0=&apos; +loggingId+ 
+&apos;&amp;ZipFiles=&apos; +zip+ 
+&apos;&amp;SF1=&apos; +sf1+ 
+&apos;&amp;EmailAdditionalTo=&apos; +encodeURIComponent(emailtoId)+ 
+&apos;&amp;EmailCC=&apos; +ccId+ 
+&apos;&amp;EmailTemplateId=&apos; +emailId; 
+
+//Open modal in SmartList 
+openURLInModal(url,false);</url>
+</WebLink>

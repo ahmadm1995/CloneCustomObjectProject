@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMPE_REE_OperatingPartner_Platform</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+     $User.Bypass_User_Validations__c = False , 
+     RecordType.Name = &quot;Platform Deal&quot; ,
+OR($Permission.AMPE_REE_V2_Validations,
+$Permission.APAC_REE_V2_Validations),
+     CONTAINS($Profile.Name, &apos;Real Estate V2&apos;) ,
+				 ISBLANK(Operating_Partner__c),
+				 TEXT( Platform_Details__c ) = &apos;Standalone Investment&apos;,
+				 TEXT(DT_RE__c) = &apos;Portfolio&apos;
+
+)</errorConditionFormula>
+    <errorDisplayField>Operating_Partner__c</errorDisplayField>
+    <errorMessage>Please provide the Operating Partner</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cur_EBITDA_Common__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT ( ISBLANK( TEXT ( Currency_EBITDA__c ) ) ), TEXT ( Currency_EBITDA__c ), 
+IF(NOT ( ISBLANK( TEXT ( CurrencyIsoCode ) ) ), TEXT ( CurrencyIsoCode ), 
+Null ) )</formula>
+    <label>EBITDA Currency - Common</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

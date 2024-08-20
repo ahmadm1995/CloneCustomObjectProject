@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Portco_for_AddOn_Yes</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+				$User.Bypass_User_Validations__c = False, 
+				TEXT( Is_Add_on__c ) = &quot;Yes&quot; ,
+				Portfolio_CompanyEU__c = &quot;&quot;, 
+				AND(
+								NOT(RecordType.Name = &apos;Real Estate Equity V2&apos;),
+								NOT(RecordType.Name = &apos;Energy&apos;),
+								NOT(RecordType.Name = &apos;Platform Deal&apos;)
+				) 
+)</errorConditionFormula>
+    <errorDisplayField>Portfolio_CompanyEU__c</errorDisplayField>
+    <errorMessage>If this Deal is an Add-On, Portfolio Company must be provided.</errorMessage>
+</ValidationRule>

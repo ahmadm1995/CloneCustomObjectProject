@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Deals_Asia</fullName>
+    <columns>LAST_UPDATE</columns>
+    <columns>NAME</columns>
+    <columns>Project_Name__c</columns>
+    <columns>Industry_Team__c</columns>
+    <columns>Status_Asia__c</columns>
+    <columns>HQ_Country__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Deal_Clone_One__c.Private_Equity_Asia</value>
+    </filters>
+    <label>All Deals (Asia)</label>
+</ListView>

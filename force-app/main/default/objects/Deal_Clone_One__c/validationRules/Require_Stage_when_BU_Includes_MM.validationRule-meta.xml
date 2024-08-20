@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Stage_when_BU_Includes_MM</fullName>
+    <active>true</active>
+    <description>Require Stage when Business includes Middle Market and the Status (TMT) is either Active or Advanced</description>
+    <errorConditionFormula>AND( 
+$User.Bypass_User_Validations__c = False , 
+RecordType.Name = &quot;Private Equity - TMT&quot;,
+INCLUDES(BU__c, &quot;AMPE - Middle Market&quot;),
+OR(
+TEXT(Status_TMT__c)=&quot;Advanced&quot; ,
+TEXT(Status_TMT__c)=&quot;Early&quot; ,
+TEXT(Status_TMT__c)=&quot;Active&quot;
+),
+ISPICKVAL( Stage__c , &quot;&quot;) 
+)</errorConditionFormula>
+    <errorDisplayField>Stage__c</errorDisplayField>
+    <errorMessage>The stage is required whenever Business includes Middle Market and Status is either Early, Active, or Advanced.</errorMessage>
+</ValidationRule>

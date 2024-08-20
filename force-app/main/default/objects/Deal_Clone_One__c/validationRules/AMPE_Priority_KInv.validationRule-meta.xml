@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMPE_Priority_KInv</fullName>
+    <active>true</active>
+    <description>Make KKR Investment High/Low required whenever the Review Timing is Active or Gold/Silver indicator is gold/silver for CRG/FIG/Industrial/HC PE-Core/TMT</description>
+    <errorConditionFormula>AND(
+    $User.Bypass_User_Validations__c = FALSE,
+    TEXT($User.Office_Region__c) = &quot;Americas&quot;,
+    OR(
+        OR(
+            OR(
+                AND(
+                    TEXT(Status__c) = &quot;Active Evaluation&quot;,
+                    RecordType.Name = &quot;Private Equity - CRG&quot;,
+                    OR(
+                        TEXT(Timing_CRG__c) = &quot;Next 12 Months&quot;,
+                        TEXT(Timing_CRG__c) = &quot;13+ Months Away&quot;
+                    )
+                ),
+                AND(
+                    OR(
+                        TEXT(Gold_Silver_Indicator__c) = &quot;Gold&quot;,
+                        TEXT(Gold_Silver_Indicator__c) = &quot;Silver&quot;
+                    ),
+                    RecordType.Name = &quot;Private Equity - CRG&quot;
+                )               
+            )
+        ),
+        OR(
+            AND(
+                OR(
+                    ISPICKVAL(PnP__c,&quot;Priority&quot;),
+                    ISPICKVAL(Gold_Silver_Indicator__c,&quot;Gold&quot;),
+                    ISPICKVAL(Gold_Silver_Indicator__c,&quot;Silver&quot;)
+                ),
+                OR(
+                    RecordType.Name = &quot;Private Capital Investment&quot;,
+                    RecordType.Name = &quot;Private Equity - Industrials&quot;
+                )   
+            )
+        ),
+        OR(
+            AND(
+                OR(
+                    TEXT(Review_Timing_HC__c ) = &quot;Active&quot;,
+                    TEXT(Gold_Silver_Indicator__c) = &quot;Gold&quot;,
+                    TEXT(Gold_Silver_Indicator__c) = &quot;Silver&quot;
+                ),
+                RecordType.Name = &quot;Health Care PE/Core&quot;
+            )
+        ),
+        OR(
+            AND(
+                OR(
+                    TEXT(Status_TMT__c) = &quot;Advanced&quot;,
+                    TEXT(Gold_Silver_Indicator__c) = &quot;Gold&quot;,
+                    TEXT(Gold_Silver_Indicator__c) = &quot;Silver&quot;
+                ),
+                RecordType.Name = &quot;Private Equity - TMT&quot;
+            )
+        )
+    ),
+    OR (
+        AND(
+            Khi__c = 0,
+            Klo__c = 0
+        ),
+        AND(
+            ISNULL(Khi__c ),
+            ISNULL(Klo__c )
+        ),
+
+        OR(
+            AND(
+                Khi__c &lt;=0,
+                ISNULL (Klo__c ) = TRUE,
+                ISNULL (Khi__c ) = FALSE
+            )
+        ),
+        AND(
+            Klo__c &lt;=0,
+            ISNULL ( Khi__c ) = TRUE,
+            ISNULL (Klo__c ) = FALSE
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>KKR Investment (Low or High) must be greater than 0 when the Deal is Priority / High Priority or Gold / Silver</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Senior_IF_REC</fullName>
+    <active>true</active>
+    <description>Require Senior (Initial Funding) for non-Senior Tranches for REC Direct Lending</description>
+    <errorConditionFormula>AND(
+$User.Bypass_User_Validations__c = False, 
+RecordType.Name = &quot;Real Estate Credit - Direct Lending&quot;,
+OR(
+TEXT(Tranche__c) = &apos;Mezz&apos;,
+TEXT(Tranche__c) = &apos;Pref. Equity&apos;),
+ISBLANK( Sr_IF__c )
+)</errorConditionFormula>
+    <errorDisplayField>Sr_IF__c</errorDisplayField>
+    <errorMessage>Senior (Initial Funding - X.X MM) is required</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_REC_NoteSale_Status</fullName>
+    <active>true</active>
+    <description>Don&apos;t Allow Securities status for non Note Sales</description>
+    <errorConditionFormula>AND(
+$User.Bypass_User_Validations__c = False,
+RecordType.Name = &quot;Real Estate Credit - Direct Lending&quot;,
+TEXT (REC_Status__c) = &quot;5. Previously Reviewed&quot;,
+NOT(TEXT(IT_REC__c) = &apos;Note Sale&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>IT_REC__c</errorDisplayField>
+    <errorMessage>5. Previously Reviewed Pipeline Status is only available for Note Sale loans</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMPE_REE_EquitySource</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$User.Bypass_User_Validations__c = False , 
+OR (
+$Permission.AMPE_REE_V2_Validations,
+$Permission.EMEA_REE_V2_Validations
+),
+RecordType.Name = &quot;Real Estate Equity V2&quot; ,
+TEXT ( Status_REE__c ) = &quot;Awarded&quot;,
+TEXT(KKR_Equity_Source_REE__c) = &quot;&quot; 
+)</errorConditionFormula>
+    <errorDisplayField>KKR_Equity_Source_REE__c</errorDisplayField>
+    <errorMessage>Please provide the KKR Equity Source</errorMessage>
+</ValidationRule>

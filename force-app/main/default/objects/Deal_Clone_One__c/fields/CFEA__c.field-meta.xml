@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CFEA__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>An initial assessment of climate thesis and investment eligibility based on KKR Climate Framework has been completed by the deal team. Where necessary, third party reviewer has been engaged early to help assess eligibility (C2ES_Climate_Review@kkr.com).</inlineHelpText>
+    <label>Climate Framework Eligibility Assessed</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

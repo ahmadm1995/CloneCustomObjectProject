@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industrials_Platform_Rule2</fullName>
+    <active>true</active>
+    <description>When industrials deal is Platform Add On or Portfolio Add On, user must select a deal in the Platform/Portfolio Deal Field</description>
+    <errorConditionFormula>RecordType.Name = &apos;Private Equity - Industrials&apos;
+&amp;&amp;
+ISBLANK(Platform_Deal__c)
+&amp;&amp;
+(
+ISPICKVAL(Platform_Details__c, &apos;Platform Add On&apos;)
+||
+ISPICKVAL(Platform_Details__c, &apos;Portfolio Add On&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>Platform_Deal__c</errorDisplayField>
+    <errorMessage>You must select a Platform/Portfolio deal when indicating this deal is an Add On in the Platform/Portfolio Details</errorMessage>
+</ValidationRule>

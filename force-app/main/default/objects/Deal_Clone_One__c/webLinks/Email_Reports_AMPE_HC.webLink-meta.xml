@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Reports_AMPE_HC</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Send Reports</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>/* Button Configuration - Change these values */ 
+var templateId =&apos;a1N5a00000FOmRB,a1N5a00000FOmRG,a1N1H000002Wj5E&apos;; 
+var queryId = &apos;[PIPE]a1F1H000005yeLj,[PORT]a1F1H000005yeLo,[HC]a1F1H00000743DC,[HSG]a1F1H00000743DD,[RM]a1F1H000005yeQn,[PIPEMMA]a1F5a000008Nm80,[PEMMA]a1F5a000008Nm81&apos;; 
+var serverURL = &apos;{!API.Partner_Server_URL_370}&apos;; 
+var id = &apos;a1L1H000004QIiJUAW&apos;; 
+var parameterId = &apos;2&apos;; 
+var loggingId = &apos;0&apos;; 
+var zip = &apos;0&apos; 
+var redirect = &apos;/lightning/n/Curated_Pipeline_Healthcare&apos;; 
+var emailtoId = &apos;&apos;; 
+var ccId = &apos;&apos;; 
+var emailId = &apos;a1E1H00000AMousUAD&apos;; 
+
+/* URL Building - Don&apos;t change these values */ 
+var url = &apos;&apos;; 
+
+url += &apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos; + 
+&apos;&amp;serverUrl=&apos; +serverURL+ 
+&apos;&amp;Id=&apos; +id+ 
+&apos;&amp;QueryId=&apos; + queryId+ 
+&apos;&amp;TemplateId=&apos;+templateId+ 
+&apos;&amp;DS7=&apos; +parameterId+ 
+&apos;&amp;AC0=&apos; +loggingId+ 
+&apos;&amp;ZipFiles=&apos; +zip+ 
+&apos;&amp;ReturnPath=&apos; +redirect+ 
+&apos;&amp;EmailAdditionalTo=&apos; +emailtoId+ 
+&apos;&amp;EmailCC=&apos; +ccId+ 
+&apos;&amp;EmailTemplateId=&apos; +emailId; 
+
+
+//Open modal in SmartList 
+openURLInModal(url,false);</url>
+</WebLink>

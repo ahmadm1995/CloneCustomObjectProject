@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AsiaNGT_GoldSilver_CurRevenue</fullName>
+    <active>true</active>
+    <description>Require Revenue Currency when deal is gold or silver and Deal RT is Asia NGT</description>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;NGT_Asia&apos;
+&amp;&amp;
+NOT(ISPICKVAL(Gold_Silver_Indicator__c,&apos;&apos;))
+&amp;&amp;
+ISPICKVAL(Currency_Revenue__c,&apos;&apos;)</errorConditionFormula>
+    <errorDisplayField>Currency_Revenue__c</errorDisplayField>
+    <errorMessage>Currency (Revenue) required when deal is Gold / Silver</errorMessage>
+</ValidationRule>

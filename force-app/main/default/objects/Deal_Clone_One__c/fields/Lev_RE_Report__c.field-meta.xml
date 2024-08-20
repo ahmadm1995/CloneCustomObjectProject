@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lev_RE_Report__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    AND(
+        OR(
+												RecordType.Name = &apos;Real Estate Equity V2&apos;,
+												AND(
+																RecordType.Name = &apos;Platform Deal&apos;,
+																TEXT(Platform_Details__c) = &apos;Standalone Investment&apos;
+																)		
+								),
+        NOT(ISBLANK(Debt_Quantum_REE__c))
+     ),
+    &quot;USD &quot; + TEXT(Debt_Quantum_REE__c) + &quot; MM&quot;,
+    IF(
+        AND(
+            OR(
+												    RecordType.Name = &apos;Real Estate Equity V2&apos;,
+												    AND(
+																    RecordType.Name = &apos;Platform Deal&apos;,
+																    TEXT(Platform_Details__c) = &apos;Standalone Investment&apos;
+																    )		
+								        ),
+            ISBLANK(Debt_Quantum_REE__c)
+        ),
+        &quot;TBD&quot;,
+        Deal_Size_Reporting__c
+    )
+)</formula>
+    <label>Leverage REV2 Reporting</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

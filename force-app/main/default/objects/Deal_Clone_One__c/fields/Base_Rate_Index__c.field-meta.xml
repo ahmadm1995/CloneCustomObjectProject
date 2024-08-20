@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Base_Rate_Index__c</fullName>
+    <externalId>false</externalId>
+    <label>Base Rate Index</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EURIBOR</fullName>
+                <default>false</default>
+                <label>EURIBOR</label>
+            </value>
+            <value>
+                <fullName>SONIA</fullName>
+                <default>false</default>
+                <label>SONIA</label>
+            </value>
+            <value>
+                <fullName>SARON</fullName>
+                <default>false</default>
+                <label>SARON</label>
+            </value>
+            <value>
+                <fullName>STIBOR</fullName>
+                <default>false</default>
+                <label>STIBOR</label>
+            </value>
+            <value>
+                <fullName>EONIA</fullName>
+                <default>false</default>
+                <label>EONIA</label>
+            </value>
+            <value>
+                <fullName>CIBOR</fullName>
+                <default>false</default>
+                <label>CIBOR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

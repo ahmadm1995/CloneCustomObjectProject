@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_RECPrefE_IR</fullName>
+    <active>true</active>
+    <description>Require Pref. Equity (Interest Rate) for Pref. Equity Tranches for REC Direct Lending</description>
+    <errorConditionFormula>AND(
+$User.Bypass_User_Validations__c = False, 
+RecordType.Name = &quot;Real Estate Credit - Direct Lending&quot;,
+TEXT(Tranche__c) = &apos;Pref. Equity&apos;,
+ISBLANK( PE_IR__c )
+)</errorConditionFormula>
+    <errorDisplayField>PE_IR__c</errorDisplayField>
+    <errorMessage>Interest Rate is required</errorMessage>
+</ValidationRule>

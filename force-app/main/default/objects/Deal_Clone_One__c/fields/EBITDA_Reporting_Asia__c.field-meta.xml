@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EBITDA_Reporting_Asia__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISNULL( EBITDA_MM_Asia__c ) , &quot;N/A&quot; , TEXT( Currency_EBITDA__c ) + &quot; &quot; + IF ( EBITDA_MM_Asia__c &gt;= 1000, TEXT( EBITDA_MM_Asia__c / 1000 ) + &quot; BN&quot; , TEXT( EBITDA_MM_Asia__c ) + &quot; MM&quot; ) ) + if(OR(ISNULL(TEXT( ED__c )), TEXT( ED__c ) = &quot;--&quot;), &quot;&quot;,&quot; &quot;+TEXT(ED__c) )</formula>
+    <label>EBITDA (Reporting - Asia)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

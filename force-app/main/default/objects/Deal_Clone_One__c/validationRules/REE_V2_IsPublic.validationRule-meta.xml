@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REE_V2_IsPublic</fullName>
+    <active>true</active>
+    <errorConditionFormula>$User.Bypass_User_Validations__c = False
+&amp;&amp;
+(
+RecordType.Name = &quot;Real Estate Equity V2&quot;
+||
+(
+RecordType.Name = &quot;Platform Deal&quot;
+&amp;&amp;
+TEXT(Platform_Details__c) = &quot;Standalone Investment&quot;
+)
+)
+&amp;&amp;
+(
+$Permission.AMPE_REE_V2_Validations
+||
+$Permission.APAC_REE_V2_Validations
+||
+$Permission.EMEA_REE_V2_Validations
+)
+&amp;&amp;
+TEXT ( Status_REE__c ) &lt;&gt; &quot;Preview&quot;
+&amp;&amp;
+TEXT ( Status_REE__c ) &lt;&gt; &quot;Tracking&quot;
+&amp;&amp;
+TEXT ( Status_REE__c ) &lt;&gt; &quot;Dead&quot;
+&amp;&amp;
+ISPICKVAL(Is_Public_REE__c,&apos;&apos;)</errorConditionFormula>
+    <errorDisplayField>Is_Public_REE__c</errorDisplayField>
+    <errorMessage>Please provide Is Public?</errorMessage>
+</ValidationRule>

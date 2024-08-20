@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_ITROXREF_REC</fullName>
+    <active>true</active>
+    <description>If KROX, KROX II, KREOCS II or KREF are selected, then Investment Type can not be a Stabilized Senior Loan, Stabilized Mezz Loan or a Stabilized Pref. Equity.</description>
+    <errorConditionFormula>AND($User.Bypass_User_Validations__c = False,
+
+OR(TEXT(Allocation_Account_1__c)=&quot;KROX&quot;,TEXT(Allocation_Account_2__c)=&quot;KROX&quot;,TEXT(Allocation_Account_3__c)=&quot;KROX&quot;, TEXT(Allocation_Account_1__c)=&quot;KREOCS II&quot;,TEXT(Allocation_Account_2__c)=&quot;KREOCS II&quot;,TEXT(Allocation_Account_3__c)=&quot;KREOCS II&quot;,
+TEXT(Allocation_Account_1__c)=&quot;KROX II&quot;,TEXT(Allocation_Account_2__c)=&quot;KROX II&quot;,TEXT(Allocation_Account_3__c)=&quot;KROX II&quot;,
+TEXT(Allocation_Account_1__c)=&quot;KREF&quot;,TEXT(Allocation_Account_2__c)=&quot;KREF&quot;,TEXT(Allocation_Account_3__c)=&quot;KREF&quot;),
+
+OR(TEXT(IT_REC__c)=&quot;Stabilized Senior Loan - Core&quot;,TEXT(IT_REC__c)=&quot;Stabilized Senior Loan - Core Plus&quot;,TEXT(IT_REC__c)=&quot;Mezz – Core&quot;, TEXT(IT_REC__c)=&quot;Pref Equity – Core&quot;),
+
+RecordType.Name = &quot;Real Estate Credit - Direct Lending&quot;)</errorConditionFormula>
+    <errorDisplayField>IT_REC__c</errorDisplayField>
+    <errorMessage>If KROX, KROX II, KREOCS II or KREF are selected, then Investment Type cannot be Stabilized Senior Loan - Core, Stabilized Senior Loan - Core Plus, Mezz - Core or Pref. Equity - Core.</errorMessage>
+</ValidationRule>

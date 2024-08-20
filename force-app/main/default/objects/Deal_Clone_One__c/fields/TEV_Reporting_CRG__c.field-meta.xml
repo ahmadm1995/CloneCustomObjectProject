@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TEV_Reporting_CRG__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+   AND( 
+       ISNULL( TLo__c ) , 
+       ISNULL( TEVhi__c ) ) , 
+   NULL , 
+   IF( 
+      TLo__c = TEVhi__c , 
+      TEVhi__c , 
+      IF( 
+         AND( 
+             ISNULL( TLo__c ) , 
+             NOT( ISNULL( TEVhi__c ) ) ) , 
+      TEVhi__c , 
+      IF( 
+         AND( 
+             NOT( ISNULL( TLo__c ) ) , 
+             ISNULL( TEVhi__c ) ) , 
+         TLo__c , 
+         ( TLo__c + TEVhi__c ) / 2 ) 
+         ) 
+       ) 
+    )</formula>
+    <label>TEV (Reporting - CRG)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

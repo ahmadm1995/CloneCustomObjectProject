@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_PDF_AMPE_IND</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Send PDFs</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>/* Button Configuration - Change these values */ 
+var templateId =&apos;[JB Pipeline Report]a1N1H0000038oaj,[JB Portfolio Report]a1N1H0000038p6J,[Forward Calendar]a1N1H000002YE4oUAG,[Summary Pipeline Report and Killed Deals]a1N1H000002Wj5J&apos;; 
+var queryId = &apos;[PIPE]a1F1H000005yeM3,[PORT]a1F1H000005yeM8,[L2NDP]a1F1H000005yfW7,[L2NDN]a1F1H000005yfWC,[LAP]a1F1H000005yfWH,[LAN]a1F1H000005yfWM,[L3MP]a1F1H000005yfWR,[L3MN]a1F1H000005yfWW,[L6M]a1F1H000005yfXZ,[LSC]a1F1H000005yfWg,[LDEAD]a1F1H000005yfWb,[MEX]a1F1H000005yfWl,[M2NDP]a1F1H000005yfWq,[M2NDN]a1F1H000005yfWv,[MAPN]a1F1H000005yfX0,[MAPP]a1F1H000005yfX5,[MANP]a1F1H000005yfXA,[M6M]a1F1H000005yfXF,[M12M]a1F1H000005yfXK,[MOI]a1F1H000005yfXP,[MDEAD]a1F1H000005yfXU,[MNPP]a1F1H000006xsza,[A6]a1F5a000007lL8G,[AN]a1F5a000007lL8H,[AP]a1F5a000007lL8I,[A2P]a1F5a000007lL8K,[A2N]a1F5a000007lL8J,[A3P]a1F5a000007lL8F,[AO]a1F5a000007lL8E,[AD]a1F5a000007lL8D,[A3N]a1F5a000007lL8L,[IS]a1F1H00000743DH,[RM]a1F1H000005yfUa,[M3PN]a1F5a000008NmeZ,[M3NP]a1F5a000008Nmee&apos;; 
+var serverURL = &apos;{!API.Partner_Server_URL_370}&apos;; 
+var id = &apos;a1L1H000004QJaM&apos;; 
+var parameterId = &apos;2&apos;; 
+var loggingId = &apos;0&apos;; 
+var fp0 = &apos;1&apos; 
+var pdf = &apos;1&apos; 
+var adpf = &apos;0&apos; 
+var zip = &apos;0&apos; 
+var redirect = &apos;/lightning/n/Curated_Pipeline_AMPE_IND&apos;; 
+var emailtoId = &apos;&apos;; 
+var ccId = &apos;&apos;; 
+var emailId = &apos;a1E1H00000AMpeYUAT&apos;; 
+
+/* URL Building - Don&apos;t change these values */ 
+var url = &apos;&apos;; 
+
+url += &apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos; + 
+&apos;&amp;serverUrl=&apos; +serverURL+ 
+&apos;&amp;Id=&apos; +id+ 
+&apos;&amp;QueryId=&apos; + queryId+ 
+&apos;&amp;TemplateId=&apos;+templateId+ 
+&apos;&amp;DS7=&apos; +parameterId+ 
+&apos;&amp;AC0=&apos; +loggingId+ 
+&apos;&amp;FP0=&apos; +fp0+ 
+&apos;&amp;DefaultPDF=&apos; +pdf+ 
+&apos;&amp;APDF=&apos; +adpf+ 
+&apos;&amp;ZipFiles=&apos; +zip+ 
+&apos;&amp;ReturnPath=&apos; +redirect+ 
+&apos;&amp;EmailAdditionalTo=&apos; +emailtoId+ 
+&apos;&amp;EmailCC=&apos; +ccId+ 
+&apos;&amp;EmailTemplateId=&apos; +emailId+
+&apos;&amp;ExcelAutoFitRows=1&apos;; 
+
+
+//Open modal in SmartList 
+openURLInModal(url,false);</url>
+</WebLink>

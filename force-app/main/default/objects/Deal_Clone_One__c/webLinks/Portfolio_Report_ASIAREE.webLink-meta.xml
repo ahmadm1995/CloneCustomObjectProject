@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portfolio_Report_ASIAREE</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Portfolio Report</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>/* Button Configuration - Change these values */ 
+var templateId =&apos;a1N1H0000038qgt&apos;; 
+var queryId = &apos;[PORT]a1F1H000005ypC8&apos;; 
+var serverURL = &apos;{!API.Partner_Server_URL_370}&apos;; 
+var Id = &apos;a1L1H000004QNlQ&apos;; 
+var parameterId = &apos;3&apos;; 
+
+/* URL Building - Don&apos;t change these values */ 
+var url = &apos;&apos;; 
+
+url += &apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos; + 
+&apos;&amp;serverUrl=&apos; +serverURL+ 
+&apos;&amp;Id=&apos; +Id+ 
+&apos;&amp;QueryId=&apos; + queryId+ 
+&apos;&amp;TemplateId=&apos;+templateId+ 
+&apos;&amp;DS7=&apos; +parameterId; 
+
+
+//Open modal in SmartList 
+openURLInModal(url,false);</url>
+</WebLink>

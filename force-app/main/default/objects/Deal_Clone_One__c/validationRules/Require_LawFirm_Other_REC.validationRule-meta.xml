@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_LawFirm_Other_REC</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( $User.Bypass_User_Validations__c = False,OR( RecordType.Name = &quot;Real Estate Credit - Direct Lending&quot;, RecordType.Name = &quot;Real Estate Credit - Securities&quot;, RecordType.Name = &quot;Real Estate Credit - Shadow&quot;), TEXT ( Law_Firm_REC__c ) = &quot;Other&quot;, ISBLANK ( LawF_Other__c ))</errorConditionFormula>
+    <errorDisplayField>LawF_Other__c</errorDisplayField>
+    <errorMessage>If Other Law Firm is selected, please define which firm is being used.</errorMessage>
+</ValidationRule>

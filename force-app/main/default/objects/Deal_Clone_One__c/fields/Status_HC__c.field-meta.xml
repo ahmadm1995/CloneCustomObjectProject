@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_HC__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tracked</fullName>
+                <default>false</default>
+                <label>Tracked</label>
+            </value>
+            <value>
+                <fullName>Active Evaluation (Higher Current Resource Intensity)</fullName>
+                <default>false</default>
+                <label>Active Evaluation (Higher Current Resource Intensity)</label>
+            </value>
+            <value>
+                <fullName>Active Evaluation (Lower Current Resource Intensity)</fullName>
+                <default>false</default>
+                <label>Active Evaluation (Lower Current Resource Intensity)</label>
+            </value>
+            <value>
+                <fullName>Priority</fullName>
+                <default>false</default>
+                <label>Priority</label>
+            </value>
+            <value>
+                <fullName>High Priority</fullName>
+                <default>false</default>
+                <label>High Priority</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Portfolio</fullName>
+                <default>false</default>
+                <label>Portfolio</label>
+            </value>
+            <value>
+                <fullName>Ex-Portfolio</fullName>
+                <default>false</default>
+                <label>Ex-Portfolio</label>
+            </value>
+            <value>
+                <fullName>Monitor</fullName>
+                <default>false</default>
+                <label>Monitor</label>
+            </value>
+            <value>
+                <fullName>Eliminated</fullName>
+                <default>false</default>
+                <label>Eliminated</label>
+            </value>
+            <value>
+                <fullName>Archived</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Archived</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

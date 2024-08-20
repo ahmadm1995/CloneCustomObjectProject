@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blank_Deal_Team_Contact</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( $User.Bypass_User_Validations__c = False, RecordType.Name &lt;&gt; &quot;Private Equity - TMT&quot;, TEXT( Status__c ) &lt;&gt; &apos;Portfolio&apos; , TEXT(CS__c) = &apos;Include&apos; ,  ISBLANK(DC__c))</errorConditionFormula>
+    <errorDisplayField>DC__c</errorDisplayField>
+    <errorMessage>Please enter the Deal Team Contact to be shown for JYB/SCN Reporting.</errorMessage>
+</ValidationRule>

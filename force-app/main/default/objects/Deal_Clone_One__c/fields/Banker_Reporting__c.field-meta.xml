@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Banker_Reporting__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Banker_Primary__c &lt;&gt; &quot;&quot;, Banker_Primary__r.Name, Banker__r.Name) + IF( Banker_2__c &lt;&gt; &quot;&quot; , &quot;, &quot; + Banker_2__r.Name , &quot;&quot; )</formula>
+    <label>Banker (Reporting)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

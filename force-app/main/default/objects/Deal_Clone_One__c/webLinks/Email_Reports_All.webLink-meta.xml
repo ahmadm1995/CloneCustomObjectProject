@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Reports_All</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Send Reports</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>/* Button Configuration - Change these values */ 
+var templateId =&apos;a1N1H000002WftK,a1N1H000002WgJt,a1N1H0000038pIB&apos;; 
+var queryId = &apos;[PIPEAMPE]a1F1H000007437o,[PIPEASIA]a1F1H00000743Pb,[PIPEEMEAPE]a1F1H00000743PW,[PIPEENERGY]a1F1H00000743Pq,[PIPECORE]a1F1H00000743hi,[PIPEINFRAAMER]a1F1H00000743Q0,[PIPEINFRAEMEA]a1F1H00000743Q5,[PIPEREA]a1F1H00000743QK,[PIPERECDL]a1F1H000005ye7W,[PIPERECS]a1F1H000005ye7M,[AMPE]a1F1H0000074383,[EMEAPE]a1F1H00000743Pg,[ASIAPE]a1F1H00000743Pl,[ENERGY]a1F1H00000743Pv,[CORE]a1F1H00000743hn,[RE1]a1F1H00000743QP,[NGT]a1F1H000005ye9N,[REC]a1F1H000005ye7W,[CRAMPE]a1F1H00000742uL,[CREMEA]a1F1H00000743iv,[CRASIA]a1F1H00000743iq,[EN]a1F1H00000743D2,[ENINFAM]a1F1H000005yfnY,[ENINFEU]a1F1H000005yfnd,[AMPEFIG]a1F1H00000743D7,[EURFIG]a1F1H00000743j5,[ASIAFIG]a1F1H00000743j0,[AMPEHC]a1F1H00000743DC,[EURHC]a1F1H00000743jF,[ASIAHC]a1F1H00000743jA,[HSG]a1F1H00000743DD,[AMPEIS]a1F1H00000743DH,[EURIS]a1F1H00000743jj,[ASIAIS]a1F1H00000743je,[INF]a1F1H000005yeDP,[AMPEREL]a1F1H00000743DR,[EURREL]a1F1H000005yeCv,[ASIAREL]a1F1H000005yeCq,[RE]a1F1H000005yeF3,[AMPETMT]a1F1H00000743DW,[EURTMT]a1F1H00000743jy,[ASIATMT]a1F1H00000743jt,[IMPACT]a1F1H000005ye9m,[AMPERM]a1F1H00000743iC,[EURRM]a1F1H00000743iW,[ASIARM]a1F1H00000743iH,[CORERM]a1F1H00000743iM,[ENRM]a1F1H00000743iR,[INFAMRM]a1F1H00000743ib,[INFEURM]a1F1H00000743ig,[RERM]a1F1H00000743il,[INFRATMT]a1F1H000005yeDF,[PIPEIMPACT]a1F1H000005yg55,[PORTIMPACT]a1F1H000005yg5A,[INFRATMTAM]a1F1H000005yfns,[INFRATMTEU]a1F1H000005yfnx,[INFRA]a1F1H000005yfnT,[ENINFASIA]a1F1H000005yp7I,[INFRATMTASIA]a1F1H000005yp73,[INFASIARM]a1F1H000005yp78,[PIPEINFRAASIA]a1F1H000005yp7S,[PIPEMMA]a1F5a000008Nm7u,[PEMMA]a1F5a000008Nm7v,[PIPEREAV2]a1F5a000008Nr2G&apos;; 
+var serverURL = &apos;{!API.Partner_Server_URL_370}&apos;; 
+var id = &apos;a1L1H000004QIghUAG&apos;; 
+var parameterId = &apos;2&apos;; 
+var loggingId = &apos;0&apos;; 
+var zip = &apos;0&apos; 
+var redirect = &apos;/lightning/n/Curated_Pipeline_All&apos;; 
+var emailtoId = &apos;&apos;; 
+var ccId = &apos;&apos;; 
+var emailId = &apos;a1E1H00000Drc7z&apos;; 
+
+/* URL Building - Don&apos;t change these values */ 
+var url = &apos;&apos;; 
+
+url += &apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos; + 
+&apos;&amp;serverUrl=&apos; +serverURL+ 
+&apos;&amp;Id=&apos; +id+ 
+&apos;&amp;QueryId=&apos; + queryId+ 
+&apos;&amp;TemplateId=&apos;+templateId+ 
+&apos;&amp;DS7=&apos; +parameterId+ 
+&apos;&amp;AC0=&apos; +loggingId+ 
+&apos;&amp;ZipFiles=&apos; +zip+ 
+&apos;&amp;ReturnPath=&apos; +redirect+ 
+&apos;&amp;EmailAdditionalTo=&apos; +emailtoId+ 
+&apos;&amp;EmailCC=&apos; +ccId+ 
+&apos;&amp;EmailTemplateId=&apos; +emailId; 
+
+
+//Open modal in SmartList 
+openURLInModal(url,false);</url>
+</WebLink>

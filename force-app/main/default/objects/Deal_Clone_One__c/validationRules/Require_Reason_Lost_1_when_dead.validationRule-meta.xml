@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Reason_Lost_1_when_dead</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($User.Bypass_User_Validations__c = False, OR(RecordType.Name = &quot;Real Estate Credit - Direct Lending&quot;,RecordType.Name = &quot;Real Estate Credit - Securities&quot;), TEXT ( REC_Status__c ) = &quot;6. Dead / Passed / Not Active&quot;,  TEXT ( KKR_Bid__c ) = &quot;Yes&quot;, ISBLANK ( TEXT (  RL1__c ) ) )</errorConditionFormula>
+    <errorDisplayField>RL1__c</errorDisplayField>
+    <errorMessage>Please fill in the Reason Lost 1 details for this deal.</errorMessage>
+</ValidationRule>

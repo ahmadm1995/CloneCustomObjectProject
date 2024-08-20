@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Platform_Deal__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Note: Please do not click on ‘+ New Deal’ in this field. Platform or Portfolio deals must be created prior to creating an add-on deal.</inlineHelpText>
+    <label>Platform/Portfolio Deal</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 AND 2 AND (3 OR 4)) OR (1 AND 5 AND 6) OR (7 AND 10 AND (8 OR 9))</booleanFilter>
+        <errorMessage>The selected deal does NOT qualify to be a platform/portfolio deal to associate with an Add-On. Please select an appropriate deal.</errorMessage>
+        <filterItems>
+            <field>Deal_Clone_One__c.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>Energy,Platform Deal</value>
+        </filterItems>
+        <filterItems>
+            <field>Deal_Clone_One__c.Platform_Details__c</field>
+            <operation>equals</operation>
+            <value>Platform/Portfolio Deal, Platform</value>
+        </filterItems>
+        <filterItems>
+            <field>Deal_Clone_One__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Completed, Portfolio, Ex-Portfolio</value>
+        </filterItems>
+        <filterItems>
+            <field>Deal_Clone_One__c.Status_REE__c</field>
+            <operation>equals</operation>
+            <value>Awarded</value>
+        </filterItems>
+        <filterItems>
+            <field>Deal_Clone_One__c.Platform_Details__c</field>
+            <operation>equals</operation>
+            <value>Standalone Investment</value>
+        </filterItems>
+        <filterItems>
+            <field>Deal_Clone_One__c.DT_RE__c</field>
+            <operation>equals</operation>
+            <value>Portfolio</value>
+        </filterItems>
+        <filterItems>
+            <field>Deal_Clone_One__c.RecordType.Name</field>
+            <operation>equals</operation>
+            <value>Private Equity - Industrials</value>
+        </filterItems>
+        <filterItems>
+            <field>Deal_Clone_One__c.Platform_Details__c</field>
+            <operation>equals</operation>
+            <value>Platform/Portfolio Deal</value>
+        </filterItems>
+        <filterItems>
+            <field>Deal_Clone_One__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Portfolio, Ex-Portfolio</value>
+        </filterItems>
+        <filterItems>
+            <field>Deal_Clone_One__c.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Eliminated</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Deal_Clone_One__c</referenceTo>
+    <relationshipLabel>Add On Deals</relationshipLabel>
+    <relationshipName>Deals1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

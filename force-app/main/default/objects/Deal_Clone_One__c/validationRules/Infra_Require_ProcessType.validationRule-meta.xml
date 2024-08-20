@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Infra_Require_ProcessType</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.Name = &apos;Infrastructure&apos;
+&amp;&amp;
+ISPICKVAL(Process_Type__c,&apos;&apos;)
+&amp;&amp;
+(
+ISPICKVAL(Phase_Infra__c, &apos;Phase 2&apos;)
+||
+ISPICKVAL(Phase_Infra__c, &apos;Phase 2a&apos;)
+||
+ISPICKVAL(Phase_Infra__c, &apos;Phase 2b&apos;)
+||
+ISPICKVAL(Phase_Infra__c, &apos;Signed&apos;)
+)
+&amp;&amp;
+(
+INCLUDES(BU__c, &apos;Infrastructure&apos;)
+||
+INCLUDES(BU__c, &apos;Infrastructure - Core&apos;)
+)
+&amp;&amp;
+ISPICKVAL($User.Office_Region__c,&apos;Americas&apos;)</errorConditionFormula>
+    <errorDisplayField>Process_Type__c</errorDisplayField>
+    <errorMessage>Process Type required when deal is in phase 2, 2a, 2b or signed</errorMessage>
+</ValidationRule>

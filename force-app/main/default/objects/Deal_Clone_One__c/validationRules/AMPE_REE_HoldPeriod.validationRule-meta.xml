@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMPE_REE_HoldPeriod</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+     $User.Bypass_User_Validations__c = False , 
+OR($Permission.AMPE_REE_V2_Validations,
+$Permission.APAC_REE_V2_Validations,
+$Permission.EMEA_REE_V2_Validations),
+     RecordType.Name = &quot;Real Estate Equity V2&quot; ,
+     CONTAINS($Profile.Name, &apos;Real Estate V2&apos;) ,
+     OR( 
+        TEXT ( Status_REE__c ) = &quot;Awarded&quot; ,
+        TEXT ( Status_REE__c ) = &quot;Ex-Portfolio&quot; 
+        ) , 
+     OR( Hold_Period_REE__c = NULL , ISBLANK( Hold_Period_REE__c ) )
+
+)</errorConditionFormula>
+    <errorDisplayField>Hold_Period_REE__c</errorDisplayField>
+    <errorMessage>Please provide the Hold Period</errorMessage>
+</ValidationRule>

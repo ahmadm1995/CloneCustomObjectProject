@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TEV_Common_USD__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEV_Common__c / CURRENCYRATE( Cur_TEV_Common__c )</formula>
+    <label>TEV ($MM) - Common</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

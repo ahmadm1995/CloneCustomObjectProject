@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AsiaPEGoldSilver_DealFlowStatus</fullName>
+    <active>true</active>
+    <description>Provide Deal Flow Status when deal is marked Gold or Silver.</description>
+    <errorConditionFormula>AND(
+  RecordType.DeveloperName = &apos;Private_Equity_Asia&apos;,
+  OR(
+    ISPICKVAL(Gold_Silver_Indicator__c, &apos;Gold&apos;),
+    ISPICKVAL(Gold_Silver_Indicator__c, &apos;Silver&apos;)
+  ),
+  ISBLANK(Deal_Flow_Status__c)
+)</errorConditionFormula>
+    <errorDisplayField>Deal_Flow_Status__c</errorDisplayField>
+    <errorMessage>Deal Flow Status required when deal is Gold or Silver</errorMessage>
+</ValidationRule>

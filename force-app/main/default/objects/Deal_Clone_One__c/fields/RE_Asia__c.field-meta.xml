@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RE_Asia__c</fullName>
+    <description>This field maps to Reason_Eliminated__c using a process.</description>
+    <externalId>false</externalId>
+    <label>Reason Eliminated</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status_Asia__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Diligence</fullName>
+                <default>false</default>
+                <label>Diligence</label>
+            </value>
+            <value>
+                <fullName>Valuation</fullName>
+                <default>false</default>
+                <label>Valuation</label>
+            </value>
+            <value>
+                <fullName>Bid, but Lost</fullName>
+                <default>false</default>
+                <label>Bid, but Lost</label>
+            </value>
+            <value>
+                <fullName>Business</fullName>
+                <default>false</default>
+                <label>Business</label>
+            </value>
+            <value>
+                <fullName>Size</fullName>
+                <default>false</default>
+                <label>Size</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>Diligence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>Valuation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>Bid, but Lost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>Business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>Size</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

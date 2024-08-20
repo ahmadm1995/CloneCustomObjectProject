@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_KeyPerson1_Quoted_REC</fullName>
+    <active>true</active>
+    <description>If deal is changed to Quoted OR Circled - deal needs Key Person 1 to be entered.
+PR-2816</description>
+    <errorConditionFormula>AND($User.Bypass_User_Validations__c = False, RecordType.Name = &quot;Real Estate Credit - Direct Lending&quot;,(OR(TEXT ( REC_Status__c ) = &quot;2. Quoted / Term Sheet&quot;, TEXT ( REC_Status__c ) = &quot;1. Circled / Due Diligence&quot;, TEXT ( REC_Status__c ) = &quot;7. Portfolio&quot;, TEXT ( REC_Status__c ) = &quot;8. Ex-Portfolio&quot;)), ISBLANK(Sponsor_Key_Person__c ))</errorConditionFormula>
+    <errorDisplayField>Sponsor_Key_Person__c</errorDisplayField>
+    <errorMessage>If Sponsor 1 is filled in, you must provide the Key Person 1.</errorMessage>
+</ValidationRule>

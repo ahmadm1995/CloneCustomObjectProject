@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Priority_CRG__c</fullName>
+    <description>Used by CRG team - previously named Priority field, used on the Fwd Calendar sheets</description>
+    <externalId>false</externalId>
+    <label>Tier</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pipeline - Tier I</fullName>
+                <default>false</default>
+                <label>Pipeline - Tier I</label>
+            </value>
+            <value>
+                <fullName>Pipeline - Tier II</fullName>
+                <default>false</default>
+                <label>Pipeline - Tier II</label>
+            </value>
+            <value>
+                <fullName>Non-Active</fullName>
+                <default>false</default>
+                <label>Non-Active</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Tier I</fullName>
+                <default>false</default>
+                <label>Tier I</label>
+            </value>
+            <value>
+                <fullName>Tier II</fullName>
+                <default>false</default>
+                <label>Tier II</label>
+            </value>
+            <value>
+                <fullName>Tier III</fullName>
+                <default>false</default>
+                <label>Tier III</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

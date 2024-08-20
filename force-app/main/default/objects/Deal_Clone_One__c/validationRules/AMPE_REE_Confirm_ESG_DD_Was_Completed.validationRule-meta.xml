@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMPE_REE_Confirm_ESG_DD_Was_Completed</fullName>
+    <active>true</active>
+    <errorConditionFormula>$User.Bypass_User_Validations__c = False
+&amp;&amp;
+$Permission.Validation_For_ESG_Certification = TRUE
+&amp;&amp;
+  (
+  RecordType.DeveloperName = &apos;Real_Estate_Equity_V2&apos;
+  ||
+    (  
+    RecordType.DeveloperName = &apos;Platform_Deal&apos;
+    &amp;&amp;
+    ISPICKVAL(DT_RE__c, &apos;Portfolio&apos;)
+    &amp;&amp;
+    ISPICKVAL(Platform_Details__c, &apos;Standalone Investment&apos;)
+    )
+  ||
+  RecordType.DeveloperName = &apos;Platform_Deal&apos;
+  )
+&amp;&amp;
+ISBLANK(TEXT(Confirm_Full_ESG_DD_Was_Completed__c))
+&amp;&amp;
+ISPICKVAL(Status_REE__c, &apos;Awarded&apos;)
+&amp;&amp;
+(
+ISPICKVAL(Awarded_Stage_REE__c, &apos;Under Contract / Hard Deposit&apos;)
+||
+ISPICKVAL(Awarded_Stage_REE__c, &apos;Closed&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>Confirm_Full_ESG_DD_Was_Completed__c</errorDisplayField>
+    <errorMessage>Confirm whether ESG DD Was Completed Before Proceeding</errorMessage>
+</ValidationRule>

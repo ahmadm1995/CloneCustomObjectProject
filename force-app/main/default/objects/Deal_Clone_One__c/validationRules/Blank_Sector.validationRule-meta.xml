@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blank_Sector</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND ( $User.Bypass_User_Validations__c = False, OR( RecordType.Name = &quot;Private Capital Investment&quot; , RecordType.Name = &quot;Private Equity - CRG&quot;  ), TEXT ( Status__c ) &lt;&gt; &quot;Portfolio&quot;, TEXT ( CS__c ) = &quot;Include&quot;,  ISBLANK ( TEXT ( Sector__c ) ) )</errorConditionFormula>
+    <errorDisplayField>Sector__c</errorDisplayField>
+    <errorMessage>Please enter the Sector to be shown for JYB/SCN Reporting.</errorMessage>
+</ValidationRule>

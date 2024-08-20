@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IS__c</fullName>
+    <externalId>false</externalId>
+    <label>Investment Structure</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asset-Level JV</fullName>
+                <default>false</default>
+                <label>Asset-Level JV</label>
+            </value>
+            <value>
+                <fullName>Controlled Partnership</fullName>
+                <default>false</default>
+                <label>Controlled Partnership</label>
+            </value>
+            <value>
+                <fullName>Opportunistic Financing</fullName>
+                <default>false</default>
+                <label>Opportunistic Financing</label>
+            </value>
+            <value>
+                <fullName>Direct Ownership</fullName>
+                <default>false</default>
+                <label>Direct Ownership</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

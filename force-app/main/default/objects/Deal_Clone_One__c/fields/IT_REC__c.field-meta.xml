@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_REC__c</fullName>
+    <externalId>false</externalId>
+    <label>Investment Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stabilized Senior Loan - Core</fullName>
+                <default>false</default>
+                <label>Stabilized Senior Loan - Core</label>
+            </value>
+            <value>
+                <fullName>Stabilized Senior Loan - Core Plus</fullName>
+                <default>false</default>
+                <label>Stabilized Senior Loan - Core Plus</label>
+            </value>
+            <value>
+                <fullName>Transitional Senior Loan</fullName>
+                <default>false</default>
+                <label>Transitional Senior Loan</label>
+            </value>
+            <value>
+                <fullName>Mezz – Core</fullName>
+                <default>false</default>
+                <label>Mezz – Core</label>
+            </value>
+            <value>
+                <fullName>Mezz – Value Add</fullName>
+                <default>false</default>
+                <label>Mezz – Value Add</label>
+            </value>
+            <value>
+                <fullName>Mezz – Opportunistic</fullName>
+                <default>false</default>
+                <label>Mezz – Opportunistic</label>
+            </value>
+            <value>
+                <fullName>Pref Equity – Core</fullName>
+                <default>false</default>
+                <label>Pref Equity – Core</label>
+            </value>
+            <value>
+                <fullName>Pref Equity – Value Add</fullName>
+                <default>false</default>
+                <label>Pref Equity – Value Add</label>
+            </value>
+            <value>
+                <fullName>Pref Equity – Opportunistic</fullName>
+                <default>false</default>
+                <label>Pref Equity – Opportunistic</label>
+            </value>
+            <value>
+                <fullName>Securities – Investment Grade</fullName>
+                <default>false</default>
+                <label>Securities – Investment Grade</label>
+            </value>
+            <value>
+                <fullName>Securities – SASB (BIG + Non Control)</fullName>
+                <default>false</default>
+                <label>Securities – SASB (BIG + Non Control)</label>
+            </value>
+            <value>
+                <fullName>Securities – SASB (Control / First Loss)</fullName>
+                <default>false</default>
+                <label>Securities – SASB (Control / First Loss)</label>
+            </value>
+            <value>
+                <fullName>Securities – Conduit BIG / B-Pieces</fullName>
+                <default>false</default>
+                <label>Securities – Conduit BIG / B-Pieces</label>
+            </value>
+            <value>
+                <fullName>Equity First Mortgage</fullName>
+                <default>false</default>
+                <label>Equity First Mortgage</label>
+            </value>
+            <value>
+                <fullName>Equity Mezzanine Loan</fullName>
+                <default>false</default>
+                <label>Equity Mezzanine Loan</label>
+            </value>
+            <value>
+                <fullName>Corporate Bonds</fullName>
+                <default>false</default>
+                <label>Corporate Bonds</label>
+            </value>
+            <value>
+                <fullName>Note Sale</fullName>
+                <default>false</default>
+                <label>Note Sale</label>
+            </value>
+            <value>
+                <fullName>Conduit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Conduit</label>
+            </value>
+            <value>
+                <fullName>Mezz</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mezz</label>
+            </value>
+            <value>
+                <fullName>Note Purchase</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Note Purchase</label>
+            </value>
+            <value>
+                <fullName>Pref. Equity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pref. Equity</label>
+            </value>
+            <value>
+                <fullName>SASB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SASB</label>
+            </value>
+            <value>
+                <fullName>Stabilized Senior Loan</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stabilized Senior Loan</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

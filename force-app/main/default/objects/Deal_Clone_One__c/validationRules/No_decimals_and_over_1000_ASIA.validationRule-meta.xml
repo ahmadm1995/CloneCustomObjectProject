@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_decimals_and_over_1000_ASIA</fullName>
+    <active>true</active>
+    <description>triggers when user inputs decimal into the field or when the value is below 1000</description>
+    <errorConditionFormula>AND(
+NOT(CONTAINS($Profile.Name, &apos;Investment Professional - Real Estate V2&apos;)),
+OR(
+CONTAINS(TEXT(Deal_Budget_Expenditure__c), &apos;.&apos;),
+Deal_Budget_Expenditure__c &lt; 1000
+)
+)</errorConditionFormula>
+    <errorDisplayField>Deal_Budget_Expenditure__c</errorDisplayField>
+    <errorMessage>Please enter the actual USD value as a whole number. Must be at least 1000.</errorMessage>
+</ValidationRule>

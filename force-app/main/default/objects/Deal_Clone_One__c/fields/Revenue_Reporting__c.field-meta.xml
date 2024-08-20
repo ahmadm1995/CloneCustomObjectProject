@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Revenue_Reporting__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISNULL( Rev__c ) , &quot;N/A&quot; , TEXT( CurrencyIsoCode ) + &quot; &quot; + IF ( Rev__c &gt;= 1000, TEXT( Rev__c / 1000 ) + &quot; BN&quot; , TEXT( Rev__c ) + &quot; MM&quot; ) ) +  if(OR ( ISNULL(TEXT( RD__c )), TEXT( RD__c ) = &quot;--&quot;), &quot;&quot;,&quot; &quot;+TEXT(RD__c) )</formula>
+    <label>Revenue (Reporting)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

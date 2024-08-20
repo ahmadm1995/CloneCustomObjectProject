@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pipeline_Type_REC__c</fullName>
+    <description>For RE Direct Lending Record Type Only</description>
+    <externalId>false</externalId>
+    <inlineHelpText>To have the deal appear on the KKR RE Securities or KKR RE Credit Pipeline, select either &apos;RE Securities&apos; or &apos;RE Credit.&apos; To appear on both reports, select &apos;Both.&apos;</inlineHelpText>
+    <label>Pipeline Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RE Securities Only</fullName>
+                <default>false</default>
+                <label>RE Securities Only</label>
+            </value>
+            <value>
+                <fullName>RE Credit Only</fullName>
+                <default>false</default>
+                <label>RE Credit Only</label>
+            </value>
+            <value>
+                <fullName>Both</fullName>
+                <default>false</default>
+                <label>Both</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

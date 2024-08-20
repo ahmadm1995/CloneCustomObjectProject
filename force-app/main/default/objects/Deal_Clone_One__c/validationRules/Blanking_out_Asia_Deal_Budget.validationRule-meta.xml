@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blanking_out_Asia_Deal_Budget</fullName>
+    <active>true</active>
+    <description>PR-2555</description>
+    <errorConditionFormula>AND(
+$User.Bypass_User_Validations__c = False,
+NOT(ISBLANK(SAP_Deal_Code__c )),
+NOT(ISNULL(PRIORVALUE(Deal_Budget_Expenditure__c))),
+OR(
+ISNULL(Deal_Budget_Expenditure__c),
+Deal_Budget_Expenditure__c==0
+)
+)</errorConditionFormula>
+    <errorDisplayField>Deal_Budget_Expenditure__c</errorDisplayField>
+    <errorMessage>Cannot blank out the budget if expense code has been assigned</errorMessage>
+</ValidationRule>

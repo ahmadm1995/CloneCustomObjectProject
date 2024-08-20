@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>bold_emea_report__c</fullName>
+    <description>If a deal stage has changed in last 7 days or if the deal was created in the last 7 days</description>
+    <externalId>false</externalId>
+    <formula>OR( TODAY() - eu_deal_stage_upd_date__c &lt;= 7, TODAY() - DATEVALUE(CreatedDate) &lt;= 7)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Bold on EMEA Deal Team Report</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

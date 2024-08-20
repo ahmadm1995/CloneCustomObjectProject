@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RL1__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason Lost 1</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>REC_Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Diligence</fullName>
+                <default>false</default>
+                <label>Diligence</label>
+            </value>
+            <value>
+                <fullName>Valuation</fullName>
+                <default>false</default>
+                <label>Valuation</label>
+            </value>
+            <value>
+                <fullName>Bid, but Lost - Proceeds</fullName>
+                <default>false</default>
+                <label>Bid, but Lost - Proceeds</label>
+            </value>
+            <value>
+                <fullName>Bid, but Lost - Pricing</fullName>
+                <default>false</default>
+                <label>Bid, but Lost - Pricing</label>
+            </value>
+            <value>
+                <fullName>Bid, but Lost - Structure</fullName>
+                <default>false</default>
+                <label>Bid, but Lost - Structure</label>
+            </value>
+            <value>
+                <fullName>Business</fullName>
+                <default>false</default>
+                <label>Business</label>
+            </value>
+            <value>
+                <fullName>Size</fullName>
+                <default>false</default>
+                <label>Size</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Proceeds</fullName>
+                <default>false</default>
+                <label>Proceeds</label>
+            </value>
+            <value>
+                <fullName>Structure</fullName>
+                <default>false</default>
+                <label>Structure</label>
+            </value>
+            <value>
+                <fullName>Relationship</fullName>
+                <default>false</default>
+                <label>Relationship</label>
+            </value>
+            <value>
+                <fullName>Did Not Transact</fullName>
+                <default>false</default>
+                <label>Did Not Transact</label>
+            </value>
+            <value>
+                <fullName>Collateral</fullName>
+                <default>false</default>
+                <label>Collateral</label>
+            </value>
+            <value>
+                <fullName>TBD</fullName>
+                <default>false</default>
+                <label>TBD</label>
+            </value>
+            <value>
+                <fullName>NAP</fullName>
+                <default>false</default>
+                <label>NAP</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>6. Dead / Passed / Not Active</controllingFieldValue>
+            <controllingFieldValue>7. Portfolio</controllingFieldValue>
+            <controllingFieldValue>8. Ex-Portfolio</controllingFieldValue>
+            <valueName>Size</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6. Dead / Passed / Not Active</controllingFieldValue>
+            <controllingFieldValue>7. Portfolio</controllingFieldValue>
+            <controllingFieldValue>8. Ex-Portfolio</controllingFieldValue>
+            <valueName>Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6. Dead / Passed / Not Active</controllingFieldValue>
+            <controllingFieldValue>7. Portfolio</controllingFieldValue>
+            <controllingFieldValue>8. Ex-Portfolio</controllingFieldValue>
+            <valueName>Proceeds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6. Dead / Passed / Not Active</controllingFieldValue>
+            <controllingFieldValue>7. Portfolio</controllingFieldValue>
+            <controllingFieldValue>8. Ex-Portfolio</controllingFieldValue>
+            <valueName>Structure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6. Dead / Passed / Not Active</controllingFieldValue>
+            <controllingFieldValue>7. Portfolio</controllingFieldValue>
+            <controllingFieldValue>8. Ex-Portfolio</controllingFieldValue>
+            <valueName>Relationship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6. Dead / Passed / Not Active</controllingFieldValue>
+            <controllingFieldValue>7. Portfolio</controllingFieldValue>
+            <controllingFieldValue>8. Ex-Portfolio</controllingFieldValue>
+            <valueName>Did Not Transact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6. Dead / Passed / Not Active</controllingFieldValue>
+            <controllingFieldValue>7. Portfolio</controllingFieldValue>
+            <controllingFieldValue>8. Ex-Portfolio</controllingFieldValue>
+            <valueName>Collateral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6. Dead / Passed / Not Active</controllingFieldValue>
+            <controllingFieldValue>7. Portfolio</controllingFieldValue>
+            <controllingFieldValue>8. Ex-Portfolio</controllingFieldValue>
+            <valueName>TBD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6. Dead / Passed / Not Active</controllingFieldValue>
+            <controllingFieldValue>7. Portfolio</controllingFieldValue>
+            <controllingFieldValue>8. Ex-Portfolio</controllingFieldValue>
+            <valueName>NAP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6. Dead / Passed / Not Active</controllingFieldValue>
+            <controllingFieldValue>7. Portfolio</controllingFieldValue>
+            <controllingFieldValue>8. Ex-Portfolio</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

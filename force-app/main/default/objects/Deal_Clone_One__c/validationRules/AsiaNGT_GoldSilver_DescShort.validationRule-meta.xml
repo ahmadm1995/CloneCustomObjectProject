@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AsiaNGT_GoldSilver_DescShort</fullName>
+    <active>true</active>
+    <description>Require Description (Short) when deal is gold or silver and Deal RT is Asia NGT</description>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;NGT_Asia&apos;
+&amp;&amp;
+NOT(ISPICKVAL(Gold_Silver_Indicator__c,&apos;&apos;))
+&amp;&amp;
+ISBLANK(Description_Short__c)</errorConditionFormula>
+    <errorDisplayField>Description_Short__c</errorDisplayField>
+    <errorMessage>Description (Short) required when deal is Gold / Silver</errorMessage>
+</ValidationRule>

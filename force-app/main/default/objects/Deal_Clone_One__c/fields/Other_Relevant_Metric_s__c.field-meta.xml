@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Relevant_Metric_s__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this field to highlight additional metrics (e.g. Gross Profit: USD 100 MM) relevant to this deal</inlineHelpText>
+    <label>Other Relevant Metric(s)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

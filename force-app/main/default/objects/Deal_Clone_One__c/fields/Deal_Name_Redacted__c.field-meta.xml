@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Name_Redacted__c</fullName>
+    <description>Redacted Deal Name</description>
+    <externalId>false</externalId>
+    <formula>IF( Use_Project_Name_Redacted__c = true , IF(ISBLANK(Project_Name__c),&quot;(Project TBD)&quot;,(&quot;(&quot; &amp; Project_Name__c &amp; &quot;)&quot;)), Name_Reporting__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Redacted Deal Name</inlineHelpText>
+    <label>Deal Name Redacted</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

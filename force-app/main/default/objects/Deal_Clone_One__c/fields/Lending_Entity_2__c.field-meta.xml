@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lending_Entity_2__c</fullName>
+    <externalId>false</externalId>
+    <label>Lending Entity 2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Allocation_Account_2__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>KREF Capital LLC</fullName>
+                <default>false</default>
+                <label>KREF Capital LLC</label>
+            </value>
+            <value>
+                <fullName>KREF Capital TRS LLC</fullName>
+                <default>false</default>
+                <label>KREF Capital TRS LLC</label>
+            </value>
+            <value>
+                <fullName>KREF Lending I LLC</fullName>
+                <default>false</default>
+                <label>KREF Lending I LLC</label>
+            </value>
+            <value>
+                <fullName>KREF Lending II LLC</fullName>
+                <default>false</default>
+                <label>KREF Lending II LLC</label>
+            </value>
+            <value>
+                <fullName>KREF Lending III LLC</fullName>
+                <default>false</default>
+                <label>KREF Lending III LLC</label>
+            </value>
+            <value>
+                <fullName>KREF Lending IV LLC</fullName>
+                <default>false</default>
+                <label>KREF Lending IV LLC</label>
+            </value>
+            <value>
+                <fullName>KREF Lending V LLC</fullName>
+                <default>false</default>
+                <label>KREF Lending V LLC</label>
+            </value>
+            <value>
+                <fullName>KREF Lending VI LLC</fullName>
+                <default>false</default>
+                <label>KREF Lending VI LLC</label>
+            </value>
+            <value>
+                <fullName>KREF Lending VII LLC</fullName>
+                <default>false</default>
+                <label>KREF Lending VII LLC</label>
+            </value>
+            <value>
+                <fullName>KREF Lending VIII LLC</fullName>
+                <default>false</default>
+                <label>KREF Lending VIII LLC</label>
+            </value>
+            <value>
+                <fullName>KREF Lending IX LLC</fullName>
+                <default>false</default>
+                <label>KREF Lending IX LLC</label>
+            </value>
+            <value>
+                <fullName>Forethought</fullName>
+                <default>false</default>
+                <label>Forethought</label>
+            </value>
+            <value>
+                <fullName>Accordia</fullName>
+                <default>false</default>
+                <label>Accordia</label>
+            </value>
+            <value>
+                <fullName>Commonwealth</fullName>
+                <default>false</default>
+                <label>Commonwealth</label>
+            </value>
+            <value>
+                <fullName>KROX</fullName>
+                <default>false</default>
+                <label>KROX</label>
+            </value>
+            <value>
+                <fullName>KREST</fullName>
+                <default>false</default>
+                <label>KREST</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>GA</controllingFieldValue>
+            <valueName>Forethought</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GA</controllingFieldValue>
+            <valueName>Accordia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GA</controllingFieldValue>
+            <valueName>Commonwealth</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GA</controllingFieldValue>
+            <controllingFieldValue>KROX</controllingFieldValue>
+            <controllingFieldValue>KREF</controllingFieldValue>
+            <controllingFieldValue>KREST</controllingFieldValue>
+            <controllingFieldValue>RECOP</controllingFieldValue>
+            <controllingFieldValue>RESTAC</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KROX</controllingFieldValue>
+            <valueName>KROX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KREF</controllingFieldValue>
+            <valueName>KREF Capital LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KREF</controllingFieldValue>
+            <valueName>KREF Capital TRS LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KREF</controllingFieldValue>
+            <valueName>KREF Lending I LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KREF</controllingFieldValue>
+            <valueName>KREF Lending II LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KREF</controllingFieldValue>
+            <valueName>KREF Lending III LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KREF</controllingFieldValue>
+            <valueName>KREF Lending IV LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KREF</controllingFieldValue>
+            <valueName>KREF Lending V LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KREF</controllingFieldValue>
+            <valueName>KREF Lending VI LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KREF</controllingFieldValue>
+            <valueName>KREF Lending VII LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KREF</controllingFieldValue>
+            <valueName>KREF Lending VIII LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KREF</controllingFieldValue>
+            <valueName>KREF Lending IX LLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KREST</controllingFieldValue>
+            <valueName>KREST</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Public_FIG</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+				$User.Bypass_User_Validations__c = False,
+				RecordType.Name = &apos;Private Capital Investment&apos;,
+				OR( 
+							AND(
+								ISPICKVAL(RT_FIG__c, &apos;Near-term / Doing Work&apos;),
+								ISPICKVAL(PnP__c, &apos;Priority&apos;)
+								),
+							ISPICKVAL(RT_FIG__c, &apos;Dead&apos;),
+							ISPICKVAL(RT_FIG__c, &apos;2nd Round Active Deals&apos;),
+							ISPICKVAL(RT_FIG__c, &apos;Active Process / Proprietary Engagement&apos;),
+							ISPICKVAL(RT_FIG__c, &apos;Completed&apos;),
+							ISPICKVAL(RT_FIG__c, &apos;Portfolio&apos;),
+							ISPICKVAL(RT_FIG__c, &apos;Ex-Portfolio&apos;)
+						),
+				 ISPICKVAL(Is_Public_FIG__c, &apos;&apos;)
+				)</errorConditionFormula>
+    <errorDisplayField>Is_Public_FIG__c</errorDisplayField>
+    <errorMessage>Please update if the deal is public or not.</errorMessage>
+</ValidationRule>

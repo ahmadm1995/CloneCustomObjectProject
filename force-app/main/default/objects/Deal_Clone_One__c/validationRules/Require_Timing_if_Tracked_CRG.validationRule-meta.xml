@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Timing_if_Tracked_CRG</fullName>
+    <active>true</active>
+    <description>If Status is Tracked, Timing must be filled in.
+for CRG team</description>
+    <errorConditionFormula>AND( $User.Bypass_User_Validations__c = False , RecordType.Name = &quot;Private Equity - CRG&quot;, TEXT(Status__c)=&quot;Tracked&quot; , TEXT(Timing_CRG__c) = &quot;&quot; )</errorConditionFormula>
+    <errorDisplayField>Timing_CRG__c</errorDisplayField>
+    <errorMessage>If Status is Tracked, then Timing must be filled in.</errorMessage>
+</ValidationRule>

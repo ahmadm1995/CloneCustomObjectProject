@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AsiaPEGoldSilver_EqNeed</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Private_Equity_Asia&apos;
+&amp;&amp;
+( EqLoA__c &lt;= 0 || ISBLANK(EqLoA__c)  )
+&amp;&amp;
+( EqHiA__c &lt;= 0 || ISBLANK(EqHiA__c)  )
+&amp;&amp;
+ ( ISPICKVAL(Gold_Silver_Indicator__c, &apos;Gold&apos;)
+   ||
+   ISPICKVAL(Gold_Silver_Indicator__c, &apos;Silver&apos;) )</errorConditionFormula>
+    <errorMessage>Equity Need (Low or High) must be greater than 0 when deal is Gold or Silver</errorMessage>
+</ValidationRule>

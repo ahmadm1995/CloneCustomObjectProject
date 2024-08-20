@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equity_Need_Reporting_Asia__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AND( ISNULL( EqLoA__c ) , ISNULL( EqHiA__c ) ) , &quot;TBD&quot; , IF( EqLoA__c = EqHiA__c , TEXT( Currency_Equity_Need__c ) + &quot; &quot; + IF( EqHiA__c &gt;= 1000, TEXT( EqHiA__c / 1000 ) + &quot; BN&quot; , TEXT( EqHiA__c ) + &quot; MM&quot; ) , IF( AND( ISNULL( EqLoA__c ) , NOT( ISNULL( EqHiA__c ) ) ) , TEXT( Currency_Equity_Need__c ) + &quot; &quot; + IF( EqHiA__c &gt;= 1000, TEXT( EqHiA__c / 1000 ) + &quot; BN&quot; , TEXT( EqHiA__c ) + &quot; MM&quot; ) , IF( AND( NOT( ISNULL( EqLoA__c ) ) , ISNULL( EqHiA__c ) ) , TEXT( Currency_Equity_Need__c ) + &quot; &quot; + IF( EqLoA__c &gt;= 1000, TEXT( EqLoA__c / 1000 ) + &quot; BN&quot; , TEXT( EqLoA__c ) + &quot; MM&quot; ) , TEXT( Currency_Equity_Need__c ) + &quot; &quot; + IF( EqLoA__c &gt;= 1000, TEXT( EqLoA__c / 1000 ) + &quot; BN&quot; , TEXT( EqLoA__c ) + &quot; MM&quot; ) + &quot; - &quot; + IF( EqHiA__c &gt;= 1000, TEXT( EqHiA__c / 1000 ) + &quot; BN&quot; , TEXT( EqHiA__c ) + &quot; MM&quot; ) ) ) ) ) + IF ( isnull( Equity_Need_Description__c ),&quot;&quot;,&quot; &quot;+Equity_Need_Description__c)</formula>
+    <label>Equity Need (Reporting - Asia)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

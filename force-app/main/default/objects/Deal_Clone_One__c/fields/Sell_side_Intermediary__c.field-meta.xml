@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sell_side_Intermediary__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>built for EU</description>
+    <externalId>false</externalId>
+    <label>Sell-side Intermediary</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>This should be a Sell-side Intermediary.</errorMessage>
+        <filterItems>
+            <field>Account.RecordType.DeveloperName</field>
+            <operation>equals</operation>
+            <value>Affiliated_Party</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+            <value>Investment Bank</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Deals (Sell-side Intermediary)</relationshipLabel>
+    <relationshipName>DealsSellsideIntermediary</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

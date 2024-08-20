@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NOI_Requirement</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( RecordType.Name = &apos;Real Estate Credit - Direct Lending&apos;,
+				ISPICKVAL(CM__c,&apos;2&apos;),
+OR(
+				ISPICKVAL(REC_Status__c,&apos;2. Quoted / Term Sheet&apos;),
+				ISPICKVAL(REC_Status__c,&apos;1. Circled / Due Diligence&apos;),
+				ISPICKVAL(REC_Status__c,&apos;7. Portfolio&apos;)
+),
+OR( ISPICKVAL(Allocation_Account_1__c,&apos;GA&apos;),
+ISPICKVAL(Allocation_Account_2__c,&apos;GA&apos;),
+ISPICKVAL(Allocation_Account_3__c,&apos;GA&apos;)
+),
+ISPICKVAL( TIB__c , &apos;Y&apos;),
+OR(
+ISBLANK(Loan_Stabilization_NOI__c),
+ISBLANK(Loan_Stabilization_Date__c )
+),
+$User.Bypass_User_Validations__c = False
+)</errorConditionFormula>
+    <errorDisplayField>Loan_Stabilization_NOI__c</errorDisplayField>
+    <errorMessage>Loan Stabilization NOI/Date is required if GA is allocated</errorMessage>
+</ValidationRule>

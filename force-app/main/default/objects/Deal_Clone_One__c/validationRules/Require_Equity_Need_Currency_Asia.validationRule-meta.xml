@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Equity_Need_Currency_Asia</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND ( $User.Bypass_User_Validations__c = False, OR( ISNEW(), OR( ISCHANGED ( EqLoA__c ), ISCHANGED ( EqHiA__c ) ) ), OR( ISNULL ( EqLoA__c ) = FALSE, ISNULL ( EqHiA__c ) = FALSE ), ISBLANK ( TEXT ( Currency_Equity_Need__c ) ) )</errorConditionFormula>
+    <errorMessage>Please provide the Currency for the Equity Need value.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asia_NGT_ESG_Gating_Issues</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;NGT_Asia&apos;
+&amp;&amp;
+(
+ISPICKVAL(Status_Asia__c, &apos;Active Evaluation&apos;)
+||
+ISPICKVAL(Status_Asia__c, &apos;Priority&apos;)
+||
+ISPICKVAL(Status_Asia__c, &apos;High Priority&apos;)
+||
+ISPICKVAL(Status_Asia__c, &apos;Completed&apos;)
+||
+ISPICKVAL(Status_Asia__c, &apos;Portfolio&apos;)
+||
+ISPICKVAL(Status_Asia__c, &apos;Ex-Portfolio&apos;)
+)
+&amp;&amp;
+NOT(ISPICKVAL(ESG_Gating_Issues_List_Reviewed__c,&apos;Yes&apos;))</errorConditionFormula>
+    <errorDisplayField>ESG_Gating_Issues_List_Reviewed__c</errorDisplayField>
+    <errorMessage>ESG Gating Issues List Reviewed? Must be set to &apos;Yes&apos; when deal status reaches Active Evaluation</errorMessage>
+</ValidationRule>

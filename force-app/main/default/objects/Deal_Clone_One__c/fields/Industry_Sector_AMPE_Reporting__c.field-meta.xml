@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry_Sector_AMPE_Reporting__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( TEXT( Sector__c ) = &quot;&quot; , Industry_Reporting__c + IF( AND( OR( CONTAINS( Deal_Team_Industry_Codes__c , &quot;448-Americas&quot; ) , CONTAINS( Deal_Team_Industry_Codes__c , &quot;442-Americas&quot; ) ) , TEXT(Industry_Team__c) &lt;&gt; &quot;Consumer&quot;, TEXT(Industry_Team__c) &lt;&gt; &quot;Retail&quot; ) , &quot; + CRG&quot; , &quot;&quot; ) , Industry_Reporting__c + &quot;/&quot; + TEXT( Sector__c ) + IF( AND( OR( CONTAINS( Deal_Team_Industry_Codes__c , &quot;448-Americas&quot; ) , CONTAINS( Deal_Team_Industry_Codes__c , &quot;442-Americas&quot; ) )  , TEXT(Industry_Team__c) &lt;&gt; &quot;Consumer&quot;, TEXT(Industry_Team__c) &lt;&gt; &quot;Retail&quot; ) , &quot; + CRG&quot; , &quot;&quot; ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Industry/Sector - AMPE (Reporting)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

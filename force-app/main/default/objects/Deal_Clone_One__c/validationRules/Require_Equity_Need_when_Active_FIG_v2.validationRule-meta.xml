@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Equity_Need_when_Active_FIG_v2</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND ( 
+$User.Bypass_User_Validations__c = False ,
+    OR( 
+        ISNEW() , 
+        ISCHANGED( RT_FIG__c ),
+ISCHANGED( PnP__c ) 
+    ), 
+    OR( 
+        AND( 
+            EqHi__c = 0, 
+            EqLo__c = 0
+        ), 
+        AND( 
+            ISNULL( EqHi__c ), 
+            ISNULL( EqLo__c )
+        ), 
+        OR( 
+            AND( 
+                EqHi__c &lt;= 0, 
+                ISNULL ( EqLo__c ) = TRUE, 
+                ISNULL ( EqHi__c ) = FALSE
+            )
+        ),
+        AND( 
+            EqLo__c &lt;= 0, 
+            ISNULL ( EqHi__c ) = TRUE, 
+            ISNULL ( EqLo__c ) = FALSE
+        )
+    ) ,
+    OR ( 
+        TEXT ( RT_FIG__c ) = &quot;Active Process / Proprietary Engagement&quot;, 
+        TEXT ( RT_FIG__c ) = &quot;Priority&quot;, 
+        AND(
+            TEXT ( RT_FIG__c ) = &quot;Near-term / Doing Work&quot;,
+            TEXT ( PnP__c ) = &quot;Priority&quot;
+        ),
+        TEXT ( RT_FIG__c ) = &quot;2nd Round Active Deals&quot;
+    )
+)</errorConditionFormula>
+    <errorMessage>Equity Need (Low or High) should be greater than 0 for all Active Deals</errorMessage>
+</ValidationRule>

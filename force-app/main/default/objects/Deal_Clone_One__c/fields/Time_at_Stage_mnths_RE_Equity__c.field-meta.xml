@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_at_Stage_mnths_RE_Equity__c</fullName>
+    <description>Calculated the Time at Stage(in months) for RE Equity records - used in DFT for Japan - RE Version</description>
+    <externalId>false</externalId>
+    <formula>( TODAY() -  RE_Status_Change_Date__c )/30</formula>
+    <inlineHelpText>Used in Japan DFT Report - RE Version</inlineHelpText>
+    <label>Time at Stage (mnths) - RE Equity</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Eliminated_ReasonEU__c</fullName>
+    <description>for EU</description>
+    <externalId>false</externalId>
+    <label>Eliminated Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Deal_Stage__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Too small / immature</fullName>
+                <default>false</default>
+                <label>Too small / immature</label>
+            </value>
+            <value>
+                <fullName>Business concern</fullName>
+                <default>false</default>
+                <label>Business concern</label>
+            </value>
+            <value>
+                <fullName>Valuation level</fullName>
+                <default>false</default>
+                <label>Valuation level</label>
+            </value>
+            <value>
+                <fullName>Missed / too late to process</fullName>
+                <default>false</default>
+                <label>Missed / too late to process</label>
+            </value>
+            <value>
+                <fullName>Governance / management</fullName>
+                <default>false</default>
+                <label>Governance / management</label>
+            </value>
+            <value>
+                <fullName>No KKR angle</fullName>
+                <default>false</default>
+                <label>No KKR angle</label>
+            </value>
+            <value>
+                <fullName>No transaction</fullName>
+                <default>false</default>
+                <label>No transaction</label>
+            </value>
+            <value>
+                <fullName>Impact</fullName>
+                <default>false</default>
+                <label>Impact</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>Too small / immature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>Business concern</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>Valuation level</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>Missed / too late to process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>Governance / management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>No KKR angle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>No transaction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>Impact</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

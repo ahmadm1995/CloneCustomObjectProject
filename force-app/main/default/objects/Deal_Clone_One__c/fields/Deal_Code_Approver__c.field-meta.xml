@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Code_Approver__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Who on the deal team will be approving the deal code</description>
+    <externalId>false</externalId>
+    <inlineHelpText>In order to request a deal code, you need to input this field and Deal Code Name.</inlineHelpText>
+    <label>Deal Code Approver</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 OR 2 OR 4 OR 5 OR 7) AND 3 AND 6</booleanFilter>
+        <filterItems>
+            <field>Contact.Title</field>
+            <operation>equals</operation>
+            <value>Principal</value>
+        </filterItems>
+        <filterItems>
+            <field>Contact.Title</field>
+            <operation>equals</operation>
+            <value>Director</value>
+        </filterItems>
+        <filterItems>
+            <field>Contact.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Internal Contact</value>
+        </filterItems>
+        <filterItems>
+            <field>Contact.Title</field>
+            <operation>equals</operation>
+            <value>Managing Director</value>
+        </filterItems>
+        <filterItems>
+            <field>Contact.Title</field>
+            <operation>equals</operation>
+            <value>Partner</value>
+        </filterItems>
+        <filterItems>
+            <field>Contact.Current_Employee__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>Contact.Title</field>
+            <operation>equals</operation>
+            <value>Member</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Deal Code Approver</relationshipLabel>
+    <relationshipName>Deals7</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

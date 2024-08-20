@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_AllocationFields_REC</fullName>
+    <active>true</active>
+    <description>If the percentage/account fields are filled in, the respective percentage/account field should also be filled in.</description>
+    <errorConditionFormula>AND($User.Bypass_User_Validations__c = False, OR(
+AND(
+NOT(ISBLANK( TEXT(Allocation_Account_2__c) )),ISBLANK( Allocation_Percentage_2__c )
+),
+AND(
+NOT(ISBLANK( Allocation_Percentage_2__c )),ISBLANK( TEXT(Allocation_Account_2__c) )
+)
+))</errorConditionFormula>
+    <errorDisplayField>Allocation_Account_2__c</errorDisplayField>
+    <errorMessage>If entering allocations, please ensure you&apos;re filling in both the account type and the percentages.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Mezz_REC</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($User.Bypass_User_Validations__c = False, OR(
+AND(
+NOT(ISBLANK( TEXT(Mezz_Fixed_Floating__c) )),ISBLANK( Mezz_IR__c )
+),
+AND(
+NOT(ISBLANK( Mezz_IR__c )),ISBLANK( TEXT(Mezz_Fixed_Floating__c) )
+)
+))</errorConditionFormula>
+    <errorDisplayField>Mezz_IR__c</errorDisplayField>
+    <errorMessage>Please ensure you&apos;re filling in both Mezz (Interest Rate) and Mezz (Fixed/ Floating).</errorMessage>
+</ValidationRule>

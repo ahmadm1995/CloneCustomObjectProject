@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AsiaNGT_GoldSilver_RoundSize</fullName>
+    <active>true</active>
+    <description>Require Round Size when deal is gold or silver and Deal RT is Asia NGT</description>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;NGT_Asia&apos;
+&amp;&amp;
+NOT(ISPICKVAL(Gold_Silver_Indicator__c,&apos;&apos;))
+&amp;&amp;
+ISBLANK(Round_Size_m__c)</errorConditionFormula>
+    <errorDisplayField>Round_Size_m__c</errorDisplayField>
+    <errorMessage>Round Size required when deal is Gold / Silver</errorMessage>
+</ValidationRule>

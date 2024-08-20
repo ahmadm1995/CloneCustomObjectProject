@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GlobalImpact_ESGGatingReviewed_No</fullName>
+    <active>true</active>
+    <errorConditionFormula>(
+RecordType.DeveloperName = &apos;Global_Impact&apos;
+)
+&amp;&amp;
+ISPICKVAL(ESG_Gating_Issues_List_Reviewed__c, &apos;No&apos;)
+&amp;&amp;
+(
+(
+ISPICKVAL(Impact_Diligence_Stage__c, &apos;First Pass&apos;)
+||
+ISPICKVAL(Impact_Diligence_Stage__c, &apos;Second Pass&apos;)
+||
+ISPICKVAL(Impact_Diligence_Stage__c, &apos;Third Pass&apos;)
+||
+ISPICKVAL(Deal_Stage__c, &apos;Binding Bids&apos;)
+||
+ISPICKVAL(Deal_Stage__c, &apos;Completed&apos;)
+||
+ISPICKVAL(Deal_Stage__c, &apos;Portfolio&apos;)
+)
+)
+&amp;&amp;
+NOT(ISPICKVAL(Deal_Stage__c, &apos;Eliminated&apos;))
+&amp;&amp;
+NOT(ISPICKVAL(Deal_Stage__c, &apos;Ex-Portfolio&apos;))</errorConditionFormula>
+    <errorDisplayField>ESG_Gating_Issues_List_Reviewed__c</errorDisplayField>
+    <errorMessage>ESG Gating Issues List Reviewed is required to have commenced prior to moving to the next stage</errorMessage>
+</ValidationRule>

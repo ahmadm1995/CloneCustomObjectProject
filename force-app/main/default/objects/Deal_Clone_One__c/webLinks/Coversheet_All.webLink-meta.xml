@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coversheet_All</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Coversheet</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>/* Button Configuration - Change these values */ 
+var templateId =&apos;a1N1H0000038pIB&apos;; 
+var queryId = &apos;[HSG]a1F1H000005ye9h,[NGT]a1F1H000005ye9N,[COR]a1F1H00000743Dg,[REE]a1F1H00000743QK,[REC]a1F1H000005ye7W,[CRASIA]a1F1H00000743iq,[CREMEA]a1F1H00000743iv,[CRAMPE]a1F1H00000742uL,[EN]a1F1H00000743D2,[ENINFAM]a1F1H000005yfnY,[ENINFEU]a1F1H000005yfnd,[AMPEFIG]a1F1H00000743D7,[EURFIG]a1F1H00000743j5,[ASIAFIG]a1F1H00000743j0,[AMPEHC]a1F1H00000743DC,[EURHC]a1F1H00000743jF,[ASIAHC]a1F1H00000743jA,[AMPEIS]a1F1H00000743DH,[EURIS]a1F1H00000743jj,[ASIAIS]a1F1H00000743je,[INF]a1F1H000005yeDP,[AMPEREL]a1F1H00000743DR,[EURREL]a1F1H000005yeCv,[ASIAREL]a1F1H000005yeCq,[RE]a1F1H000005yeF3,[RECC]a1F1H000005yeF8,[AMPETMT]a1F1H00000743DW,[EURTMT]a1F1H00000743jy,[ASIATMT]a1F1H00000743jt,[IMPACT]a1F1H000005ye9m,[AMPERM]a1F1H00000743iC,[EURRM]a1F1H00000743iW,[ASIARM]a1F1H00000743iH,[CORERM]a1F1H00000743iM,[ENRM]a1F1H00000743iR,[INFAMRM]a1F1H00000743ib,[INFEURM]a1F1H00000743ig,[RERM]a1F1H00000743il,[INFRATMTAM]a1F1H000005yfns,[INFRATMTEU]a1F1H000005yfnx,[ENINFASIA]a1F1H000005yp7I,[INFRATMTASIA]a1F1H000005yp73,[INFASIARM]a1F1H000005yp78&apos;; 
+var serverURL = &apos;{!API.Partner_Server_URL_370}&apos;; 
+var Id = &apos;a1L1H000004QIXSUA4&apos;; 
+var parameterId = &apos;3&apos;; 
+
+/* URL Building - Don&apos;t change these values */ 
+var url = &apos;&apos;; 
+
+url += &apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos; + 
+&apos;&amp;serverUrl=&apos; +serverURL+ 
+&apos;&amp;Id=&apos; +Id+ 
+&apos;&amp;QueryId=&apos; + queryId+ 
+&apos;&amp;TemplateId=&apos;+templateId+ 
+&apos;&amp;DS7=&apos; +parameterId; 
+
+
+//Open modal in SmartList 
+openURLInModal(url,false);</url>
+</WebLink>

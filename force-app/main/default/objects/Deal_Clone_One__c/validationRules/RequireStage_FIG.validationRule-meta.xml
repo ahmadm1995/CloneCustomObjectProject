@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RequireStage_FIG</fullName>
+    <active>false</active>
+    <description>Stage is required when Business is Middle Market, and Status is Active. Used in MM Reporting</description>
+    <errorConditionFormula>AND(
+
+TEXT( Industry_Team__c ) = &apos;FIG&apos; ,
+
+TEXT( Pipeline_Status_FIG__c ) = &apos;Active&apos; ,
+
+Americas_Office_Count__c &gt; 0 ,
+
+Is_Middle_Market__c = TRUE ,
+
+ISBLANK( TEXT( Stage__c ) ) ,
+
+$User.Bypass_User_Validations__c = False
+
+)</errorConditionFormula>
+    <errorDisplayField>Stage__c</errorDisplayField>
+    <errorMessage>Stage needs to be filled for Middle Market deals, where the status is Active.</errorMessage>
+</ValidationRule>

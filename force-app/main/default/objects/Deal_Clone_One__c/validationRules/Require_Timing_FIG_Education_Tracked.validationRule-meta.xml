@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Timing_FIG_Education_Tracked</fullName>
+    <active>true</active>
+    <description>Enforces the filling out of timing when Sector is Education and Status is Tracked.</description>
+    <errorConditionFormula>AND(
+$User.Bypass_User_Validations__c = False ,
+RecordType.Name= &apos;Private Capital Investment&apos;,
+OR(
+TEXT(RT_FIG__c)= &apos;Next 12 Months&apos;,
+TEXT(RT_FIG__c)= &apos;Longer Term Pipeline&apos;,
+TEXT(RT_FIG__c)= &apos;Other Ideas&apos;,
+AND(TEXT(RT_FIG__c)= &apos;Near-term / Doing Work&apos;, TEXT(PnP__c)=&apos;Non-Priority&apos;)
+),
+ISBLANK(TEXT(Timing_CRG__c)),
+OR(
+AND(
+TEXT(Industry_Team__c)= &apos;FIG&apos;,
+TEXT(Sector__c)= &apos;Education&apos;
+),
+AND(
+TEXT(Industry_Team__c)= &apos;Consumer&apos;,
+TEXT(Sector__c)= &apos;Education&apos;
+),
+AND(
+TEXT(Industry_Team__c)= &apos;TMT&apos;,
+TEXT(Sector__c)= &apos;Education&apos;
+)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Timing_CRG__c</errorDisplayField>
+    <errorMessage>Timing is required when Sector is set to Education for proper pipeline tracking.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subproperty_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Subproperty Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>PT_REC__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Casino</fullName>
+                <default>false</default>
+                <label>Casino</label>
+            </value>
+            <value>
+                <fullName>Hotel-Economy</fullName>
+                <default>false</default>
+                <label>Hotel-Economy</label>
+            </value>
+            <value>
+                <fullName>Hotel-Full Service</fullName>
+                <default>false</default>
+                <label>Hotel-Full Service</label>
+            </value>
+            <value>
+                <fullName>Hotel-Limited Service/Select Service</fullName>
+                <default>false</default>
+                <label>Hotel-Limited Service/Select Service</label>
+            </value>
+            <value>
+                <fullName>Hotel-Unclassified</fullName>
+                <default>false</default>
+                <label>Hotel-Unclassified</label>
+            </value>
+            <value>
+                <fullName>Cold Storage</fullName>
+                <default>false</default>
+                <label>Cold Storage</label>
+            </value>
+            <value>
+                <fullName>Data Center</fullName>
+                <default>false</default>
+                <label>Data Center</label>
+            </value>
+            <value>
+                <fullName>Flex Space</fullName>
+                <default>false</default>
+                <label>Flex Space</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>Office Showroom</fullName>
+                <default>false</default>
+                <label>Office Showroom</label>
+            </value>
+            <value>
+                <fullName>Research &amp; Development</fullName>
+                <default>false</default>
+                <label>Research &amp; Development</label>
+            </value>
+            <value>
+                <fullName>Warehouse/Distribution</fullName>
+                <default>false</default>
+                <label>Warehouse/Distribution</label>
+            </value>
+            <value>
+                <fullName>Manufactured</fullName>
+                <default>false</default>
+                <label>Manufactured</label>
+            </value>
+            <value>
+                <fullName>Mixed Use</fullName>
+                <default>false</default>
+                <label>Mixed Use</label>
+            </value>
+            <value>
+                <fullName>Multi-Fam (Condo)</fullName>
+                <default>false</default>
+                <label>Multi-Fam (Condo)</label>
+            </value>
+            <value>
+                <fullName>Garden-type Projects</fullName>
+                <default>false</default>
+                <label>Garden-type Projects</label>
+            </value>
+            <value>
+                <fullName>High-rise Elevator Projects</fullName>
+                <default>false</default>
+                <label>High-rise Elevator Projects</label>
+            </value>
+            <value>
+                <fullName>Mid-rise Projects</fullName>
+                <default>false</default>
+                <label>Mid-rise Projects</label>
+            </value>
+            <value>
+                <fullName>Student Housing</fullName>
+                <default>false</default>
+                <label>Student Housing</label>
+            </value>
+            <value>
+                <fullName>CBD High-Rise</fullName>
+                <default>false</default>
+                <label>CBD High-Rise</label>
+            </value>
+            <value>
+                <fullName>CBD Low-Rise</fullName>
+                <default>false</default>
+                <label>CBD Low-Rise</label>
+            </value>
+            <value>
+                <fullName>CBD Mid-Rise</fullName>
+                <default>false</default>
+                <label>CBD Mid-Rise</label>
+            </value>
+            <value>
+                <fullName>Healthcare/Medical Office</fullName>
+                <default>false</default>
+                <label>Healthcare/Medical Office</label>
+            </value>
+            <value>
+                <fullName>Suburban Office</fullName>
+                <default>false</default>
+                <label>Suburban Office</label>
+            </value>
+            <value>
+                <fullName>Cell Towers</fullName>
+                <default>false</default>
+                <label>Cell Towers</label>
+            </value>
+            <value>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+                <label>Entertainment</label>
+            </value>
+            <value>
+                <fullName>Land - Entitled</fullName>
+                <default>false</default>
+                <label>Land - Entitled</label>
+            </value>
+            <value>
+                <fullName>Land - Unentitled</fullName>
+                <default>false</default>
+                <label>Land - Unentitled</label>
+            </value>
+            <value>
+                <fullName>Parking</fullName>
+                <default>false</default>
+                <label>Parking</label>
+            </value>
+            <value>
+                <fullName>Community Center</fullName>
+                <default>false</default>
+                <label>Community Center</label>
+            </value>
+            <value>
+                <fullName>Fashion/Specialty Center</fullName>
+                <default>false</default>
+                <label>Fashion/Specialty Center</label>
+            </value>
+            <value>
+                <fullName>Neighborhood Center</fullName>
+                <default>false</default>
+                <label>Neighborhood Center</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Outlet Center</fullName>
+                <default>false</default>
+                <label>Outlet Center</label>
+            </value>
+            <value>
+                <fullName>Power Center</fullName>
+                <default>false</default>
+                <label>Power Center</label>
+            </value>
+            <value>
+                <fullName>Regional Mall</fullName>
+                <default>false</default>
+                <label>Regional Mall</label>
+            </value>
+            <value>
+                <fullName>Single-Tenant</fullName>
+                <default>false</default>
+                <label>Single-Tenant</label>
+            </value>
+            <value>
+                <fullName>Super-Regional Mall</fullName>
+                <default>false</default>
+                <label>Super-Regional Mall</label>
+            </value>
+            <value>
+                <fullName>Theme/Festival Center</fullName>
+                <default>false</default>
+                <label>Theme/Festival Center</label>
+            </value>
+            <value>
+                <fullName>Self-Storage</fullName>
+                <default>false</default>
+                <label>Self-Storage</label>
+            </value>
+            <value>
+                <fullName>Life Science</fullName>
+                <default>false</default>
+                <label>Life Science</label>
+            </value>
+            <value>
+                <fullName>AL/MC</fullName>
+                <default>false</default>
+                <label>AL/MC</label>
+            </value>
+            <value>
+                <fullName>IL</fullName>
+                <default>false</default>
+                <label>IL</label>
+            </value>
+            <value>
+                <fullName>Active Adult</fullName>
+                <default>false</default>
+                <label>Active Adult</label>
+            </value>
+            <value>
+                <fullName>ASC</fullName>
+                <default>false</default>
+                <label>ASC</label>
+            </value>
+            <value>
+                <fullName>Surgical Hospital</fullName>
+                <default>false</default>
+                <label>Surgical Hospital</label>
+            </value>
+            <value>
+                <fullName>Net Lease</fullName>
+                <default>false</default>
+                <label>Net Lease</label>
+            </value>
+            <value>
+                <fullName>Studios</fullName>
+                <default>false</default>
+                <label>Studios</label>
+            </value>
+            <value>
+                <fullName>Scattered Site</fullName>
+                <default>false</default>
+                <label>Scattered Site</label>
+            </value>
+            <value>
+                <fullName>Build-to-Rent</fullName>
+                <default>false</default>
+                <label>Build-to-Rent</label>
+            </value>
+            <value>
+                <fullName>Non-Grocery Anchored Retail</fullName>
+                <default>false</default>
+                <label>Non-Grocery Anchored Retail</label>
+            </value>
+            <value>
+                <fullName>Senior Living - Assisted Living/Memory Care</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Senior Living - Assisted Living/Memory Care</label>
+            </value>
+            <value>
+                <fullName>Senior Living - Independent Living</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Senior Living - Independent Living</label>
+            </value>
+            <value>
+                <fullName>Single-Family</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Single-Family</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Community Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Fashion/Specialty Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Neighborhood Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Outlet Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Power Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Regional Mall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Single-Tenant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Super-Regional Mall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Theme/Festival Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Non-Grocery Anchored Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Senior Housing</controllingFieldValue>
+            <valueName>AL/MC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Senior Housing</controllingFieldValue>
+            <valueName>IL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Senior Housing</controllingFieldValue>
+            <valueName>Active Adult</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Self-Storage</controllingFieldValue>
+            <valueName>Self-Storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Student Housing</controllingFieldValue>
+            <valueName>Student Housing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Life Science</controllingFieldValue>
+            <valueName>Life Science</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFR</controllingFieldValue>
+            <valueName>Scattered Site</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SFR</controllingFieldValue>
+            <valueName>Build-to-Rent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MOB</controllingFieldValue>
+            <valueName>ASC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MOB</controllingFieldValue>
+            <valueName>Surgical Hospital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MOB</controllingFieldValue>
+            <valueName>Net Lease</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Center</controllingFieldValue>
+            <valueName>Data Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hospitality</controllingFieldValue>
+            <valueName>Casino</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hospitality</controllingFieldValue>
+            <valueName>Hotel-Economy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hospitality</controllingFieldValue>
+            <valueName>Hotel-Full Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hospitality</controllingFieldValue>
+            <valueName>Hotel-Limited Service/Select Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hospitality</controllingFieldValue>
+            <valueName>Hotel-Unclassified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Cold Storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Flex Space</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Manufacturing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Office Showroom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Research &amp; Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Warehouse/Distribution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Manufactured Housing</controllingFieldValue>
+            <valueName>Manufactured</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mixed-Use</controllingFieldValue>
+            <valueName>Mixed Use</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Multi Fam (Condo)</controllingFieldValue>
+            <valueName>Multi-Fam (Condo)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Multi Fam (Rental)</controllingFieldValue>
+            <valueName>Garden-type Projects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Multi Fam (Rental)</controllingFieldValue>
+            <valueName>High-rise Elevator Projects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Multi Fam (Rental)</controllingFieldValue>
+            <valueName>Mid-rise Projects</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office</controllingFieldValue>
+            <valueName>CBD High-Rise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office</controllingFieldValue>
+            <valueName>CBD Low-Rise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office</controllingFieldValue>
+            <valueName>CBD Mid-Rise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office</controllingFieldValue>
+            <valueName>Healthcare/Medical Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Office</controllingFieldValue>
+            <valueName>Suburban Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Cell Towers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Entertainment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Land - Entitled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Land - Unentitled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Parking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Studios</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deal_Company_Change_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( $User.Bypass_User_Validations__c = False, ISCHANGED( Portfolio_Account__c ) , $Profile.Name &lt;&gt; &quot;System Administrator&quot; , $Profile.Name &lt;&gt; &quot;Integration&quot; )</errorConditionFormula>
+    <errorDisplayField>Account__c</errorDisplayField>
+    <errorMessage>Company cannot be changed once Deal has been created. Please contact KKR IT if further assistance is required.</errorMessage>
+</ValidationRule>

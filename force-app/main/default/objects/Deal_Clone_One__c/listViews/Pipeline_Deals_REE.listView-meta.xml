@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pipeline_Deals_REE</fullName>
+    <columns>NAME</columns>
+    <columns>Project_Name__c</columns>
+    <columns>Industry_Team__c</columns>
+    <columns>CS__c</columns>
+    <columns>Curated_Status_Date__c</columns>
+    <columns>WU__c</columns>
+    <columns>Description__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Deal_Clone_One__c.Real_Estate_Equity</value>
+    </filters>
+    <label>Pipeline Deals - Real Estate Equity</label>
+</ListView>

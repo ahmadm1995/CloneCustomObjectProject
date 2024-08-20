@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Eliminated_RE__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason Eliminated</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Pipeline_StatusRE__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1. Did not evaluate</fullName>
+                <default>false</default>
+                <label>1. Did not evaluate</label>
+            </value>
+            <value>
+                <fullName>2. Screened and passed</fullName>
+                <default>false</default>
+                <label>2. Screened and passed</label>
+            </value>
+            <value>
+                <fullName>3. Active evaluation and passed</fullName>
+                <default>false</default>
+                <label>3. Active evaluation and passed</label>
+            </value>
+            <value>
+                <fullName>4. Bid, but lost</fullName>
+                <default>false</default>
+                <label>4. Bid, but lost</label>
+            </value>
+            <value>
+                <fullName>5. Bid and won, but did not close</fullName>
+                <default>false</default>
+                <label>5. Bid and won, but did not close</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>1. Did not evaluate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>2. Screened and passed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>3. Active evaluation and passed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>4. Bid, but lost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eliminated</controllingFieldValue>
+            <valueName>5. Bid and won, but did not close</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

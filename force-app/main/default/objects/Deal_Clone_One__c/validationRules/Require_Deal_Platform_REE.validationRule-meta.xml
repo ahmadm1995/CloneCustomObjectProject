@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Deal_Platform_REE</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $User.Bypass_User_Validations__c = False ,
+    ISBLANK(Platform_Deal__c),
+    OR(
+        TEXT( Platform_Details__c ) = &apos;Add On&apos;,
+        TEXT( Platform_Details__c ) = &apos;Platform Add On&apos;
+    ),
+    OR (
+        RecordType.Name = &apos;Real Estate Equity V2&apos;,
+        AND(
+            TEXT( $User.Office_Region__c ) = &apos;Asia&apos;,
+            RecordType.Name = &apos;Real Estate Equity&apos;
+        )
+    )
+)</errorConditionFormula>
+    <errorDisplayField>Platform_Deal__c</errorDisplayField>
+    <errorMessage>Please select Platform Deal for this Platform Add-on.</errorMessage>
+</ValidationRule>

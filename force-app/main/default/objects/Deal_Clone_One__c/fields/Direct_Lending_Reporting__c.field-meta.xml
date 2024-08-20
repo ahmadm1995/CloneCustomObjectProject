@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Direct_Lending_Reporting__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISNULL ( LS__c ) , null , TEXT( CurrencyIsoCode ) + &quot; &quot; + TEXT ( LS__c ) + &quot; MM&quot; + &quot;/&quot; ) &amp;
+IF( ISNULL ( TF__c ) , &quot; &quot; , TF__c + &quot;/&quot;) &amp;
+IF( ISNULL ( TA__c ) , &quot; &quot; , TEXT ( TA__c ) + &quot;%&quot;) + IF( ISNULL ( PE__c ), null , &quot;/&quot;)  &amp;
+IF( ISNULL ( PE__c ) , null , TEXT( CurrencyIsoCode ) + &quot; &quot; + TEXT ( PE__c ) + &quot; MM&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Direct Lending (Reporting)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

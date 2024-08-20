@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Sources__c</fullName>
+    <externalId>false</externalId>
+    <label>Funding Sources</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Credit</fullName>
+                <default>false</default>
+                <label>Credit</label>
+            </value>
+            <value>
+                <fullName>EIGF</fullName>
+                <default>false</default>
+                <label>EIGF</label>
+            </value>
+            <value>
+                <fullName>EIGF II</fullName>
+                <default>false</default>
+                <label>EIGF II</label>
+            </value>
+            <value>
+                <fullName>Infra</fullName>
+                <default>false</default>
+                <label>Infra</label>
+            </value>
+            <value>
+                <fullName>Mezz</fullName>
+                <default>false</default>
+                <label>Mezz</label>
+            </value>
+            <value>
+                <fullName>Minerals</fullName>
+                <default>false</default>
+                <label>Minerals</label>
+            </value>
+            <value>
+                <fullName>Private Equity (PE)</fullName>
+                <default>false</default>
+                <label>Private Equity (PE)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Public_To_Private_REE__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>For REE. Used to indicate if a deal is going from public to private. When this field is checked, this deal will be removed from re equity pipeline reports</description>
+    <externalId>false</externalId>
+    <label>Public To Private</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

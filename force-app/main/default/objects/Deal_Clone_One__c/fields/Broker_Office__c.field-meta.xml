@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Broker_Office__c</fullName>
+    <externalId>false</externalId>
+    <label>Broker Office</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Broker__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ATL</fullName>
+                <default>false</default>
+                <label>ATL</label>
+            </value>
+            <value>
+                <fullName>AUS</fullName>
+                <default>false</default>
+                <label>AUS</label>
+            </value>
+            <value>
+                <fullName>BOS</fullName>
+                <default>false</default>
+                <label>BOS</label>
+            </value>
+            <value>
+                <fullName>CHI</fullName>
+                <default>false</default>
+                <label>CHI</label>
+            </value>
+            <value>
+                <fullName>CLT</fullName>
+                <default>false</default>
+                <label>CLT</label>
+            </value>
+            <value>
+                <fullName>DAL</fullName>
+                <default>false</default>
+                <label>DAL</label>
+            </value>
+            <value>
+                <fullName>DC</fullName>
+                <default>false</default>
+                <label>DC</label>
+            </value>
+            <value>
+                <fullName>DEN</fullName>
+                <default>false</default>
+                <label>DEN</label>
+            </value>
+            <value>
+                <fullName>HOU</fullName>
+                <default>false</default>
+                <label>HOU</label>
+            </value>
+            <value>
+                <fullName>LA</fullName>
+                <default>false</default>
+                <label>LA</label>
+            </value>
+            <value>
+                <fullName>MIA</fullName>
+                <default>false</default>
+                <label>MIA</label>
+            </value>
+            <value>
+                <fullName>MSP</fullName>
+                <default>false</default>
+                <label>MSP</label>
+            </value>
+            <value>
+                <fullName>NAS</fullName>
+                <default>false</default>
+                <label>NAS</label>
+            </value>
+            <value>
+                <fullName>NYC</fullName>
+                <default>false</default>
+                <label>NYC</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>OC</fullName>
+                <default>false</default>
+                <label>OC</label>
+            </value>
+            <value>
+                <fullName>ORL</fullName>
+                <default>false</default>
+                <label>ORL</label>
+            </value>
+            <value>
+                <fullName>PHI</fullName>
+                <default>false</default>
+                <label>PHI</label>
+            </value>
+            <value>
+                <fullName>PHX</fullName>
+                <default>false</default>
+                <label>PHX</label>
+            </value>
+            <value>
+                <fullName>PIT</fullName>
+                <default>false</default>
+                <label>PIT</label>
+            </value>
+            <value>
+                <fullName>POR</fullName>
+                <default>false</default>
+                <label>POR</label>
+            </value>
+            <value>
+                <fullName>SD</fullName>
+                <default>false</default>
+                <label>SD</label>
+            </value>
+            <value>
+                <fullName>SEA</fullName>
+                <default>false</default>
+                <label>SEA</label>
+            </value>
+            <value>
+                <fullName>SF</fullName>
+                <default>false</default>
+                <label>SF</label>
+            </value>
+            <value>
+                <fullName>TPA</fullName>
+                <default>false</default>
+                <label>TPA</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Benelux</fullName>
+                <default>false</default>
+                <label>Benelux</label>
+            </value>
+            <value>
+                <fullName>Denmark</fullName>
+                <default>false</default>
+                <label>Denmark</label>
+            </value>
+            <value>
+                <fullName>Finland</fullName>
+                <default>false</default>
+                <label>Finland</label>
+            </value>
+            <value>
+                <fullName>France</fullName>
+                <default>false</default>
+                <label>France</label>
+            </value>
+            <value>
+                <fullName>Germany</fullName>
+                <default>false</default>
+                <label>Germany</label>
+            </value>
+            <value>
+                <fullName>Ireland</fullName>
+                <default>false</default>
+                <label>Ireland</label>
+            </value>
+            <value>
+                <fullName>Italy</fullName>
+                <default>false</default>
+                <label>Italy</label>
+            </value>
+            <value>
+                <fullName>Spain</fullName>
+                <default>false</default>
+                <label>Spain</label>
+            </value>
+            <value>
+                <fullName>Sweden</fullName>
+                <default>false</default>
+                <label>Sweden</label>
+            </value>
+            <value>
+                <fullName>UK</fullName>
+                <default>false</default>
+                <label>UK</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>ATL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>AUS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>BOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>CHI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>CLT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>DAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>DC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>DEN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>HOU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>LA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>MIA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>MSP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>NAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>NYC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>OC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>ORL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>PHI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>PHX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>PIT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>POR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>SD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>SEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>SF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>TPA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>Benelux</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>Denmark</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>Finland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>France</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>Germany</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>Ireland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>Italy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>Spain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>Sweden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ladder Capital</controllingFieldValue>
+            <controllingFieldValue>LMF Commercial</controllingFieldValue>
+            <controllingFieldValue>Morgan Stanley</controllingFieldValue>
+            <controllingFieldValue>Natixis</controllingFieldValue>
+            <controllingFieldValue>RBC</controllingFieldValue>
+            <controllingFieldValue>Societe Generale</controllingFieldValue>
+            <controllingFieldValue>Starwood Mortgage</controllingFieldValue>
+            <controllingFieldValue>UBS</controllingFieldValue>
+            <controllingFieldValue>Wells Fargo</controllingFieldValue>
+            <controllingFieldValue>CIBC</controllingFieldValue>
+            <controllingFieldValue>Argentic</controllingFieldValue>
+            <controllingFieldValue>Bank of America</controllingFieldValue>
+            <controllingFieldValue>Barclays</controllingFieldValue>
+            <controllingFieldValue>Benefit Street</controllingFieldValue>
+            <controllingFieldValue>BMO</controllingFieldValue>
+            <controllingFieldValue>CCRE</controllingFieldValue>
+            <controllingFieldValue>Citi</controllingFieldValue>
+            <controllingFieldValue>Credit Suisse</controllingFieldValue>
+            <controllingFieldValue>Deutsche Bank</controllingFieldValue>
+            <controllingFieldValue>Goldman Sachs</controllingFieldValue>
+            <controllingFieldValue>C&amp;W</controllingFieldValue>
+            <controllingFieldValue>JLL</controllingFieldValue>
+            <controllingFieldValue>CBRE</controllingFieldValue>
+            <controllingFieldValue>Meridian</controllingFieldValue>
+            <controllingFieldValue>Eastdil</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <controllingFieldValue>Newmark</controllingFieldValue>
+            <controllingFieldValue>JP Morgan</controllingFieldValue>
+            <controllingFieldValue>KeyBank</controllingFieldValue>
+            <valueName>UK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Direct</controllingFieldValue>
+            <valueName>None</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

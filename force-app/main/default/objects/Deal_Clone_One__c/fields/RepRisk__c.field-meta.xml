@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RepRisk__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The Company has been screened for reputational issues using RepRisk (email the RepRisk bot with the company name in the subject line to obtain a RepRisk report). Where relevant, identified issues have been discussed with KKR Public Affairs (kkresg@kkr.com).</inlineHelpText>
+    <label>RepRisk Reviewed?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

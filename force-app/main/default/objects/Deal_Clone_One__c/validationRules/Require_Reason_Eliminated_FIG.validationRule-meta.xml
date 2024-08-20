@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Reason_Eliminated_FIG</fullName>
+    <active>true</active>
+    <description>PR-3197</description>
+    <errorConditionFormula>AND($User.Bypass_User_Validations__c = False, 
+    NOT(ISPICKVAL(Reason_Eliminated_FIG__c,&quot;&quot;)),
+    RecordType.Name =&apos;Private Capital Investment&apos;,
+    TEXT(RT_FIG__c) = &apos;Dead&apos;,			
+    ISBLANK(If_Other_Reason_Eliminated__c)
+	)</errorConditionFormula>
+    <errorDisplayField>If_Other_Reason_Eliminated__c</errorDisplayField>
+    <errorMessage>Please provide a short description of the reason eliminated.</errorMessage>
+</ValidationRule>

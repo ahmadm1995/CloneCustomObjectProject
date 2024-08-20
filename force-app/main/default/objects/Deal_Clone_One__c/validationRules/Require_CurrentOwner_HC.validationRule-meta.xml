@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_CurrentOwner_HC</fullName>
+    <active>true</active>
+    <description>If HC Status is not Portfolio, require Current Owner</description>
+    <errorConditionFormula>AND( $User.Bypass_User_Validations__c = False , TEXT(Review_Timing_HC__c)&lt;&gt;&quot;Portfolio&quot; , ISBLANK(TEXT(Current_Owner__c)), OR(RecordType.Name = &quot;Health Care PE/Core&quot; , RecordType.Name = &quot;Health Care Growth&quot;))</errorConditionFormula>
+    <errorDisplayField>Current_Owner__c</errorDisplayField>
+    <errorMessage>The following fields are required: Current Owner</errorMessage>
+</ValidationRule>

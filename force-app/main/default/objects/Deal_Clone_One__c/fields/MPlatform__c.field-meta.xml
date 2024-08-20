@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MPlatform__c</fullName>
+    <externalId>false</externalId>
+    <label>Management Platform</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Spur Energy Partners</fullName>
+                <default>false</default>
+                <label>Spur Energy Partners</label>
+            </value>
+            <value>
+                <fullName>FDL</fullName>
+                <default>false</default>
+                <label>FDL</label>
+            </value>
+            <value>
+                <fullName>Western Natural Resources</fullName>
+                <default>false</default>
+                <label>Western Natural Resources</label>
+            </value>
+            <value>
+                <fullName>Internal</fullName>
+                <default>false</default>
+                <label>Internal</label>
+            </value>
+            <value>
+                <fullName>PCORE team</fullName>
+                <default>false</default>
+                <label>PCORE team</label>
+            </value>
+            <value>
+                <fullName>Venado</fullName>
+                <default>false</default>
+                <label>Venado</label>
+            </value>
+            <value>
+                <fullName>Red Bluff</fullName>
+                <default>false</default>
+                <label>Red Bluff</label>
+            </value>
+            <value>
+                <fullName>Viking</fullName>
+                <default>false</default>
+                <label>Viking</label>
+            </value>
+            <value>
+                <fullName>JKLM Energy</fullName>
+                <default>false</default>
+                <label>JKLM Energy</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Haymaker</fullName>
+                <default>false</default>
+                <label>Haymaker</label>
+            </value>
+            <value>
+                <fullName>Bridge Energy</fullName>
+                <default>false</default>
+                <label>Bridge Energy</label>
+            </value>
+            <value>
+                <fullName>Extraction Oil &amp; Gas</fullName>
+                <default>false</default>
+                <label>Extraction Oil &amp; Gas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

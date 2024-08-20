@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMPE_REE_YearBuiltVintage_Platform</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+     $User.Bypass_User_Validations__c = False , 
+     RecordType.Name = &quot;Platform Deal&quot; ,
+OR($Permission.AMPE_REE_V2_Validations,
+$Permission.APAC_REE_V2_Validations,
+$Permission.EMEA_REE_V2_Validations),
+     CONTAINS($Profile.Name, &apos;Real Estate V2&apos;) ,
+     Year_Built_Vintage_REE__c = &quot;&quot;,
+				 TEXT(DT_RE__c) = &apos;Portfolio&apos;,
+     TEXT(Platform_Details__c) = &quot;Standalone Investment&quot; 
+)</errorConditionFormula>
+    <errorDisplayField>Year_Built_Vintage_REE__c</errorDisplayField>
+    <errorMessage>Please provide the Year Built / Vintage</errorMessage>
+</ValidationRule>

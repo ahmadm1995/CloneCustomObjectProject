@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pipeline_Deals_Real_Estate_Equity_V2</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Re__c</columns>
+    <columns>Property_City__c</columns>
+    <columns>Status_REE__c</columns>
+    <columns>CS__c</columns>
+    <columns>Equity_Need_Reporting__c</columns>
+    <columns>Investment_Vehicle__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Deal_Clone_One__c.Platform_Deal,Deal_Clone_One__c.Real_Estate_Equity_V2</value>
+    </filters>
+    <filters>
+        <field>Status_REE__c</field>
+        <operation>notEqual</operation>
+        <value>Dead</value>
+    </filters>
+    <label>Pipeline Deals - Real Estate Equity V2</label>
+</ListView>

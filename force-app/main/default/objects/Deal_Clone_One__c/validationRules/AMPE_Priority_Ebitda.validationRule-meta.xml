@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMPE_Priority_Ebitda</fullName>
+    <active>true</active>
+    <description>Require EBITDA to be filled in when an CRG/FIG/Industrials/TMT/HC PE/Core deal is marked as Priority or Gold or Silver</description>
+    <errorConditionFormula>AND(
+    $User.Bypass_User_Validations__c = FALSE,
+    TEXT($User.Office_Region__c) = &quot;Americas&quot;,
+    OR(
+        OR(
+            OR(
+                AND(
+                    TEXT(Status__c) = &quot;Active Evaluation&quot;,
+                    RecordType.Name = &quot;Private Equity - CRG&quot;,
+                    OR(
+                        TEXT(Timing_CRG__c) = &quot;Next 12 Months&quot;,
+                        TEXT(Timing_CRG__c) = &quot;13+ Months Away&quot;
+                    )
+                ),
+                AND(
+                    OR(
+                        TEXT(Gold_Silver_Indicator__c) = &quot;Gold&quot;,
+                        TEXT(Gold_Silver_Indicator__c) = &quot;Silver&quot;
+                    ),
+                    RecordType.Name = &quot;Private Equity - CRG&quot;
+                )               
+            )
+        ),
+        OR(
+            AND(
+                OR(
+                    ISPICKVAL(PnP__c,&quot;Priority&quot;),
+                    ISPICKVAL(Gold_Silver_Indicator__c,&quot;Gold&quot;),
+                    ISPICKVAL(Gold_Silver_Indicator__c,&quot;Silver&quot;)
+                ),
+                OR(
+                    RecordType.Name = &quot;Private Capital Investment&quot;,
+                    RecordType.Name = &quot;Private Equity - Industrials&quot;
+                )   
+            )
+        ),
+        OR(
+            AND(
+                OR(
+                    TEXT(Review_Timing_HC__c ) = &quot;Active&quot;,
+                    TEXT(Gold_Silver_Indicator__c) = &quot;Gold&quot;,
+                    TEXT(Gold_Silver_Indicator__c) = &quot;Silver&quot;
+                ),
+                RecordType.Name = &quot;Health Care PE/Core&quot;
+            )
+        ),
+        OR(
+            AND(
+                OR(
+                    TEXT(Status_TMT__c) = &quot;Advanced&quot;,
+                    TEXT(Gold_Silver_Indicator__c) = &quot;Gold&quot;,
+                    TEXT(Gold_Silver_Indicator__c) = &quot;Silver&quot;
+                ),
+                RecordType.Name = &quot;Private Equity - TMT&quot;
+            )
+        )
+    ),
+    Text( EB__c) = &quot;&quot;
+)</errorConditionFormula>
+    <errorDisplayField>EB__c</errorDisplayField>
+    <errorMessage>Please provide EBITDA when deal is marked Priority or Gold or Silver</errorMessage>
+</ValidationRule>

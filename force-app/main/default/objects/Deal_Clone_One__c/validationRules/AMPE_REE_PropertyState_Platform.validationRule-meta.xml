@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMPE_REE_PropertyState_Platform</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $User.Bypass_User_Validations__c = False,    
+$Permission.AMPE_REE_V2_Validations,
+				RecordType.Name = &quot;Platform Deal&quot;,
+    ISBLANK(TEXT(Property_State__c)),
+				TEXT(DT_RE__c) = &apos;Portfolio&apos;,
+    TEXT(Platform_Details__c) = &quot;Standalone Investment&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Property_State__c</errorDisplayField>
+    <errorMessage>Please provide the Property State</errorMessage>
+</ValidationRule>

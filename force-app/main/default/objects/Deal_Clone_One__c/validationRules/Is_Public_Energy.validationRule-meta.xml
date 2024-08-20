@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Public_Energy</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$User.Bypass_User_Validations__c = False,
+RecordType.Name = &apos;Energy&apos;,
+OR(Dead_Infra__c = TRUE, TEXT(DLA__c) &lt;&gt; &quot;Screened&quot;),
+ISBLANK(TEXT(Is_Public_Energy__c))
+)</errorConditionFormula>
+    <errorDisplayField>Is_Public_Energy__c</errorDisplayField>
+    <errorMessage>Please indicate whether the deal is public.</errorMessage>
+</ValidationRule>

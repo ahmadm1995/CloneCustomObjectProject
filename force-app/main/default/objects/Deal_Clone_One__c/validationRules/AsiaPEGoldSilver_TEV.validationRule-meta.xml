@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AsiaPEGoldSilver_TEV</fullName>
+    <active>true</active>
+    <description>Require TEV Low or HIgh to be filled in when</description>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Private_Equity_Asia&apos;
+&amp;&amp;
+(  TEV_High_MM_Asia__c &lt;= 0 || ISBLANK(TEV_High_MM_Asia__c) )
+&amp;&amp;
+(  TEV_Low_MM_Asia__c &lt;= 0 || ISBLANK(TEV_Low_MM_Asia__c)  )
+&amp;&amp;
+ ( ISPICKVAL(Gold_Silver_Indicator__c, &apos;Gold&apos;)
+   ||
+   ISPICKVAL(Gold_Silver_Indicator__c, &apos;Silver&apos;) )</errorConditionFormula>
+    <errorMessage>TEV (Low or High) must be greater than 0 when deal is Gold or Silver</errorMessage>
+</ValidationRule>

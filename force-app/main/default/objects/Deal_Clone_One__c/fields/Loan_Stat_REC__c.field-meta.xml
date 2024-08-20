@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Stat_REC__c</fullName>
+    <externalId>false</externalId>
+    <label>Loan Performance Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>IT_REC__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Performing</fullName>
+                <default>false</default>
+                <label>Performing</label>
+            </value>
+            <value>
+                <fullName>Non-Performing</fullName>
+                <default>false</default>
+                <label>Non-Performing</label>
+            </value>
+            <value>
+                <fullName>Sub-Performing</fullName>
+                <default>false</default>
+                <label>Sub-Performing</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Note Sale</controllingFieldValue>
+            <valueName>Performing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Note Sale</controllingFieldValue>
+            <valueName>Non-Performing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Note Sale</controllingFieldValue>
+            <valueName>Sub-Performing</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

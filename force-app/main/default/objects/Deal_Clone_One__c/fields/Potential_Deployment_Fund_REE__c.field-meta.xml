@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Potential_Deployment_Fund_REE__c</fullName>
+    <description>For Asia REE</description>
+    <externalId>false</externalId>
+    <label>Potential Deployment Fund</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AREP I</fullName>
+                <default>true</default>
+                <label>AREP I</label>
+            </value>
+            <value>
+                <fullName>AREP II</fullName>
+                <default>false</default>
+                <label>AREP II</label>
+            </value>
+            <value>
+                <fullName>KAPP</fullName>
+                <default>false</default>
+                <label>KAPP</label>
+            </value>
+            <value>
+                <fullName>KREST</fullName>
+                <default>false</default>
+                <label>KREST</label>
+            </value>
+            <value>
+                <fullName>Balance Sheet</fullName>
+                <default>false</default>
+                <label>Balance Sheet</label>
+            </value>
+            <value>
+                <fullName>Asia III</fullName>
+                <default>false</default>
+                <label>Asia III</label>
+            </value>
+            <value>
+                <fullName>Asia IV</fullName>
+                <default>false</default>
+                <label>Asia IV</label>
+            </value>
+            <value>
+                <fullName>GA</fullName>
+                <default>false</default>
+                <label>GA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

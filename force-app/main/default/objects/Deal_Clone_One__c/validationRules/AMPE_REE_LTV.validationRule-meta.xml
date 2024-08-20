@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMPE_REE_LTV</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+     $User.Bypass_User_Validations__c = False , 
+     RecordType.Name = &quot;Real Estate Equity V2&quot; ,
+OR($Permission.AMPE_REE_V2_Validations,
+$Permission.APAC_REE_V2_Validations,
+$Permission.EMEA_REE_V2_Validations),
+     CONTAINS($Profile.Name, &apos;Real Estate V2&apos;) ,
+     TEXT ( Status_REE__c ) &lt;&gt; &quot;Preview&quot; ,
+     TEXT ( Status_REE__c ) &lt;&gt; &quot;Tracking&quot; ,
+TEXT ( Status_REE__c ) &lt;&gt; &quot;Dead&quot; ,
+
+     OR( As_Is_LTV__c= NULL , ISBLANK( As_Is_LTV__c) )
+
+)</errorConditionFormula>
+    <errorDisplayField>As_Is_LTV__c</errorDisplayField>
+    <errorMessage>Please provide the LTV</errorMessage>
+</ValidationRule>

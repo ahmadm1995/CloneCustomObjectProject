@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_M1_REC</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($User.Bypass_User_Validations__c = False, OR(
+AND(
+NOT(ISBLANK( TEXT(M1_Fixed_Floating__c) )),ISBLANK( M1_IR__c )
+),
+AND(
+NOT(ISBLANK( M1_IR__c )),ISBLANK( TEXT(M1_Fixed_Floating__c) )
+)
+))</errorConditionFormula>
+    <errorDisplayField>M1_IR__c</errorDisplayField>
+    <errorMessage>Please ensure you&apos;re filling in both M1 (Interest Rate) and M1 (Fixed/ Floating).</errorMessage>
+</ValidationRule>

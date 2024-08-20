@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Awarded_Stage_REE__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Under Exclusivity: Any deal the deal team has under exclusivity 
+Under Contract / Soft Deposit: Any deal for which we have signed a PSA and have made a refundable deposit
+Under Contract / Hard Deposit: Any deal for which we have signed a PSA and have made a non-refundable deposit
+Closed: Any deal the deal team has acquired</inlineHelpText>
+    <label>Awarded Stage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status_REE__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Under Exclusivity</fullName>
+                <default>false</default>
+                <label>Under Exclusivity</label>
+            </value>
+            <value>
+                <fullName>Under Contract / Soft Deposit</fullName>
+                <default>false</default>
+                <label>Under Contract / Soft Deposit</label>
+            </value>
+            <value>
+                <fullName>Under Contract / Hard Deposit</fullName>
+                <default>false</default>
+                <label>Under Contract / Hard Deposit</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Awarded</controllingFieldValue>
+            <valueName>Under Exclusivity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Awarded</controllingFieldValue>
+            <valueName>Under Contract / Soft Deposit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Awarded</controllingFieldValue>
+            <valueName>Under Contract / Hard Deposit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Awarded</controllingFieldValue>
+            <valueName>Closed</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

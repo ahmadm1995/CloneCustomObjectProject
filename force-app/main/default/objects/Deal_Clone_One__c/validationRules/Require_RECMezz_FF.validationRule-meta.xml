@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_RECMezz_FF</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$User.Bypass_User_Validations__c = False, 
+RecordType.Name = &quot;Real Estate Credit - Direct Lending&quot;,
+TEXT(Tranche__c) = &apos;Mezz&apos;,
+ISBLANK( TEXT(Mezz_Fixed_Floating__c) )
+)</errorConditionFormula>
+    <errorDisplayField>Mezz_Fixed_Floating__c</errorDisplayField>
+    <errorMessage>Fixed/Floating is required</errorMessage>
+</ValidationRule>

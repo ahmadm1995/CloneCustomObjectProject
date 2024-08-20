@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CRG_Activity_In_Other_Geos</fullName>
+    <booleanFilter>(1 AND 2 AND 3) OR (1 AND 2 AND 4 AND 5) OR (6 AND 2 AND 7 AND 8 AND 9)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>BU__c</columns>
+    <columns>Sector__c</columns>
+    <columns>TEV_Reporting__c</columns>
+    <columns>EBITDA_Reporting__c</columns>
+    <columns>Deal_Team_Initials__c</columns>
+    <columns>CS__c</columns>
+    <columns>Latest_Deal_Note__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>notEqual</operation>
+        <value>Deal_Clone_One__c.Private_Equity_CRG</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active Evaluation,Priority,High Priority</value>
+    </filters>
+    <filters>
+        <field>Industry_Team__c</field>
+        <operation>equals</operation>
+        <value>Consumer,Retail</value>
+    </filters>
+    <filters>
+        <field>Deal_Team_Industry_Codes__c</field>
+        <operation>contains</operation>
+        <value>448-,442-</value>
+    </filters>
+    <filters>
+        <field>Deal_Team_Industry_Codes__c</field>
+        <operation>contains</operation>
+        <value>Americas</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Deal_Clone_One__c.Private_Equity_CRG</value>
+    </filters>
+    <filters>
+        <field>Deal_Team_Industry_Codes__c</field>
+        <operation>notEqual</operation>
+        <value>448-Americas,442-Americas,442-Americas|448-Americas</value>
+    </filters>
+    <filters>
+        <field>Deal_Team_Industry_Codes__c</field>
+        <operation>notEqual</operation>
+        <value>448-Americas|442-Americas</value>
+    </filters>
+    <filters>
+        <field>Deal_Team_Industry_Codes__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Cross-PE team &amp; Other Relevant Deals</label>
+</ListView>

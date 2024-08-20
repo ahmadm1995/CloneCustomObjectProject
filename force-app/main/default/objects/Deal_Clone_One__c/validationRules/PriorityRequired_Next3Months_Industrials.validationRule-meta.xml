@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PriorityRequired_Next3Months_Industrials</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+				 $User.Bypass_User_Validations__c = False,
+					RecordType.Name = &apos;Private Equity - Industrials&apos;,
+					ISPICKVAL(RT__c, &apos;Next 3 Months / Proprietary Ideas&apos;),
+				 ISPICKVAL(PnP__c, &apos;&apos;)
+				)</errorConditionFormula>
+    <errorDisplayField>PnP__c</errorDisplayField>
+    <errorMessage>Priority is required when review timing is Next 3 Months / Proprietary Ideas</errorMessage>
+</ValidationRule>

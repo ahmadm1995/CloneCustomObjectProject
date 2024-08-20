@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Focus__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used for Asia REE reports</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if this deal is going to IC or greenlight discussions soon, and will be allocated more time in the beginning. It will be presented at the top of the Asia report.</inlineHelpText>
+    <label>Focus</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

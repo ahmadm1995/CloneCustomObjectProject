@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View_Pipeline_Report_Infra</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Infra Pipeline Tracker</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>/* Button Configuration - Change these values */ 
+var templateId =&apos;a1N1H000003lwgo&apos;; 
+var queryId = &apos;[PIPE]a1F1H000005yn45,[AMDEAD]a1F1H000005yn4A,[EUDEAD]a1F1H000005yn4F&apos;; 
+var serverURL = &apos;{!API.Partner_Server_URL_370}&apos;; 
+var Id = &apos;a1L1H000004QLWz&apos;; 
+var parameterId = &apos;3&apos;; 
+//var loadingImageFileId=&apos;0681H000004005M&apos;; 
+
+
+/* URL Building - Don&apos;t change these values */ 
+var url = &apos;&apos;; 
+
+url += &apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos; + 
+&apos;&amp;serverUrl=&apos; +serverURL+ 
+&apos;&amp;Id=&apos; +Id+ 
+&apos;&amp;QueryId=&apos; + queryId+ 
+&apos;&amp;TemplateId=&apos;+templateId+ 
+&apos;&amp;DS7=&apos; +parameterId; 
+
+//var loadingImageLink = &apos;/sfc/servlet.shepherd/version/download/&apos;+loadingImageFileId; 
+
+//var prettyDisplayURL = &apos;/apex/Conga_CustomReportDisplay?reportURL=&apos;+encodeURIComponent(url)+&apos;&amp;imageURL=&apos;+encodeURIComponent(loadingImageLink); 
+
+
+//Open modal in SmartList 
+//openURLInModal(prettyDisplayURL,false,&apos;500&apos;,&apos;330&apos;); 
+openURLInModal(url,false);</url>
+</WebLink>

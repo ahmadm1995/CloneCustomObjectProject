@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HCBR__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+INCLUDES(BU__c,&quot;AMPE&quot;),&quot;AMPE&quot;,
+IF(
+INCLUDES(BU__c,&quot;Healthcare Strategic Growth&quot;),&quot;Healthcare Strategic Growth&quot;,
+IF(
+INCLUDES(BU__c,&quot;Healthcare Royalty and Income&quot;),&quot;Healthcare Royalty and Income&quot;,
+IF(
+INCLUDES(BU__c,&quot;AMPE - Middle Market&quot;),&quot;AMPE&quot;,
+IF(
+INCLUDES(BU__c,&quot;AMPE-Core&quot;),&quot;AMPE&quot;,
+IF(
+INCLUDES(BU__c,&quot;Eur-Core&quot;),&quot;AMPE&quot;,
+IF(
+INCLUDES(BU__c,&quot;Asia-Core&quot;),&quot;AMPE&quot;,
+IF(
+INCLUDES(BU__c,&quot;Balance Sheet&quot;),&quot;Balance Sheet&quot;,
+IF(
+INCLUDES(BU__c,&quot;Public toe-holds&quot;),&quot;AMPE&quot;,&quot;Null&quot;
+)
+)
+)
+)
+)
+)
+)
+)
+)</formula>
+    <label>Healthcare Business Reporting</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source_of_Deal__c</fullName>
+    <description>built for RE</description>
+    <externalId>false</externalId>
+    <label>Source of Deal</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Broker</fullName>
+                <default>false</default>
+                <label>Broker</label>
+            </value>
+            <value>
+                <fullName>RE Team</fullName>
+                <default>false</default>
+                <label>RE Team</label>
+            </value>
+            <value>
+                <fullName>Internal</fullName>
+                <default>false</default>
+                <label>Internal</label>
+            </value>
+            <value>
+                <fullName>Auction</fullName>
+                <default>false</default>
+                <label>Auction</label>
+            </value>
+            <value>
+                <fullName>Intermediary</fullName>
+                <default>false</default>
+                <label>Intermediary</label>
+            </value>
+            <value>
+                <fullName>Direct (Approached by Co.)</fullName>
+                <default>false</default>
+                <label>Direct (Approached by Co.)</label>
+            </value>
+            <value>
+                <fullName>KKR Exec - PE</fullName>
+                <default>false</default>
+                <label>KKR Exec - PE</label>
+            </value>
+            <value>
+                <fullName>KKR Exec - CPG</fullName>
+                <default>false</default>
+                <label>KKR Exec - CPG</label>
+            </value>
+            <value>
+                <fullName>KKR Exec - KCM</fullName>
+                <default>false</default>
+                <label>KKR Exec - KCM</label>
+            </value>
+            <value>
+                <fullName>KKR Senior Advisor</fullName>
+                <default>false</default>
+                <label>KKR Senior Advisor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

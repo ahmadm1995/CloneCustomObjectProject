@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEA_Pipeline_Meeting_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>SEA Pipeline Meeting Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agenda with Ming</fullName>
+                <default>false</default>
+                <label>Agenda with Ming</label>
+            </value>
+            <value>
+                <fullName>Live Deals</fullName>
+                <default>false</default>
+                <label>Live Deals</label>
+            </value>
+            <value>
+                <fullName>Priority for Discussion</fullName>
+                <default>false</default>
+                <label>Priority for Discussion</label>
+            </value>
+            <value>
+                <fullName>Early Stage</fullName>
+                <default>false</default>
+                <label>Early Stage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RT_FIG__c</fullName>
+    <externalId>false</externalId>
+    <label>Review Timing (FIG)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2nd Round Active Deals</fullName>
+                <default>false</default>
+                <label>2nd Round Active Deals</label>
+            </value>
+            <value>
+                <fullName>Active Process / Proprietary Engagement</fullName>
+                <default>false</default>
+                <label>Active Process / Proprietary Engagement</label>
+            </value>
+            <value>
+                <fullName>Near-term / Doing Work</fullName>
+                <default>false</default>
+                <label>Near-term / Doing Work</label>
+            </value>
+            <value>
+                <fullName>Next 12 Months</fullName>
+                <default>false</default>
+                <label>Next 12 Months</label>
+            </value>
+            <value>
+                <fullName>Longer Term Pipeline</fullName>
+                <default>false</default>
+                <label>Longer Term Pipeline</label>
+            </value>
+            <value>
+                <fullName>Other Ideas</fullName>
+                <default>false</default>
+                <label>Other Ideas</label>
+            </value>
+            <value>
+                <fullName>Dead</fullName>
+                <default>false</default>
+                <label>Dead</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Portfolio</fullName>
+                <default>false</default>
+                <label>Portfolio</label>
+            </value>
+            <value>
+                <fullName>Ex-Portfolio</fullName>
+                <default>false</default>
+                <label>Ex-Portfolio</label>
+            </value>
+            <value>
+                <fullName>Active (Ongoing process, NDA in place, Imminent NDA receipt, Active proprietary review)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Active (Ongoing process, NDA in place, Imminent NDA receipt, Active proprietary review)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

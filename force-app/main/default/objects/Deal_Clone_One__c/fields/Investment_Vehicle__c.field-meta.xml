@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Investment_Vehicle__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>For REE</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Investment Vehicles are the line items our finance team uses to track at the fund level and are required if you’re creating an add-on in order to facilitate the roll-up of investment metrics. Click the ‘Create New’ selection to create a new Investment Vehicle if it doesn’t exist.
+
+Used in GP Pack Reporting</inlineHelpText>
+    <label>Investment Vehicle</label>
+    <referenceTo>Investment_Vehicle__c</referenceTo>
+    <relationshipLabel>Deals</relationshipLabel>
+    <relationshipName>Deals</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TEV_Common__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+NOT ( AND( ISNULL(TEV_Low_MM_Asia__c), ISNULL(TEV_High_MM_Asia__c) ) ), 
+IF( TEV_Low_MM_Asia__c = TEV_High_MM_Asia__c , 
+TEV_High_MM_Asia__c , 
+IF( AND( ISNULL( TEV_Low_MM_Asia__c ) , NOT( ISNULL( TEV_High_MM_Asia__c ) ) ), 
+TEV_High_MM_Asia__c , 
+IF( AND( NOT( ISNULL( TEV_Low_MM_Asia__c ) ) , ISNULL( TEV_High_MM_Asia__c ) ) , 
+TEV_Low_MM_Asia__c, IF( AND( NOT( ISNULL( TEV_Low_MM_Asia__c ) ) , NOT(ISNULL( TEV_High_MM_Asia__c ) ) ), 
+TEV_High_MM_Asia__c, null ) ) ) ),
+IF( 
+NOT ( AND( ISNULL(DSlo__c), ISNULL(DShi__c) ) ), 
+IF( DSlo__c = DShi__c , 
+DShi__c , 
+IF( AND( ISNULL( DSlo__c ) , NOT( ISNULL( DShi__c ) ) ), 
+DShi__c , 
+IF( AND( NOT( ISNULL( DSlo__c ) ) , 
+ISNULL( DShi__c ) ) , 
+DSlo__c, IF( AND( NOT( ISNULL( DSlo__c ) ) , 
+NOT( ISNULL( DShi__c ) ) ), 
+DSlo__c, null)))),
+IF(
+NOT(AND(ISNULL(TLo__c),ISNULL(TEVhi__c))),IF(TLo__c=TEVhi__c,TEVhi__c,IF(AND(ISNULL(TLo__c),NOT(ISNULL(TEVhi__c))),TEVhi__c,IF(AND(NOT(ISNULL(TLo__c)),ISNULL(TEVhi__c)),TLo__c,IF(AND(NOT(ISNULL(TLo__c)),NOT(ISNULL(TEVhi__c))),TEVhi__c,null )))), null)))</formula>
+    <label>TEV (MM) - Common</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

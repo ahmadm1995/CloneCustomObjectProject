@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asia_NGT_ESG_DD</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;NGT_Asia&apos;
+&amp;&amp;
+(
+ISPICKVAL(Status_Asia__c, &apos;Priority&apos;)
+||
+ISPICKVAL(Status_Asia__c, &apos;High Priority&apos;)
+||
+ISPICKVAL(Status_Asia__c, &apos;Completed&apos;)
+||
+ISPICKVAL(Status_Asia__c, &apos;Portfolio&apos;)
+||
+ISPICKVAL(Status_Asia__c, &apos;Ex-Portfolio&apos;)
+)
+&amp;&amp;
+NOT(ISPICKVAL(Confirm_ESG_DD_Has_Commenced__c,&apos;Yes&apos;))</errorConditionFormula>
+    <errorDisplayField>Confirm_ESG_DD_Has_Commenced__c</errorDisplayField>
+    <errorMessage>ESG DD Has Commenced? Must be set to &apos;Yes&apos; when deal status reaches Priority</errorMessage>
+</ValidationRule>

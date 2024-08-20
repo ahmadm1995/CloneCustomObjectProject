@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Timing_HC_Education_Monitor</fullName>
+    <active>true</active>
+    <description>Enforces the filling out of timing when Sector is Education and Status is Monitor.</description>
+    <errorConditionFormula>AND(
+$User.Bypass_User_Validations__c = False ,
+RecordType.Name= &apos;Health Care PE/Core&apos;,
+OR(
+TEXT(Review_Timing_HC__c)= &apos;Other Live Deals&apos;,
+TEXT(Review_Timing_HC__c)= &apos;Forward Pipeline&apos;
+),
+ISBLANK(TEXT(Timing_CRG__c)),
+OR(
+AND(
+TEXT(Industry_Team__c)= &apos;Healthcare&apos;,
+TEXT(Sector__c)= &apos;Education&apos;
+),
+AND(
+TEXT(Industry_Team__c)= &apos;Consumer&apos;,
+TEXT(Sector__c)= &apos;Education&apos;
+),
+AND(
+TEXT(Industry_Team__c)= &apos;TMT&apos;,
+TEXT(Sector__c)= &apos;Education&apos;
+)
+)
+)</errorConditionFormula>
+    <errorDisplayField>Timing_CRG__c</errorDisplayField>
+    <errorMessage>Timing is required when Sector is set to Education for proper pipeline tracking.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Probability_Weighted_Deployment__c</fullName>
+    <externalId>false</externalId>
+    <formula>If (OR(RecordType.DeveloperName = &apos;Private_Equity_Asia&apos;, RecordType.DeveloperName = &apos;NGT_Asia&apos;),IF( OR(
+KKR_Investment_High_MM_Asia__c = 0,
+ISBLANK(KKR_Investment_High_MM_Asia__c) = TRUE
+), ((((KKR_Investment_Low_MM_Asia__c)/100) * VALUE(TEXT(Probability_of_Closing__c)))),
+IF ( OR(
+KKR_Investment_Low_MM_Asia__c = 0,
+ISBLANK(KKR_Investment_Low_MM_Asia__c) = TRUE
+), ((((KKR_Investment_High_MM_Asia__c)/100) * VALUE(TEXT(Probability_of_Closing__c)))),
+((( KKR_Investment_High_MM_Asia__c + KKR_Investment_Low_MM_Asia__c )/2)/100) * (VALUE(TEXT(Probability_of_Closing__c))))
+),IF( OR(
+    Khi__c = 0,
+    ISBLANK(Khi__c) =  TRUE
+), ((((Klo__c)/100) * VALUE(TEXT(Probability_of_Closing__c)))), 
+IF ( OR(
+    Klo__c = 0,
+    ISBLANK(Klo__c) = TRUE
+), ((((Khi__c)/100) * VALUE(TEXT(Probability_of_Closing__c)))),
+((( Khi__c + Klo__c )/2)/100) * (VALUE(TEXT(Probability_of_Closing__c))))
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Probability Weighted Deployment</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

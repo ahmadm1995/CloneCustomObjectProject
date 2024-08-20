@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Equity_Need_when_Active_REE</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND ( OR( ISNEW() , ISCHANGED( Pipeline_StatusRE__c ) ) , OR( AND ( EN_High_REE__c = 0, EN_Low_REE__c = 0), AND( ISNULL(  EN_High_REE__c  ), ISNULL(  EN_Low_REE__c  )), OR( AND( EN_High_REE__c &lt;= 0, ISNULL ( EN_Low_REE__c ) = TRUE, ISNULL ( EN_High_REE__c ) = FALSE)),AND( EN_Low_REE__c &lt;= 0, ISNULL ( EN_High_REE__c ) = TRUE, ISNULL ( EN_Low_REE__c ) = FALSE)) , 
+OR ( TEXT (  Pipeline_StatusRE__c  ) = &quot;Active Evaluation&quot;, TEXT ( Pipeline_StatusRE__c ) = &quot;Priority&quot;, TEXT ( Pipeline_StatusRE__c ) = &quot;High Priority&quot;) )</errorConditionFormula>
+    <errorMessage>Equity Need (Low or High) should be greater than 0 for all Active Deals</errorMessage>
+</ValidationRule>

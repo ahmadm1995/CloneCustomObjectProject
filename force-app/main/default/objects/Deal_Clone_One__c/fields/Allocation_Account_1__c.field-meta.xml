@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allocation_Account_1__c</fullName>
+    <description>PR-2113</description>
+    <externalId>false</externalId>
+    <label>Allocation Account 1</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GA</fullName>
+                <default>false</default>
+                <label>GA</label>
+            </value>
+            <value>
+                <fullName>KROX</fullName>
+                <default>false</default>
+                <label>KROX</label>
+            </value>
+            <value>
+                <fullName>KREF</fullName>
+                <default>false</default>
+                <label>KREF</label>
+            </value>
+            <value>
+                <fullName>KREST</fullName>
+                <default>false</default>
+                <label>KREST</label>
+            </value>
+            <value>
+                <fullName>RECOP</fullName>
+                <default>false</default>
+                <label>RECOP</label>
+            </value>
+            <value>
+                <fullName>RESTAC</fullName>
+                <default>false</default>
+                <label>RESTAC</label>
+            </value>
+            <value>
+                <fullName>KREOCS II</fullName>
+                <default>false</default>
+                <label>KREOCS II</label>
+            </value>
+            <value>
+                <fullName>KCORE</fullName>
+                <default>false</default>
+                <label>KCORE</label>
+            </value>
+            <value>
+                <fullName>KROX II</fullName>
+                <default>false</default>
+                <label>KROX II</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

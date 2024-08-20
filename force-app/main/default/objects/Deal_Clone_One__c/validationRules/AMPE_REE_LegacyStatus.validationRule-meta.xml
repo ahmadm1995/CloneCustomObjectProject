@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMPE_REE_LegacyStatus</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+     $User.Bypass_User_Validations__c = False , 
+OR($Permission.AMPE_REE_V2_Validations,
+$Permission.APAC_REE_V2_Validations,
+$Permission.EMEA_REE_V2_Validations),
+     CONTAINS($Profile.Name, &apos;Real Estate V2&apos;) ,
+     RecordType.Name = &quot;Real Estate Equity&quot; ,
+     ISCHANGED(Status_REE__c)  
+)</errorConditionFormula>
+    <errorDisplayField>Status_REE__c</errorDisplayField>
+    <errorMessage>Please reach out to Polaris Support if you need to change the status.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AsiaPEGoldSilver_CurEBITDA</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Private_Equity_Asia&apos;
+&amp;&amp;
+  ( ISPICKVAL(Gold_Silver_Indicator__c, &apos;Gold&apos;)
+  ||
+  ISPICKVAL(Gold_Silver_Indicator__c, &apos;Silver&apos;)  )
+&amp;&amp;
+ISPICKVAL(Currency_EBITDA__c, &apos;&apos;)</errorConditionFormula>
+    <errorDisplayField>Currency_EBITDA__c</errorDisplayField>
+    <errorMessage>Currency (EBITDA) required when deal is Gold or Silver</errorMessage>
+</ValidationRule>

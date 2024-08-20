@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HCSG_GoldSilver_ProcessType</fullName>
+    <active>true</active>
+    <errorConditionFormula>$User.Bypass_User_Validations__c = FALSE
+&amp;&amp;
+TEXT($User.Office_Region__c) = &quot;Americas&quot;
+&amp;&amp;
+RecordType.DeveloperName = &quot;Health_Care_Growth&quot;
+&amp;&amp;
+(
+ISPICKVAL(Gold_Silver_Indicator__c, &apos;Gold&apos;) ||
+ISPICKVAL(Gold_Silver_Indicator__c, &apos;Silver&apos;) ||
+TEXT(Review_Timing_HC__c) = &apos;Active&apos; 
+)
+&amp;&amp;
+TEXT(Process_Type__c) = &apos;&apos;</errorConditionFormula>
+    <errorDisplayField>Process_Type__c</errorDisplayField>
+    <errorMessage>Please provide Process Type when deal is marked Priority or Gold / Silver</errorMessage>
+</ValidationRule>

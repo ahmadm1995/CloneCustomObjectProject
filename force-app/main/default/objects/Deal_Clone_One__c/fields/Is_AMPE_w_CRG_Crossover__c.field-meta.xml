@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_AMPE_w_CRG_Crossover__c</fullName>
+    <description>Used in the following SmartLists due to character length limits in Custom Settings: Pipeline_CuratedPipeline_AMPE, Portfolio_CuratedPipeline_AMPE</description>
+    <externalId>false</externalId>
+    <formula>OR( AND( NOT( INCLUDES( BU__c , &quot;AMPE-Impact&quot; ) ) , NOT( INCLUDES( BU__c , &quot;Eur-Impact&quot; ) ) , NOT( INCLUDES( BU__c , &quot;Asia-Impact&quot; ) ) , TEXT( Industry_Team__c ) &lt;&gt; &quot;Infrastructure&quot; , TEXT( Industry_Team__c ) &lt;&gt; &quot;Real Estate&quot; , RecordType.Name &lt;&gt; &quot;Energy&quot; , RecordType.Name &lt;&gt; &quot;Infrastructure&quot; , OR( Primary_Office_Region__c = &apos;Americas&apos; , Include_in_CP_AMPE__c = True ) ) , CONTAINS( Deal_Team_Industry_Codes__c , &quot;448-Americas&quot; ) , CONTAINS( Deal_Team_Industry_Codes__c , &quot;442-Americas&quot; ) )</formula>
+    <label>Is AMPE (w CRG Crossover)</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

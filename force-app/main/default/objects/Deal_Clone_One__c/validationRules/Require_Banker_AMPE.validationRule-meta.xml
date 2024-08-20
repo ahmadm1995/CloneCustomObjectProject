@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Banker_AMPE</fullName>
+    <active>true</active>
+    <description>Require Banker for all AMPE Strategies</description>
+    <errorConditionFormula>AND(
+$User.Bypass_User_Validations__c = FALSE,
+$User.Profile_Name__c != &quot;Investment Professional - Private Equity&quot;,
+TEXT($User.Office_Region__c) = &quot;Americas&quot;,
+OR(
+    RecordType.Name = &quot;Private Equity - CRG&quot;,
+    RecordType.Name = &quot;Private Capital Investment&quot;,
+    RecordType.Name = &quot;Private Equity - Industrials&quot;,
+    RecordType.Name = &quot;Health Care PE/Core&quot;,
+    RecordType.Name = &quot;Health Care Growth&quot;,
+    RecordType.Name = &quot;Private Equity - TMT&quot;
+),
+OR(
+    TEXT(Status__c) = &apos;Tracked&apos;,
+    TEXT(Status__c) = &apos;Active Evaluation&apos;,
+    TEXT(Status__c) = &apos;High Priority&apos;,
+    TEXT(Status__c) = &apos;Priority&apos;,
+    TEXT(Status__c) = &apos;Completed&apos;,
+    TEXT(Status__c) = &apos;Portfolio&apos;,
+    TEXT(Status__c) = &apos;Completed&apos;
+),
+Banker_Primary__c = &apos;&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Banker_Primary__c</errorDisplayField>
+    <errorMessage>Please select the associated bank from the available list. If the bank you&apos;re looking for is not available, please reach out to PolarisSupport@kkr.com. If there&apos;s is no bank associated, please enter N/A.</errorMessage>
+</ValidationRule>

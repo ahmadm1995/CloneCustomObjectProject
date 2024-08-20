@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_of_Businesses__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(INCLUDES( BU__c, &quot;AMPE&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Euro PE&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Asia PE&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Public toe-holds&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;NGT&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Healthcare Strategic Growth&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Healthcare Royalty and Income&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Energy&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Infrastructure&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Real Estate Equity&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Real Estate Credit&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;AMPE-Core&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Eur-Core&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Asia-Core&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;AMPE-Impact&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Eur-Impact&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Asia-Impact&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Balance Sheet&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Credit&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Global Impact&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;NBFC&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Mezzanine&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;AMPE - Middle Market&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Asia - Climate Transition&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Strategic Investments Group&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;Hedge Fund&quot;), 1,0) + 
+IF(INCLUDES( BU__c, &quot;TBD&quot;), 1,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>No. of Businesses</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

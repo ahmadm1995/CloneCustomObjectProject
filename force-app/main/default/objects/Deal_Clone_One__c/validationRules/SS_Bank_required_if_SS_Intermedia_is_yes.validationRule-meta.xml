@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SS_Bank_required_if_SS_Intermedia_is_yes</fullName>
+    <active>true</active>
+    <description>SS Bank required if SS Intermediary is yes</description>
+    <errorConditionFormula>AND(
+TEXT(Sell_side_intermediaryGI__c) = &quot;Yes&quot;,
+ISBLANK(Sell_side_Bank__c),
+OR(
+$Profile.Name = &quot;Investment Professional - Global Impact&quot;,
+$Profile.Name = &quot;Investment Professional - EMEA PE &amp; Impact&quot;, 
+$Profile.Name = &quot;Investment Professional - Asia PE &amp; Impact&quot; 
+)
+)</errorConditionFormula>
+    <errorDisplayField>Sell_side_Bank__c</errorDisplayField>
+    <errorMessage>Please provide the Sell-side Bank</errorMessage>
+</ValidationRule>

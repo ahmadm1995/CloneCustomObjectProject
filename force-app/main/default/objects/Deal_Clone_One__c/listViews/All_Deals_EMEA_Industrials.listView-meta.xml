@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Deals_EMEA_Industrials</fullName>
+    <columns>NAME</columns>
+    <columns>Project_Name__c</columns>
+    <columns>Deal_Stage__c</columns>
+    <columns>Company_Interest_Level__c</columns>
+    <columns>HQ_Country__c</columns>
+    <columns>Latest_Deal_Note_Short_lim_200__c</columns>
+    <columns>Deal_Team_Short__c</columns>
+    <columns>Latest_Deal_Note_Date__c</columns>
+    <columns>Common_Status_Asia_sort__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Industry_Team__c</field>
+        <operation>contains</operation>
+        <value>Industrial</value>
+    </filters>
+    <filters>
+        <field>Deal_Stage__c</field>
+        <operation>notEqual</operation>
+        <value>Completed,Portfolio,Eliminated,Ex-Portfolio</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Deal_Clone_One__c.Europe</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Archived</value>
+    </filters>
+    <label>All Deals (EMEA Industrials)</label>
+</ListView>

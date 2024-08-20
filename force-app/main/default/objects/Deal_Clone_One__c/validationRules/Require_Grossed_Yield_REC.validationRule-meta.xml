@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Grossed_Yield_REC</fullName>
+    <active>true</active>
+    <description>If deal is changed to Portfolio - deal needs Grossed Book Yield to be entered.</description>
+    <errorConditionFormula>AND($User.Bypass_User_Validations__c = False, RecordType.Name = &quot;Real Estate Credit - Direct Lending&quot;, TEXT ( REC_Status__c ) = &quot;7. Portfolio&quot;,  ISBLANK(Grossed_Book_Yield__c	))</errorConditionFormula>
+    <errorDisplayField>Grossed_Book_Yield__c</errorDisplayField>
+    <errorMessage>Before closing, please enter the Grossed Book Yield//Unlevered IRR.</errorMessage>
+</ValidationRule>

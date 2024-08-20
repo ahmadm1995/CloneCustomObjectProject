@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Active_Evaluation__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR( TEXT( Status__c ) = &quot;Active Evaluation&quot; , TEXT( Status__c ) = &quot;Priority&quot; , TEXT( Status__c ) = &quot;High Priority&quot; ) , True , False )</formula>
+    <label>Is Active Evaluation?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

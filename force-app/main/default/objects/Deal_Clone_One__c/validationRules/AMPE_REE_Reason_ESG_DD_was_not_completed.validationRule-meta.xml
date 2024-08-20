@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMPE_REE_Reason_ESG_DD_was_not_completed</fullName>
+    <active>true</active>
+    <description>Enforce providing a reason for why ESG DD was not completed</description>
+    <errorConditionFormula>$Permission.Validation_For_ESG_Certification = TRUE
+&amp;&amp;
+  (
+  RecordType.DeveloperName = &apos;Real_Estate_Equity_V2&apos;
+  ||
+    (  
+    RecordType.DeveloperName = &apos;Platform_Deal&apos;
+    &amp;&amp;
+    ISPICKVAL(DT_RE__c, &apos;Portfolio&apos;)
+    &amp;&amp;
+    ISPICKVAL(Platform_Details__c, &apos;Standalone Investment&apos;)
+    )
+  ||
+  RecordType.DeveloperName = &apos;Platform_Deal&apos;
+  )
+&amp;&amp;
+ISPICKVAL(Confirm_Full_ESG_DD_Was_Completed__c, &apos;No&apos;)
+&amp;&amp;
+ISBLANK(Reason_ESG_DD_Was_Not_Completed__c)</errorConditionFormula>
+    <errorDisplayField>Reason_ESG_DD_Was_Not_Completed__c</errorDisplayField>
+    <errorMessage>Provide a reason for why ESG DD was not completed</errorMessage>
+</ValidationRule>

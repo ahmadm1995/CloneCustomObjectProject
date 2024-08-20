@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FFIR__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( TEXT ( Tranche__c ) = &quot;Senior&quot;, Sr_IR__c, 
+IF( TEXT ( Tranche__c ) = &quot;Mezz&quot;, Mezz_IR__c, 
+IF( TEXT ( Tranche__c ) = &quot;M1&quot;, M1_IR__c, 
+IF( TEXT ( Tranche__c ) = &quot;M2&quot;, M2_IR__c, 
+IF( TEXT ( Tranche__c ) = &quot;Pref. Equity&quot;, PE_IR__c,NULL)))))</formula>
+    <label>Fully Funded Target Tranche Int. Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

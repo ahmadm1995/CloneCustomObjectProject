@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BU__c</fullName>
+    <defaultValue>IF(
+    AND(
+        $RecordType.DeveloperName = &quot;Global_Impact&quot;,
+        ISPICKVAL($User.Office_Region__c, &quot;Americas&quot;)
+    ),
+    &quot;AMPE-Impact&quot;,
+    IF(
+        AND(
+            $RecordType.DeveloperName = &quot;Global_Impact&quot;,
+            ISPICKVAL($User.Office_Region__c, &quot;EMEA&quot;)
+        ),
+        &quot;Eur-Impact&quot;,
+        IF(
+            AND(
+                $RecordType.DeveloperName = &quot;NGT - Asia&quot;,
+                ISPICKVAL($User.Office_Region__c, &quot;Asia&quot;)
+            ),
+            &quot;Asia NGT&quot;,
+            IF(
+                AND(
+                    $RecordType.DeveloperName = &quot;Global_Impact&quot;,
+                    ISPICKVAL($User.Office_Region__c, &quot;Asia&quot;)
+                ),
+                &quot;Asia-Impact&quot;,
+                IF(
+                    AND(
+                        $User.Primary_Team__c = &quot;Industry Team - FIG&quot;,
+                        ISPICKVAL($User.Office_Region__c, &quot;Americas&quot;)
+                    ),
+                    &quot;AMPE&quot;,
+                    IF(
+                        
+                        $RecordType.DeveloperName = &quot;Health_Care_Growth&quot;
+                        
+                    ,
+                    &quot;Healthcare Strategic Growth&quot;,
+                    null
+                    )
+                )
+            )
+        )
+    )
+)</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Required for JYB/SCN Weekly Update</inlineHelpText>
+    <label>Business</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AMPE</fullName>
+                <default>false</default>
+                <label>AMPE</label>
+            </value>
+            <value>
+                <fullName>Euro PE</fullName>
+                <default>false</default>
+                <label>Euro PE</label>
+            </value>
+            <value>
+                <fullName>Asia PE</fullName>
+                <default>false</default>
+                <label>Asia PE</label>
+            </value>
+            <value>
+                <fullName>Public toe-holds</fullName>
+                <default>false</default>
+                <label>Public toe-holds</label>
+            </value>
+            <value>
+                <fullName>Asia NGT</fullName>
+                <default>false</default>
+                <label>Asia NGT</label>
+            </value>
+            <value>
+                <fullName>NGT</fullName>
+                <default>false</default>
+                <label>NGT</label>
+            </value>
+            <value>
+                <fullName>Healthcare Strategic Growth</fullName>
+                <default>false</default>
+                <label>Health Care Strategic Growth</label>
+            </value>
+            <value>
+                <fullName>Healthcare Royalty and Income</fullName>
+                <default>false</default>
+                <label>Health Care Royalty and Income</label>
+            </value>
+            <value>
+                <fullName>Energy</fullName>
+                <default>false</default>
+                <label>Energy</label>
+            </value>
+            <value>
+                <fullName>Infrastructure</fullName>
+                <default>false</default>
+                <label>Infrastructure</label>
+            </value>
+            <value>
+                <fullName>Infrastructure - Core</fullName>
+                <default>false</default>
+                <label>Infrastructure - Core</label>
+            </value>
+            <value>
+                <fullName>Real Estate Equity</fullName>
+                <default>false</default>
+                <label>Real Estate Equity</label>
+            </value>
+            <value>
+                <fullName>Real Estate Credit</fullName>
+                <default>false</default>
+                <label>Real Estate Credit</label>
+            </value>
+            <value>
+                <fullName>AMPE-Core</fullName>
+                <default>false</default>
+                <label>AMPE-Core</label>
+            </value>
+            <value>
+                <fullName>Eur-Core</fullName>
+                <default>false</default>
+                <label>Eur-Core</label>
+            </value>
+            <value>
+                <fullName>Asia-Core</fullName>
+                <default>false</default>
+                <label>Asia-Core</label>
+            </value>
+            <value>
+                <fullName>AMPE-Impact</fullName>
+                <default>false</default>
+                <label>AMPE-Impact</label>
+            </value>
+            <value>
+                <fullName>Eur-Impact</fullName>
+                <default>false</default>
+                <label>Eur-Impact</label>
+            </value>
+            <value>
+                <fullName>Asia-Impact</fullName>
+                <default>false</default>
+                <label>Asia-Impact</label>
+            </value>
+            <value>
+                <fullName>Balance Sheet</fullName>
+                <default>false</default>
+                <label>Balance Sheet</label>
+            </value>
+            <value>
+                <fullName>Credit</fullName>
+                <default>false</default>
+                <label>Credit</label>
+            </value>
+            <value>
+                <fullName>Global Impact</fullName>
+                <default>false</default>
+                <label>Global Impact</label>
+            </value>
+            <value>
+                <fullName>NBFC</fullName>
+                <default>false</default>
+                <label>NBFC</label>
+            </value>
+            <value>
+                <fullName>Mezzanine</fullName>
+                <default>false</default>
+                <label>Mezzanine</label>
+            </value>
+            <value>
+                <fullName>Strategic Investments Group</fullName>
+                <default>false</default>
+                <label>Strategic Investments Group</label>
+            </value>
+            <value>
+                <fullName>Hedge Fund</fullName>
+                <default>false</default>
+                <label>Hedge Fund</label>
+            </value>
+            <value>
+                <fullName>TBD</fullName>
+                <default>false</default>
+                <label>TBD</label>
+            </value>
+            <value>
+                <fullName>AMPE - Middle Market</fullName>
+                <default>false</default>
+                <label>AMPE - Middle Market</label>
+            </value>
+            <value>
+                <fullName>Asia Climate</fullName>
+                <default>false</default>
+                <label>Asia Climate</label>
+            </value>
+            <value>
+                <fullName>Americas + EMEA Climate</fullName>
+                <default>false</default>
+                <label>Americas + EMEA Climate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

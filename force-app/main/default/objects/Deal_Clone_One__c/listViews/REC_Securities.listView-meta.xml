@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REC_Securities</fullName>
+    <columns>NAME</columns>
+    <columns>REC_Status__c</columns>
+    <columns>Deal_Team_Short__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Deal_Clone_One__c.Real_Estate_Credit_Securities</value>
+    </filters>
+    <label>REC - Securities</label>
+</ListView>

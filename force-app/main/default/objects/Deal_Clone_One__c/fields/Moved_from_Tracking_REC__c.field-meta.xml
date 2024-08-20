@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Moved_from_Tracking_REC__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>True if moved from Quoted/Term Sheet to Tracking/Dead.</description>
+    <externalId>false</externalId>
+    <label>Moved from Tracking?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

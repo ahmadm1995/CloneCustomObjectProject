@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_AMPE_CRG__c</fullName>
+    <description>Used in the following SmartLists due to character length limits in Custom Settings: Pipeline_CuratedPipeline_AMPE_CRG, Portfolio_CuratedPipeline_AMPE_CRG</description>
+    <externalId>false</externalId>
+    <formula>OR( AND( NOT( INCLUDES( BU__c , &quot;AMPE-Impact&quot; ) ) , NOT( INCLUDES( BU__c , &quot;Eur-Impact&quot; ) ) , NOT( INCLUDES( BU__c , &quot;Asia-Impact&quot; ) ) , NOT( INCLUDES( BU__c , &quot;NGT&quot; ) ) , OR ( TEXT( Industry_Team__c ) = &quot;Consumer&quot; , TEXT( Industry_Team__c ) = &quot;Retail&quot; ) , Americas_Office_Count__c &gt; 0 ) , CONTAINS( Deal_Team_Industry_Codes__c , &quot;448-Americas&quot; ) , CONTAINS( Deal_Team_Industry_Codes__c , &quot;442-Americas&quot; ) )</formula>
+    <label>Is AMPE CRG</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

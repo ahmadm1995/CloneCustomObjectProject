@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Equity_Need_when_Active</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( $User.Bypass_User_Validations__c = False ,  
+    OR( 
+       ISNEW() , 
+       ISCHANGED( Status__c ),
+       ISCHANGED( Pipeline_Status_FIG__c ),
+       ISCHANGED( Status_HC__c ),
+       ISCHANGED( Review_Timing_HC__c ),
+       ISCHANGED( Status_TMT__c ),
+       OR ( ISCHANGED( Phase_Infra__c ),
+            ISCHANGED( Dead_Infra__c ) ),
+       OR ( ISCHANGED( RT__c ), AND(
+                    TEXT ( RT__c ) = &quot;Next 3 Months / Proprietary Ideas&quot;, 
+                    ISCHANGED ( PnP__c ), TEXT ( PnP__c ) = &quot;Priority&quot; ) ), 
+       ISCHANGED( Deal_Stage__c ) ),
+    OR( 
+       AND( 
+           EqHi__c = 0, 
+           EqLo__c = 0), 
+       AND( 
+           ISNULL( EqHi__c ), 
+           ISNULL( EqLo__c )), 
+       OR( 
+           AND( 
+               EqHi__c &lt;= 0, 
+               ISNULL ( EqLo__c ) = TRUE, 
+               ISNULL ( EqHi__c) = FALSE)), 
+           AND( 
+               EqLo__c &lt;= 0, 
+               ISNULL ( EqHi__c ) = TRUE, 
+               ISNULL ( EqLo__c) = FALSE)), 
+       OR( 
+          TEXT( Pipeline_Status_FIG__c ) = &quot;Active&quot;, 
+          TEXT( Status_HC__c ) = &quot;Active Evaluation (Higher Current Resource Intensity)&quot;, 
+          TEXT( Status_HC__c ) = &quot;Active Evaluation (Lower Current Resource Intensity)&quot;, 
+          TEXT( Status_HC__c ) = &quot;Priority&quot;, 
+          TEXT( Status_HC__c ) = &quot;High Priority&quot;,
+          TEXT( Review_Timing_HC__c ) = &quot;Active&quot;,
+TEXT( Review_Timing_HC__c ) = &quot;Active Pipeline&quot;,
+          TEXT( Status_TMT__c ) = &quot;Advanced&quot;, 
+          TEXT( Status_TMT__c ) = &quot;Active&quot;, 
+          AND( 
+              OR( 
+                 RecordType.Name = &quot;Private Equity - CRG&quot;, 
+                 AND( RecordType.Name = &quot;Private Capital Investment&quot;, ISBLANK ( 
+                 TEXT ( Status_HC__c ) ), ISBLANK ( TEXT(
+                 Pipeline_Status_FIG__c))), RecordType.Name = &quot;Core&quot;), 
+                 OR( 
+                    TEXT ( Status__c ) = &quot;Active Evaluation&quot;, 
+                    TEXT ( Status__c ) = &quot;Priority&quot;, 
+                    TEXT ( Status__c ) = &quot;High Priority&quot;)),
+                 AND( 
+                     Dead_Infra__c = FALSE, 
+                     OR( 
+                        TEXT ( Phase_Infra__c ) = &quot;Active&quot;, 
+                        TEXT ( Phase_Infra__c ) = &quot;Phase 1&quot;, 
+                        TEXT ( Phase_Infra__c ) = &quot;Phase 2a&quot;, 
+                        TEXT ( Phase_Infra__c ) = &quot;Phase 2b&quot;, 
+                        TEXT ( Phase_Infra__c ) = &quot;Phase 2&quot;) ),
+                 OR( 
+                    TEXT( RT__c ) = &quot;2nd Round Active Deals&quot;, 
+                    TEXT( RT__c ) = &quot;Active (Ongoing process, NDA in place, Imminent NDA receipt, Active proprietary review)&quot;, 
+                    AND(
+                    TEXT ( RT__c ) = &quot;Next 3 Months / Proprietary Ideas&quot;, 
+                    TEXT ( PnP__c ) = &quot;Priority&quot; ), 
+                    AND(
+                    TEXT ( RT__c ) = &quot;Next 3 Months / Proprietary Ideas&quot;, 
+                    ISCHANGED ( PnP__c ), TEXT ( PnP__c ) = &quot;Priority&quot; ) ) ,
+              TEXT( Deal_Stage__c ) = &quot;Early Diligence&quot;, 
+              TEXT( Deal_Stage__c ) = &quot;First Round Bids&quot;, 
+              TEXT( Deal_Stage__c ) = &quot;Binding Bids&quot;)
+)</errorConditionFormula>
+    <errorMessage>Equity Need (Low or High) should be greater than 0 for all Active Deals</errorMessage>
+</ValidationRule>

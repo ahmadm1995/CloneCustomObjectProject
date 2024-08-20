@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transaction_Mult__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( EB__c &lt; 0, &quot;N/A&quot;, 
+IF( OR(
+    TEVhi__c = 0,
+    ISBLANK(TEVhi__c)
+), TEXT(((TLo__c) / EB__c)),
+IF( OR(
+    TLo__c = 0,
+    ISBLANK(TLo__c)
+), TEXT(((TEVhi__c) / EB__c)),
+TEXT((( TEVhi__c +  TLo__c )/2) / ( EB__c ))
+)))</formula>
+    <label>Transaction Multiple</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

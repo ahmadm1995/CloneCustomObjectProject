@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reverse_Investment_Category_Platform</fullName>
+    <active>true</active>
+    <description>If the Deal type is portfolio, then clear investment category</description>
+    <errorConditionFormula>AND(
+    $User.Bypass_User_Validations__c = False,
+				RecordType.Name = &quot;Platform Deal&quot;,
+				TEXT(DT_RE__c) = &apos;Portfolio&apos;,
+				NOT(ISBLANK(TEXT(Investment_Category__c))),
+				TEXT(Platform_Details__c) = &quot;Standalone Investment&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Investment_Category__c</errorDisplayField>
+    <errorMessage>Please clear the Investment Category</errorMessage>
+</ValidationRule>

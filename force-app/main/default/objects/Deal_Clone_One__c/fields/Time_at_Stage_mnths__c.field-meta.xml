@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_at_Stage_mnths__c</fullName>
+    <description>Getting the time difference between today and last time pipeline status was changed in terms of months</description>
+    <externalId>false</externalId>
+    <formula>(TODAY()- pipeline_status_change_date__c)/30</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Should NOT be visible on any layout when we go live</inlineHelpText>
+    <label>Time at Stage (mnths)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

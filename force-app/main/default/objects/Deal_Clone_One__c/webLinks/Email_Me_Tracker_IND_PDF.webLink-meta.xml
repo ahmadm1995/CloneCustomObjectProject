@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Me_Tracker_IND_PDF</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Email Me PDF Calendar</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>/* Button Configuration - Change these values */ 
+var templateId =&apos;a1N1H000002YE4o&apos;; 
+var queryId = &apos;[L2NDP]a1F1H000005yfW7,[L2NDN]a1F1H000005yfWC,[LAP]a1F1H000005yfWH,[LAN]a1F1H000005yfWM,[L3MP]a1F1H000005yfWR,[L3MN]a1F1H000005yfWW,[L6M]a1F1H000005yfXZ,[LSC]a1F1H000005yfWg,[LDEAD]a1F1H000005yfWb,[MEX]a1F1H000005yfWl,[M2NDP]a1F1H000005yfWq,[M2NDN]a1F1H000005yfWv,[MAPN]a1F1H000005yfX0,[MAPP]a1F1H000005yfX5,[MANP]a1F1H000005yfXA,[M6M]a1F1H000005yfXF,[M12M]a1F1H000005yfXK,[MOI]a1F1H000005yfXP,[MDEAD]a1F1H000005yfXU&apos;; 
+var serverURL = &apos;{!API.Partner_Server_URL_370}&apos;; 
+var id = &apos;a1L1H000004QJBi&apos;; 
+var redirect = &apos;/lightning/n/My_Deals_Industrials&apos;; 
+var parameterId = &apos;12&apos;; 
+var loggingId = &apos;0&apos;; 
+var fp0 = &apos;1&apos; 
+var pdf = &apos;1&apos; 
+var zip = &apos;0&apos; 
+var sf1 = &apos;1&apos; 
+var ccId = &apos;&apos;; 
+var emailId = &apos;a1E1H00000AMq1p&apos;; 
+var user = sforce.connection.getUserInfo(); 
+var emailtoId = user.userEmail; 
+console.log(user); 
+
+/* URL Building - Don&apos;t change these values */ 
+var url = &apos;&apos;; 
+
+url += &apos;/apex/APXTConga4__Conga_Composer?SolMgr=1&apos; + 
+&apos;&amp;serverUrl=&apos; +serverURL+ 
+&apos;&amp;Id=&apos; +id+ 
+&apos;&amp;QueryId=&apos; + queryId+ 
+&apos;&amp;TemplateId=&apos;+templateId+ 
+&apos;&amp;ReturnPath=&apos; +redirect+ 
+&apos;&amp;DS7=&apos; +parameterId+ 
+&apos;&amp;AC0=&apos; +loggingId+ 
+&apos;&amp;FP0=&apos; +fp0+ 
+&apos;&amp;DefaultPDF=&apos; +pdf+ 
+&apos;&amp;ZipFiles=&apos; +zip+ 
+&apos;&amp;SF1=&apos; +sf1+ 
+&apos;&amp;EmailAdditionalTo=&apos; +encodeURIComponent(emailtoId)+ 
+&apos;&amp;EmailCC=&apos; +ccId+ 
+&apos;&amp;EmailTemplateId=&apos; +emailId; 
+
+//Open modal in SmartList 
+var mobileExpression = new RegExp(&apos;Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune&apos;); 
+var userAgent = navigator.userAgent; 
+if(userAgent.match(mobileExpression)){ 
+var redirect = &quot;/lightning/n/My_Deals_Industrials&quot;; 
+url += &apos;&amp;ReturnPath=&apos; + redirect; 
+sforce.one.navigateToURL(url, false); 
+} else { 
+var redirect = &apos;/lightning/n/My_Deals_Industrials&apos;; 
+url += &apos;&amp;ReturnPath=&apos; +redirect; 
+openURLInModal(url,false); 
+}</url>
+</WebLink>

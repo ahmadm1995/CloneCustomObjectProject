@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMPE_REE_SizeNoOfUnits_Platform</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $User.Bypass_User_Validations__c = False,    
+				RecordType.Name = &quot;Platform Deal&quot;,
+    ISBLANK(Size_REE__c),
+				TEXT(DT_RE__c) = &apos;Portfolio&apos;,
+    TEXT(Platform_Details__c) = &quot;Standalone Investment&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Size_REE__c</errorDisplayField>
+    <errorMessage>Please provide the Size / # of Units</errorMessage>
+</ValidationRule>

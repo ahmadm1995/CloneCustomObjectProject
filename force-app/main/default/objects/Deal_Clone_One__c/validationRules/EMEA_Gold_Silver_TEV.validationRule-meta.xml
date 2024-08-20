@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EMEA_Gold_Silver_TEV</fullName>
+    <active>true</active>
+    <description>Require TEV Low or HIgh to be filled in when</description>
+    <errorConditionFormula>$User.Bypass_User_Validations__c = FALSE
+&amp;&amp;
+RecordType.DeveloperName = &apos;Europe&apos;
+&amp;&amp;
+(TEVhi__c &lt;= 0 || ISBLANK(TEVhi__c) )
+&amp;&amp;
+(TLo__c &lt;= 0 || ISBLANK(TLo__c)  )
+&amp;&amp;
+ ( ISPICKVAL(Gold_Silver_Indicator__c, &apos;Gold&apos;)
+   ||
+   ISPICKVAL(Gold_Silver_Indicator__c, &apos;Silver&apos;) )</errorConditionFormula>
+    <errorMessage>TEV (Low or High) must be greater than 0 when deal is Gold or Silver</errorMessage>
+</ValidationRule>
