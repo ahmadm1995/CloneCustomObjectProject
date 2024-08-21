@@ -5,7 +5,6 @@
     <formula>CASE( RecordType.Name,
 &quot;Private Equity - Industrials&quot;, TEXT(RE_Industrials__c),
 &quot;Private Equity - TMT&quot;, TEXT(Reason_Eliminated__c),
-&quot;Real Estate Equity&quot;, TEXT(Reason_Eliminated_RE__c),
 &quot;Health Care Growth&quot;, TEXT(Reason_Passed__c),
 &quot;Health Care PE/Core&quot;, TEXT(Reason_Passed__c),
 &quot;Europe&quot;, TEXT(Eliminated_ReasonEU__c),

@@ -3802,17 +3802,7 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>Include__c</picklist>
-        <values>
-            <fullName>No</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Yes</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
+    
     <picklistValues>
         <picklist>Include_for_GA_Securities_Pipeline__c</picklist>
         <values>
@@ -8975,29 +8965,7 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>Reason_EliminatedRE__c</picklist>
-        <values>
-            <fullName>1%2E Did not evaluate</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>2%2E Screen and passed</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>3%2E Active evaluation and passed</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>4%2E Bid%2C but lst</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>5%2E Bid and won%2C but did not close</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
+    
     <picklistValues>
         <picklist>Reason_Eliminated_FIG__c</picklist>
         <values>
@@ -9254,97 +9222,7 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>SP_Rating__c</picklist>
-        <values>
-            <fullName>A</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>A%2B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>A-</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>AA</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>AA%2B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>AA-</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>AAA</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>B%2B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>B-</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>BB</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>BB%2B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>BB-</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>BBB</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>BBB%2B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>BBB-</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>C</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>CC</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>CCC</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>CCC%2B</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>CCC-</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>NR</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
+    
     <picklistValues>
         <picklist>ST_REC__c</picklist>
         <values>
@@ -12641,25 +12519,7 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>Type_Crypto__c</picklist>
-        <values>
-            <fullName>Defensive</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Education</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Internal Org</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Offensive</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
+    
     <picklistValues>
         <picklist>Type_Infra__c</picklist>
         <values>
