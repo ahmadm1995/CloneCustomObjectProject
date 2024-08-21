@@ -6,7 +6,7 @@
     <label>Office</label>
     <referenceTo>KKR_Office__c</referenceTo>
     <relationshipLabel>Deals</relationshipLabel>
-    <relationshipName>Deals</relationshipName>
+    <relationshipName>Deals_Clone</relationshipName>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

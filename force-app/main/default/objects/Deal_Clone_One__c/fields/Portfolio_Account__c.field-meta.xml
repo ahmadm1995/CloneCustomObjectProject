@@ -7,7 +7,7 @@
     <label>Portfolio Company</label>
     <referenceTo>Account</referenceTo>
     <relationshipLabel>Projects (Portfolio Company)</relationshipLabel>
-    <relationshipName>Projects1</relationshipName>
+    <relationshipName>Projects1_Clone</relationshipName>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

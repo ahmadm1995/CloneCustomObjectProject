@@ -22,7 +22,7 @@
     </lookupFilter>
     <referenceTo>Account</referenceTo>
     <relationshipLabel>Deals (Sell-side Intermediary)</relationshipLabel>
-    <relationshipName>DealsSellsideIntermediary</relationshipName>
+    <relationshipName>DealsSellsideIntermediary_Clone</relationshipName>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

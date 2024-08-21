@@ -7,7 +7,7 @@
     <label>Requestor</label>
     <referenceTo>Contact</referenceTo>
     <relationshipLabel>Projects</relationshipLabel>
-    <relationshipName>Requested_Projects</relationshipName>
+    <relationshipName>Requested_Projects_Clone</relationshipName>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

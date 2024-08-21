@@ -3,7 +3,7 @@
     <fullName>Deal_Team_Member_Count__c</fullName>
     <externalId>false</externalId>
     <label>Deal Team Member Count</label>
-    <summaryForeignKey>Project_Team_Member__c.Deal_Clone_One__c</summaryForeignKey>
+    <summaryForeignKey>CT_PE__Project_Team_Member__c.CT_PE__Project__c</summaryForeignKey>
     <summaryOperation>count</summaryOperation>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

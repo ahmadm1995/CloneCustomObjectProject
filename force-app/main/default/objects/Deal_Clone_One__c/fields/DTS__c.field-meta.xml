@@ -15,7 +15,7 @@
     </lookupFilter>
     <referenceTo>Contact</referenceTo>
     <relationshipLabel>Deals (Deal Team Support)</relationshipLabel>
-    <relationshipName>DealTeamSupport</relationshipName>
+    <relationshipName>DealTeamSupport_Clone</relationshipName>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

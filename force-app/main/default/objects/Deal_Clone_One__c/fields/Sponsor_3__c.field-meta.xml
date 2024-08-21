@@ -16,7 +16,7 @@
     </lookupFilter>
     <referenceTo>Account</referenceTo>
     <relationshipLabel>Deals (Sponsor 3)</relationshipLabel>
-    <relationshipName>Sponsor3</relationshipName>
+    <relationshipName>Sponsor3_Clone</relationshipName>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

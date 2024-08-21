@@ -20,7 +20,7 @@
     </lookupFilter>
     <referenceTo>Contact</referenceTo>
     <relationshipLabel>Projects (as Deal Team Contact)</relationshipLabel>
-    <relationshipName>Projects</relationshipName>
+    <relationshipName>Projects_Clone</relationshipName>
     <required>false</required>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>

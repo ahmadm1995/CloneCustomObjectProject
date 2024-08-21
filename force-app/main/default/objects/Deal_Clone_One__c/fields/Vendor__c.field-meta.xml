@@ -27,7 +27,7 @@
     </lookupFilter>
     <referenceTo>Account</referenceTo>
     <relationshipLabel>Deals (Vendor)</relationshipLabel>
-    <relationshipName>Deals2</relationshipName>
+    <relationshipName>Deals2_Clone</relationshipName>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
