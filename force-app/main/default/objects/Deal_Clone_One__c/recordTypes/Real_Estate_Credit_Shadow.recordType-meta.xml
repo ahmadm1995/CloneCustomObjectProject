@@ -14007,29 +14007,7 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>Vertical__c</picklist>
-        <values>
-            <fullName>Climate Action</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Inclusive Growth</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Lifelong Learning</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Other</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Sustainable Living</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
+    
     <picklistValues>
         <picklist>WT__c</picklist>
         <values>
