@@ -3,7 +3,6 @@
     <fullName>Securities_Reporting__c</fullName>
     <externalId>false</externalId>
     <formula>IF( ISNULL ( PS__c ) , null , TEXT( CurrencyIsoCode ) + &quot; &quot; + TEXT ( PS__c ) + &quot; MM&quot; + &quot;/&quot; ) &amp;
-IF( ISNULL ( RF__c ) , &quot; &quot; , RF__c + &quot;/&quot;) &amp;
 IF( ISNULL ( FA__c ) , &quot; &quot; , TEXT( CurrencyIsoCode ) + &quot; &quot; + TEXT ( FA__c ) + &quot; MM&quot; ) &amp;
 IF( ISNULL ( PE__c ) , null , TEXT( CurrencyIsoCode ) + &quot; &quot; + TEXT ( PE__c ) + &quot; MM&quot; )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
