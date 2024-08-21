@@ -1679,13 +1679,7 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>Country__c</picklist>
-        <values>
-            <fullName>TBD</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
+    
     <picklistValues>
         <picklist>Cur_DCS__c</picklist>
         <values>
