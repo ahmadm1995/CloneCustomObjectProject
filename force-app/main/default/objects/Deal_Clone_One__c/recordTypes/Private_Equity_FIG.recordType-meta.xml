@@ -10850,29 +10850,7 @@
             <default>false</default>
         </values>
     </picklistValues>
-    <picklistValues>
-        <picklist>Reason_Eliminated_RE__c</picklist>
-        <values>
-            <fullName>1%2E Did not evaluate</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>2%2E Screened and passed</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>3%2E Active evaluation and passed</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>4%2E Bid%2C but lost</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>5%2E Bid and won%2C but did not close</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
+    
     <picklistValues>
         <picklist>Reason_Eliminated_TMT__c</picklist>
         <values>
